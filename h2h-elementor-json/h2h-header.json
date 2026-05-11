@@ -1,0 +1,249 @@
+{
+  "version": "0.4",
+  "title": "H2H Dating — Header",
+  "type": "header",
+  "content": [
+    {
+      "id": "hdr00001",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "flex_direction": "row",
+        "content_width": "full",
+        "align_items": "center",
+        "background_background": "classic",
+        "background_color": "#000000",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": false
+        },
+        "min_height": {
+          "unit": "px",
+          "size": 76
+        },
+        "position": "sticky",
+        "sticky": "top",
+        "z_index": 1000,
+        "box_shadow_box_shadow_type": "yes",
+        "box_shadow_box_shadow": {
+          "horizontal": 0,
+          "vertical": 2,
+          "blur": 20,
+          "spread": 0,
+          "color": "rgba(0,0,0,0.40)"
+        },
+        "custom_css": "backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);"
+      },
+      "elements": [
+        {
+          "id": "hdr00002",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "flex_direction": "row",
+            "align_items": "center",
+            "justify_content": "space-between",
+            "content_width": "boxed",
+            "width": {
+              "unit": "px",
+              "size": 1280
+            },
+            "width_tablet": {
+              "unit": "%",
+              "size": 100
+            },
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "24",
+              "bottom": "0",
+              "left": "24",
+              "isLinked": false
+            },
+            "min_height": {
+              "unit": "px",
+              "size": 76
+            },
+            "flex_gap": {
+              "unit": "px",
+              "size": 32
+            }
+          },
+          "elements": [
+            {
+              "id": "hdr00003",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "url": "YOUR_LOGO_URL_HERE",
+                  "id": "",
+                  "size": "",
+                  "alt": "H2H Dating — Heart to Heart",
+                  "source": "library"
+                },
+                "image_size": "full",
+                "width": {
+                  "unit": "px",
+                  "size": 120
+                },
+                "width_tablet": {
+                  "unit": "px",
+                  "size": 100
+                },
+                "link_to": "custom",
+                "link": {
+                  "url": "/",
+                  "is_external": false,
+                  "nofollow": false
+                }
+              },
+              "elements": []
+            },
+            {
+              "id": "hdr00004",
+              "elType": "widget",
+              "widgetType": "nav-menu",
+              "settings": {
+                "menu": "main-menu",
+                "layout": "horizontal",
+                "align_items": "center",
+                "pointer": "none",
+                "item_gap": {
+                  "unit": "px",
+                  "size": 36
+                },
+                "typography_typography": "custom",
+                "typography_font_family": "Poppins",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 15
+                },
+                "typography_font_weight": "500",
+                "color": "#FFFFFF",
+                "color_hover": "#E5C162",
+                "color_active": "#E5C162",
+                "toggle_align": "right",
+                "full_width": "no",
+                "custom_css": "flex: 1; justify-content: center;"
+              },
+              "elements": []
+            },
+            {
+              "id": "hdr00005",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "flex_direction": "row",
+                "align_items": "center",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 12
+                }
+              },
+              "elements": [
+                {
+                  "id": "hdr00006",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Sign In",
+                    "link": {
+                      "url": "/login/",
+                      "is_external": false,
+                      "nofollow": false
+                    },
+                    "button_type": "ghost",
+                    "background_color": "transparent",
+                    "button_text_color": "#FFFFFF",
+                    "button_text_color_hover": "#E5C162",
+                    "border_color": "transparent",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "100",
+                      "right": "100",
+                      "bottom": "100",
+                      "left": "100",
+                      "isLinked": true
+                    },
+                    "typography_typography": "custom",
+                    "typography_font_family": "Poppins",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 15
+                    },
+                    "typography_font_weight": "500",
+                    "padding": {
+                      "unit": "px",
+                      "top": "10",
+                      "right": "20",
+                      "bottom": "10",
+                      "left": "20",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "hdr00007",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Join Free",
+                    "link": {
+                      "url": "/register/",
+                      "is_external": false,
+                      "nofollow": false
+                    },
+                    "background_color": "#BE0002",
+                    "button_text_color": "#E5C162",
+                    "button_text_color_hover": "#FFFFFF",
+                    "background_color_hover": "#9A0002",
+                    "border_width": {
+                      "unit": "px",
+                      "top": "2",
+                      "right": "2",
+                      "bottom": "2",
+                      "left": "2",
+                      "isLinked": true
+                    },
+                    "border_color": "#E5C162",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "100",
+                      "right": "100",
+                      "bottom": "100",
+                      "left": "100",
+                      "isLinked": true
+                    },
+                    "typography_typography": "custom",
+                    "typography_font_family": "Poppins",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 15
+                    },
+                    "typography_font_weight": "700",
+                    "padding": {
+                      "unit": "px",
+                      "top": "10",
+                      "right": "24",
+                      "bottom": "10",
+                      "left": "24",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": {}
+}
