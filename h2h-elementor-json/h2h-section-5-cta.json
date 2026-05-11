@@ -1,0 +1,218 @@
+{
+  "version": "0.4",
+  "title": "H2H Section 5 — Final CTA",
+  "type": "page",
+  "content": [
+    {
+      "id": "s5000001",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "flex_direction": "column",
+        "content_width": "full",
+        "background_background": "classic",
+        "background_color": "#BE0002",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": false
+        },
+        "custom_css": "background: linear-gradient(135deg, #9A0002 0%, #BE0002 50%, #D40002 100%);"
+      },
+      "elements": [
+        {
+          "id": "s5000002",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "flex_direction": "column",
+            "align_items": "center",
+            "content_width": "boxed",
+            "width": {
+              "unit": "px",
+              "size": 860
+            },
+            "width_mobile": {
+              "unit": "%",
+              "size": 100
+            },
+            "padding": {
+              "unit": "px",
+              "top": "100",
+              "right": "24",
+              "bottom": "100",
+              "left": "24",
+              "isLinked": false
+            },
+            "padding_tablet": {
+              "unit": "px",
+              "top": "72",
+              "right": "20",
+              "bottom": "72",
+              "left": "20",
+              "isLinked": false
+            },
+            "padding_mobile": {
+              "unit": "px",
+              "top": "64",
+              "right": "16",
+              "bottom": "64",
+              "left": "16",
+              "isLinked": false
+            },
+            "flex_gap": {
+              "unit": "px",
+              "size": 28
+            }
+          },
+          "elements": [
+            {
+              "id": "s5000003",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<span style='display:inline-block; background:rgba(0,0,0,0.25); color:#E5C162; font-family:Poppins,sans-serif; font-size:12px; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; padding:7px 20px; border-radius:100px; border:1px solid rgba(229,193,98,0.4);'>Start Today</span>"
+              },
+              "elements": []
+            },
+            {
+              "id": "s5000004",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Your Story <span style='color:#E5C162;'>Starts Here</span>",
+                "header_size": "h2",
+                "title_color": "#FFFFFF",
+                "align": "center",
+                "typography_typography": "custom",
+                "typography_font_family": "Poppins",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 56
+                },
+                "typography_font_size_tablet": {
+                  "unit": "px",
+                  "size": 40
+                },
+                "typography_font_size_mobile": {
+                  "unit": "px",
+                  "size": 32
+                },
+                "typography_font_weight": "800",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.15
+                },
+                "typography_letter_spacing": {
+                  "unit": "em",
+                  "size": -0.02
+                }
+              },
+              "elements": []
+            },
+            {
+              "id": "s5000005",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='font-family:Inter,sans-serif; font-size:19px; line-height:1.7; color:rgba(255,255,255,0.9); text-align:center; margin:0;'>Join thousands of Americans finding real, genuine connections every day. It's free — no credit card, no catch, no algorithms. Just real people, ready to connect.</p>"
+              },
+              "elements": []
+            },
+            {
+              "id": "s5000006",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "flex_direction": "column",
+                "align_items": "center",
+                "flex_gap": {"unit": "px", "size": 16},
+                "margin": {
+                  "unit": "px",
+                  "top": "12",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": false
+                }
+              },
+              "elements": [
+                {
+                  "id": "s5000007",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Create My Free Profile →",
+                    "link": {
+                      "url": "/register/",
+                      "is_external": false,
+                      "nofollow": false
+                    },
+                    "background_color": "#E5C162",
+                    "button_text_color": "#000000",
+                    "background_color_hover": "#f0cd6e",
+                    "button_text_color_hover": "#000000",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "100",
+                      "right": "100",
+                      "bottom": "100",
+                      "left": "100",
+                      "isLinked": true
+                    },
+                    "typography_typography": "custom",
+                    "typography_font_family": "Poppins",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 18
+                    },
+                    "typography_font_weight": "700",
+                    "padding": {
+                      "unit": "px",
+                      "top": "20",
+                      "right": "56",
+                      "bottom": "20",
+                      "left": "56",
+                      "isLinked": false
+                    },
+                    "box_shadow_box_shadow_type": "yes",
+                    "box_shadow_box_shadow": {
+                      "horizontal": 0,
+                      "vertical": 12,
+                      "blur": 40,
+                      "spread": 0,
+                      "color": "rgba(0,0,0,0.35)"
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "s5000008",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p style='font-family:Inter,sans-serif; font-size:14px; color:rgba(255,255,255,0.7); text-align:center; margin:0;'>Already have an account? <a href='/login/' style='color:#E5C162; text-decoration:underline; font-weight:600;'>Sign In →</a></p>"
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "s5000009",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<div style='display:flex; align-items:center; justify-content:center; gap:24px; flex-wrap:wrap; padding-top:8px; border-top:1px solid rgba(255,255,255,0.15);'><span style='display:flex; align-items:center; gap:8px; font-family:Inter,sans-serif; font-size:14px; color:rgba(255,255,255,0.8);'><span style='color:#E5C162; font-size:16px;'>✔</span> No credit card</span><span style='display:flex; align-items:center; gap:8px; font-family:Inter,sans-serif; font-size:14px; color:rgba(255,255,255,0.8);'><span style='color:#E5C162; font-size:16px;'>✔</span> No subscription fees</span><span style='display:flex; align-items:center; gap:8px; font-family:Inter,sans-serif; font-size:14px; color:rgba(255,255,255,0.8);'><span style='color:#E5C162; font-size:16px;'>✔</span> 100% free forever</span><span style='display:flex; align-items:center; gap:8px; font-family:Inter,sans-serif; font-size:14px; color:rgba(255,255,255,0.8);'><span style='color:#E5C162; font-size:16px;'>✔</span> Human-verified members</span></div>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": {}
+}

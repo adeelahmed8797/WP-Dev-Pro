@@ -1,0 +1,476 @@
+{
+  "version": "0.4",
+  "title": "H2H Section 4 — Testimonials",
+  "type": "page",
+  "content": [
+    {
+      "id": "s4000001",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "flex_direction": "column",
+        "content_width": "full",
+        "background_background": "classic",
+        "background_color": "#000000",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "s4000002",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "flex_direction": "column",
+            "align_items": "center",
+            "content_width": "boxed",
+            "width": {
+              "unit": "px",
+              "size": 1280
+            },
+            "padding": {
+              "unit": "px",
+              "top": "100",
+              "right": "24",
+              "bottom": "100",
+              "left": "24",
+              "isLinked": false
+            },
+            "padding_tablet": {
+              "unit": "px",
+              "top": "72",
+              "right": "20",
+              "bottom": "72",
+              "left": "20",
+              "isLinked": false
+            },
+            "padding_mobile": {
+              "unit": "px",
+              "top": "56",
+              "right": "16",
+              "bottom": "56",
+              "left": "16",
+              "isLinked": false
+            },
+            "flex_gap": {
+              "unit": "px",
+              "size": 64
+            }
+          },
+          "elements": [
+            {
+              "id": "s4000003",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "flex_direction": "column",
+                "align_items": "center",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 20
+                },
+                "width": {
+                  "unit": "px",
+                  "size": 640
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100
+                }
+              },
+              "elements": [
+                {
+                  "id": "s4000004",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<span style='display:inline-block; background:#BE0002; color:#E5C162; font-family:Poppins,sans-serif; font-size:12px; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; padding:7px 20px; border-radius:100px;'>Success Stories</span>"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "s4000005",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Real People. <span style='color:#E5C162;'>Real Couples.</span>",
+                    "header_size": "h2",
+                    "title_color": "#FFFFFF",
+                    "align": "center",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Poppins",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 44
+                    },
+                    "typography_font_size_tablet": {
+                      "unit": "px",
+                      "size": 34
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 28
+                    },
+                    "typography_font_weight": "700",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.2
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "s4000006",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p style='font-family:Inter,sans-serif; font-size:18px; line-height:1.7; color:#888888; text-align:center; margin:0;'>Join thousands of Americans who found genuine connections on H2H Dating — with zero cost and zero algorithms.</p>"
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "s4000007",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "flex_direction": "row",
+                "align_items": "stretch",
+                "flex_wrap": "wrap",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 28
+                },
+                "flex_direction_mobile": "column"
+              },
+              "elements": [
+                {
+                  "id": "s4000008",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "flex_direction": "column",
+                    "justify_content": "space-between",
+                    "flex_gap": {"unit": "px", "size": 24},
+                    "width": {
+                      "unit": "calc",
+                      "string": "calc(33.333% - 19px)"
+                    },
+                    "width_tablet": {"unit": "%", "size": 100},
+                    "width_mobile": {"unit": "%", "size": 100},
+                    "background_background": "classic",
+                    "background_color": "#111111",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "20",
+                      "right": "20",
+                      "bottom": "20",
+                      "left": "20",
+                      "isLinked": true
+                    },
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "1",
+                      "bottom": "1",
+                      "left": "1",
+                      "isLinked": true
+                    },
+                    "border_color": "#222222",
+                    "padding": {
+                      "unit": "px",
+                      "top": "40",
+                      "right": "36",
+                      "bottom": "40",
+                      "left": "36",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "s4000009",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<div style='font-family:Georgia,serif; font-size:72px; line-height:0.6; color:#BE0002; font-weight:700; margin-bottom:16px; display:block;'>&ldquo;</div><p style='font-family:Inter,sans-serif; font-size:16px; line-height:1.75; color:#CCCCCC; margin:0; font-style:italic;'>After wasting $200+ on other apps with zero results, I tried H2H. No paywalls, no games — just real people. I met my fiancée here in 3 weeks. We&rsquo;re getting married in October.</p>"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "s4000010",
+                      "elType": "container",
+                      "isInner": true,
+                      "settings": {
+                        "flex_direction": "column",
+                        "flex_gap": {"unit": "px", "size": 12}
+                      },
+                      "elements": [
+                        {
+                          "id": "s4000011",
+                          "elType": "widget",
+                          "widgetType": "text-editor",
+                          "settings": {
+                            "editor": "<div style='display:flex; gap:4px;'><span style='color:#E5C162; font-size:18px;'>★</span><span style='color:#E5C162; font-size:18px;'>★</span><span style='color:#E5C162; font-size:18px;'>★</span><span style='color:#E5C162; font-size:18px;'>★</span><span style='color:#E5C162; font-size:18px;'>★</span></div>"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "s4000012",
+                          "elType": "widget",
+                          "widgetType": "text-editor",
+                          "settings": {
+                            "editor": "<div style='display:flex; align-items:center; gap:14px; padding-top:4px; border-top:1px solid #222;'><div style='width:46px; height:46px; background:#BE0002; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0;'><span style='font-family:Poppins,sans-serif; font-size:18px; font-weight:700; color:#E5C162;'>M</span></div><div><p style='font-family:Poppins,sans-serif; font-size:15px; font-weight:700; color:#FFFFFF; margin:0 0 2px;'>Michael T.</p><p style='font-family:Inter,sans-serif; font-size:13px; color:#666666; margin:0;'>Chicago, IL</p></div></div>"
+                          },
+                          "elements": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "s4000013",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "flex_direction": "column",
+                    "justify_content": "space-between",
+                    "flex_gap": {"unit": "px", "size": 24},
+                    "width": {
+                      "unit": "calc",
+                      "string": "calc(33.333% - 19px)"
+                    },
+                    "width_tablet": {"unit": "%", "size": 100},
+                    "width_mobile": {"unit": "%", "size": 100},
+                    "background_background": "classic",
+                    "background_color": "#BE0002",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "20",
+                      "right": "20",
+                      "bottom": "20",
+                      "left": "20",
+                      "isLinked": true
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "40",
+                      "right": "36",
+                      "bottom": "40",
+                      "left": "36",
+                      "isLinked": false
+                    },
+                    "box_shadow_box_shadow_type": "yes",
+                    "box_shadow_box_shadow": {
+                      "horizontal": 0,
+                      "vertical": 16,
+                      "blur": 48,
+                      "spread": 0,
+                      "color": "rgba(190,0,2,0.35)"
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "s4000014",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<div style='font-family:Georgia,serif; font-size:72px; line-height:0.6; color:rgba(229,193,98,0.6); font-weight:700; margin-bottom:16px; display:block;'>&ldquo;</div><p style='font-family:Inter,sans-serif; font-size:16px; line-height:1.75; color:rgba(255,255,255,0.95); margin:0; font-style:italic;'>I loved that I could actually message someone without hitting a paywall. H2H is what dating apps should have always been — free, simple, and full of real people. Found my partner here and couldn&rsquo;t be happier.</p>"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "s4000015",
+                      "elType": "container",
+                      "isInner": true,
+                      "settings": {
+                        "flex_direction": "column",
+                        "flex_gap": {"unit": "px", "size": 12}
+                      },
+                      "elements": [
+                        {
+                          "id": "s4000016",
+                          "elType": "widget",
+                          "widgetType": "text-editor",
+                          "settings": {
+                            "editor": "<div style='display:flex; gap:4px;'><span style='color:#E5C162; font-size:18px;'>★</span><span style='color:#E5C162; font-size:18px;'>★</span><span style='color:#E5C162; font-size:18px;'>★</span><span style='color:#E5C162; font-size:18px;'>★</span><span style='color:#E5C162; font-size:18px;'>★</span></div>"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "s4000017",
+                          "elType": "widget",
+                          "widgetType": "text-editor",
+                          "settings": {
+                            "editor": "<div style='display:flex; align-items:center; gap:14px; padding-top:4px; border-top:1px solid rgba(255,255,255,0.2);'><div style='width:46px; height:46px; background:#E5C162; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0;'><span style='font-family:Poppins,sans-serif; font-size:18px; font-weight:700; color:#BE0002;'>S</span></div><div><p style='font-family:Poppins,sans-serif; font-size:15px; font-weight:700; color:#FFFFFF; margin:0 0 2px;'>Sarah K.</p><p style='font-family:Inter,sans-serif; font-size:13px; color:rgba(255,255,255,0.7); margin:0;'>Austin, TX</p></div></div>"
+                          },
+                          "elements": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "s4000018",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "flex_direction": "column",
+                    "justify_content": "space-between",
+                    "flex_gap": {"unit": "px", "size": 24},
+                    "width": {
+                      "unit": "calc",
+                      "string": "calc(33.333% - 19px)"
+                    },
+                    "width_tablet": {"unit": "%", "size": 100},
+                    "width_mobile": {"unit": "%", "size": 100},
+                    "background_background": "classic",
+                    "background_color": "#111111",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "20",
+                      "right": "20",
+                      "bottom": "20",
+                      "left": "20",
+                      "isLinked": true
+                    },
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "1",
+                      "bottom": "1",
+                      "left": "1",
+                      "isLinked": true
+                    },
+                    "border_color": "#222222",
+                    "padding": {
+                      "unit": "px",
+                      "top": "40",
+                      "right": "36",
+                      "bottom": "40",
+                      "left": "36",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "s4000019",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<div style='font-family:Georgia,serif; font-size:72px; line-height:0.6; color:#BE0002; font-weight:700; margin-bottom:16px; display:block;'>&ldquo;</div><p style='font-family:Inter,sans-serif; font-size:16px; line-height:1.75; color:#CCCCCC; margin:0; font-style:italic;'>The human verification made me feel safe right away. No bots, no scammers — just genuine people. We matched on H2H, got coffee two weeks later, and now we&rsquo;re inseparable. Getting married in June!</p>"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "s4000020",
+                      "elType": "container",
+                      "isInner": true,
+                      "settings": {
+                        "flex_direction": "column",
+                        "flex_gap": {"unit": "px", "size": 12}
+                      },
+                      "elements": [
+                        {
+                          "id": "s4000021",
+                          "elType": "widget",
+                          "widgetType": "text-editor",
+                          "settings": {
+                            "editor": "<div style='display:flex; gap:4px;'><span style='color:#E5C162; font-size:18px;'>★</span><span style='color:#E5C162; font-size:18px;'>★</span><span style='color:#E5C162; font-size:18px;'>★</span><span style='color:#E5C162; font-size:18px;'>★</span><span style='color:#E5C162; font-size:18px;'>★</span></div>"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "s4000022",
+                          "elType": "widget",
+                          "widgetType": "text-editor",
+                          "settings": {
+                            "editor": "<div style='display:flex; align-items:center; gap:14px; padding-top:4px; border-top:1px solid #222;'><div style='width:46px; height:46px; background:#BE0002; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0;'><span style='font-family:Poppins,sans-serif; font-size:14px; font-weight:700; color:#E5C162;'>J&P</span></div><div><p style='font-family:Poppins,sans-serif; font-size:15px; font-weight:700; color:#FFFFFF; margin:0 0 2px;'>James &amp; Priya R.</p><p style='font-family:Inter,sans-serif; font-size:13px; color:#666666; margin:0;'>New York, NY</p></div></div>"
+                          },
+                          "elements": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "s4000023",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "flex_direction": "row",
+                "align_items": "center",
+                "justify_content": "center",
+                "flex_gap": {"unit": "px", "size": 48},
+                "flex_wrap": "wrap",
+                "flex_direction_mobile": "column"
+              },
+              "elements": [
+                {
+                  "id": "s4000024",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<div style='text-align:center;'><div style='display:flex; gap:4px; justify-content:center; margin-bottom:8px;'><span style='color:#E5C162; font-size:22px;'>★</span><span style='color:#E5C162; font-size:22px;'>★</span><span style='color:#E5C162; font-size:22px;'>★</span><span style='color:#E5C162; font-size:22px;'>★</span><span style='color:#E5C162; font-size:22px;'>★</span></div><p style='font-family:Poppins,sans-serif; font-size:32px; font-weight:800; color:#FFFFFF; margin:0 0 4px;'>4.9 / 5</p><p style='font-family:Inter,sans-serif; font-size:14px; color:#666; margin:0; text-transform:uppercase; letter-spacing:0.08em;'>Average Member Rating</p></div>"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "s4000025",
+                  "elType": "widget",
+                  "widgetType": "divider",
+                  "settings": {
+                    "style": "solid",
+                    "weight": {"unit": "px", "size": 1},
+                    "color": "#222222",
+                    "custom_css": "width:1px; height:60px; background:#222;"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "s4000026",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<div style='text-align:center;'><p style='font-family:Poppins,sans-serif; font-size:32px; font-weight:800; color:#E5C162; margin:0 0 4px;'>12,000+</p><p style='font-family:Inter,sans-serif; font-size:14px; color:#666; margin:0; text-transform:uppercase; letter-spacing:0.08em;'>Successful Connections</p></div>"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "s4000027",
+                  "elType": "widget",
+                  "widgetType": "divider",
+                  "settings": {
+                    "style": "solid",
+                    "weight": {"unit": "px", "size": 1},
+                    "color": "#222222",
+                    "custom_css": "width:1px; height:60px; background:#222;"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "s4000028",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<div style='text-align:center;'><p style='font-family:Poppins,sans-serif; font-size:32px; font-weight:800; color:#FFFFFF; margin:0 0 4px;'>50,000+</p><p style='font-family:Inter,sans-serif; font-size:14px; color:#666; margin:0; text-transform:uppercase; letter-spacing:0.08em;'>Verified Members</p></div>"
+                  },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": {}
+}

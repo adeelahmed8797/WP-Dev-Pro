@@ -1,0 +1,529 @@
+{
+  "version": "0.4",
+  "title": "H2H Section 2 — Why H2H (Features)",
+  "type": "page",
+  "content": [
+    {
+      "id": "s2000001",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "flex_direction": "column",
+        "content_width": "full",
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "s2000002",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "flex_direction": "column",
+            "align_items": "center",
+            "content_width": "boxed",
+            "width": {
+              "unit": "px",
+              "size": 1280
+            },
+            "padding": {
+              "unit": "px",
+              "top": "100",
+              "right": "24",
+              "bottom": "100",
+              "left": "24",
+              "isLinked": false
+            },
+            "padding_tablet": {
+              "unit": "px",
+              "top": "72",
+              "right": "20",
+              "bottom": "72",
+              "left": "20",
+              "isLinked": false
+            },
+            "padding_mobile": {
+              "unit": "px",
+              "top": "56",
+              "right": "16",
+              "bottom": "56",
+              "left": "16",
+              "isLinked": false
+            },
+            "flex_gap": {
+              "unit": "px",
+              "size": 64
+            }
+          },
+          "elements": [
+            {
+              "id": "s2000003",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "flex_direction": "column",
+                "align_items": "center",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 20
+                },
+                "width": {
+                  "unit": "px",
+                  "size": 680
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100
+                }
+              },
+              "elements": [
+                {
+                  "id": "s2000004",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<span style='display:inline-block; background:#BE0002; color:#E5C162; font-family:Poppins,sans-serif; font-size:12px; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; padding:7px 20px; border-radius:100px;'>Why H2H Dating</span>"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "s2000005",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Finally, a Dating Site That <span style='color:#BE0002;'>Respects You</span>",
+                    "header_size": "h2",
+                    "title_color": "#000000",
+                    "align": "center",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Poppins",
+                    "typography_font_size": {
+                      "unit": "px",
+                      "size": 44
+                    },
+                    "typography_font_size_tablet": {
+                      "unit": "px",
+                      "size": 34
+                    },
+                    "typography_font_size_mobile": {
+                      "unit": "px",
+                      "size": 28
+                    },
+                    "typography_font_weight": "700",
+                    "typography_line_height": {
+                      "unit": "em",
+                      "size": 1.2
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "s2000006",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p style='font-family:Inter,sans-serif; font-size:18px; line-height:1.7; color:#555555; text-align:center; margin:0;'>No paywalls. No algorithms. No bots. Just real Americans looking for genuine connections — and it never costs a thing.</p>"
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "s2000007",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "flex_direction": "row",
+                "align_items": "stretch",
+                "flex_wrap": "wrap",
+                "flex_gap": {
+                  "unit": "px",
+                  "size": 28
+                },
+                "flex_direction_mobile": "column"
+              },
+              "elements": [
+                {
+                  "id": "s2000008",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "flex_direction": "column",
+                    "align_items": "flex-start",
+                    "flex_gap": {
+                      "unit": "px",
+                      "size": 20
+                    },
+                    "width": {
+                      "unit": "calc",
+                      "size": 0,
+                      "sizes": {"start": 0, "end": 100},
+                      "string": "calc(25% - 21px)"
+                    },
+                    "width_tablet": {
+                      "unit": "calc",
+                      "string": "calc(50% - 14px)"
+                    },
+                    "width_mobile": {
+                      "unit": "%",
+                      "size": 100
+                    },
+                    "background_background": "classic",
+                    "background_color": "#FFFFFF",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "20",
+                      "right": "20",
+                      "bottom": "20",
+                      "left": "20",
+                      "isLinked": true
+                    },
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "1",
+                      "bottom": "1",
+                      "left": "1",
+                      "isLinked": true
+                    },
+                    "border_color": "#EEEEEE",
+                    "box_shadow_box_shadow_type": "yes",
+                    "box_shadow_box_shadow": {
+                      "horizontal": 0,
+                      "vertical": 4,
+                      "blur": 24,
+                      "spread": 0,
+                      "color": "rgba(0,0,0,0.07)"
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "36",
+                      "right": "32",
+                      "bottom": "36",
+                      "left": "32",
+                      "isLinked": false
+                    },
+                    "custom_css": "border-top: 4px solid #BE0002; transition: transform 0.25s ease, box-shadow 0.25s ease;",
+                    "_hover_animation": "float"
+                  },
+                  "elements": [
+                    {
+                      "id": "s2000009",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<div style='width:56px; height:56px; background:#FFF0F0; border-radius:14px; display:flex; align-items:center; justify-content:center; font-size:26px;'>🚫💳</div>"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "s2000010",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Zero Paywalls. Zero Subscriptions.",
+                        "header_size": "h3",
+                        "title_color": "#000000",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Poppins",
+                        "typography_font_size": {"unit": "px", "size": 20},
+                        "typography_font_weight": "700",
+                        "typography_line_height": {"unit": "em", "size": 1.3}
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "s2000011",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p style='font-family:Inter,sans-serif; font-size:15px; line-height:1.7; color:#555555; margin:0;'>Other apps charge $30+/month just to see who liked you. H2H Dating is 100% free — every feature, forever. No credit card needed.</p>"
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "s2000012",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "flex_direction": "column",
+                    "align_items": "flex-start",
+                    "flex_gap": {"unit": "px", "size": 20},
+                    "width": {
+                      "unit": "calc",
+                      "string": "calc(25% - 21px)"
+                    },
+                    "width_tablet": {
+                      "unit": "calc",
+                      "string": "calc(50% - 14px)"
+                    },
+                    "width_mobile": {"unit": "%", "size": 100},
+                    "background_background": "classic",
+                    "background_color": "#FFFFFF",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "20",
+                      "right": "20",
+                      "bottom": "20",
+                      "left": "20",
+                      "isLinked": true
+                    },
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "1",
+                      "bottom": "1",
+                      "left": "1",
+                      "isLinked": true
+                    },
+                    "border_color": "#EEEEEE",
+                    "box_shadow_box_shadow_type": "yes",
+                    "box_shadow_box_shadow": {
+                      "horizontal": 0,
+                      "vertical": 4,
+                      "blur": 24,
+                      "spread": 0,
+                      "color": "rgba(0,0,0,0.07)"
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "36",
+                      "right": "32",
+                      "bottom": "36",
+                      "left": "32",
+                      "isLinked": false
+                    },
+                    "custom_css": "border-top: 4px solid #BE0002; transition: transform 0.25s ease, box-shadow 0.25s ease;",
+                    "_hover_animation": "float"
+                  },
+                  "elements": [
+                    {
+                      "id": "s2000013",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<div style='width:56px; height:56px; background:#FFF0F0; border-radius:14px; display:flex; align-items:center; justify-content:center; font-size:26px;'>🛡️</div>"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "s2000014",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Every Profile is Human-Verified",
+                        "header_size": "h3",
+                        "title_color": "#000000",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Poppins",
+                        "typography_font_size": {"unit": "px", "size": 20},
+                        "typography_font_weight": "700",
+                        "typography_line_height": {"unit": "em", "size": 1.3}
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "s2000015",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p style='font-family:Inter,sans-serif; font-size:15px; line-height:1.7; color:#555555; margin:0;'>Our team personally reviews every single account. No bots, no fake profiles, no catfishing. Just verified, real people who are serious about connecting.</p>"
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "s2000016",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "flex_direction": "column",
+                    "align_items": "flex-start",
+                    "flex_gap": {"unit": "px", "size": 20},
+                    "width": {
+                      "unit": "calc",
+                      "string": "calc(25% - 21px)"
+                    },
+                    "width_tablet": {
+                      "unit": "calc",
+                      "string": "calc(50% - 14px)"
+                    },
+                    "width_mobile": {"unit": "%", "size": 100},
+                    "background_background": "classic",
+                    "background_color": "#FFFFFF",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "20",
+                      "right": "20",
+                      "bottom": "20",
+                      "left": "20",
+                      "isLinked": true
+                    },
+                    "border_width": {
+                      "unit": "px",
+                      "top": "1",
+                      "right": "1",
+                      "bottom": "1",
+                      "left": "1",
+                      "isLinked": true
+                    },
+                    "border_color": "#EEEEEE",
+                    "box_shadow_box_shadow_type": "yes",
+                    "box_shadow_box_shadow": {
+                      "horizontal": 0,
+                      "vertical": 4,
+                      "blur": 24,
+                      "spread": 0,
+                      "color": "rgba(0,0,0,0.07)"
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "36",
+                      "right": "32",
+                      "bottom": "36",
+                      "left": "32",
+                      "isLinked": false
+                    },
+                    "custom_css": "border-top: 4px solid #E5C162; transition: transform 0.25s ease, box-shadow 0.25s ease;",
+                    "_hover_animation": "float"
+                  },
+                  "elements": [
+                    {
+                      "id": "s2000017",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<div style='width:56px; height:56px; background:#FFFBF0; border-radius:14px; display:flex; align-items:center; justify-content:center; font-size:26px;'>🤖❌</div>"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "s2000018",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "AI-Free. Algorithm-Free.",
+                        "header_size": "h3",
+                        "title_color": "#000000",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Poppins",
+                        "typography_font_size": {"unit": "px", "size": 20},
+                        "typography_font_weight": "700",
+                        "typography_line_height": {"unit": "em", "size": 1.3}
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "s2000019",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p style='font-family:Inter,sans-serif; font-size:15px; line-height:1.7; color:#555555; margin:0;'>No mysterious ELO scores deciding your fate. Browse freely, message anyone, connect on your terms — not an algorithm's. You are in control.</p>"
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+                {
+                  "id": "s2000020",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "flex_direction": "column",
+                    "align_items": "flex-start",
+                    "flex_gap": {"unit": "px", "size": 20},
+                    "width": {
+                      "unit": "calc",
+                      "string": "calc(25% - 21px)"
+                    },
+                    "width_tablet": {
+                      "unit": "calc",
+                      "string": "calc(50% - 14px)"
+                    },
+                    "width_mobile": {"unit": "%", "size": 100},
+                    "background_background": "classic",
+                    "background_color": "#000000",
+                    "border_radius": {
+                      "unit": "px",
+                      "top": "20",
+                      "right": "20",
+                      "bottom": "20",
+                      "left": "20",
+                      "isLinked": true
+                    },
+                    "box_shadow_box_shadow_type": "yes",
+                    "box_shadow_box_shadow": {
+                      "horizontal": 0,
+                      "vertical": 4,
+                      "blur": 24,
+                      "spread": 0,
+                      "color": "rgba(0,0,0,0.2)"
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "36",
+                      "right": "32",
+                      "bottom": "36",
+                      "left": "32",
+                      "isLinked": false
+                    },
+                    "custom_css": "border-top: 4px solid #E5C162; transition: transform 0.25s ease, box-shadow 0.25s ease;",
+                    "_hover_animation": "float"
+                  },
+                  "elements": [
+                    {
+                      "id": "s2000021",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<div style='width:56px; height:56px; background:#1A1A1A; border-radius:14px; display:flex; align-items:center; justify-content:center; font-size:26px;'>💬📹</div>"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "s2000022",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Real-Time Chat & Video Calls",
+                        "header_size": "h3",
+                        "title_color": "#E5C162",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Poppins",
+                        "typography_font_size": {"unit": "px", "size": 20},
+                        "typography_font_weight": "700",
+                        "typography_line_height": {"unit": "em", "size": 1.3}
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "s2000023",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p style='font-family:Inter,sans-serif; font-size:15px; line-height:1.7; color:#AAAAAA; margin:0;'>Full messaging and video calling — no tokens, no limits. Connect instantly with anyone on the platform, free forever. No premium tier needed.</p>"
+                      },
+                      "elements": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": {}
+}
