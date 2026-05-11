@@ -1,0 +1,1474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>H2H Dating — Homepage Redesign Preview</title>
+  <meta name="description" content="100% Free, AI-Free US Online Dating. No paywalls, no algorithms — just real human connections." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    /* ================================================
+       H2H DATING — DESIGN SYSTEM
+       ================================================ */
+    :root {
+      --clr-primary:       #1E3A6E;   /* Deep navy blue   */
+      --clr-primary-light: #2B52A0;   /* Lighter navy     */
+      --clr-secondary:     #E8536A;   /* Warm coral-rose  */
+      --clr-secondary-light:#F27A8E;  /* Soft rose        */
+      --clr-accent:        #F59E0B;   /* Amber — CTAs, badges */
+      --clr-accent-light:  #FCD34D;   /* Light amber      */
+      --clr-success:       #22C55E;
+      --clr-bg:            #F7F8FC;   /* Off-white canvas */
+      --clr-bg-white:      #FFFFFF;
+      --clr-bg-dark:       #0F1B35;   /* Dark hero/CTA bg */
+      --clr-text-dark:     #0F172A;
+      --clr-text-body:     #475569;
+      --clr-text-muted:    #94A3B8;
+      --clr-border:        #E2E8F0;
+
+      --ff-display: 'Poppins', sans-serif;
+      --ff-body:    'Inter', sans-serif;
+
+      --radius-sm:  8px;
+      --radius-md:  14px;
+      --radius-lg:  20px;
+      --radius-xl:  32px;
+      --radius-pill: 100px;
+
+      --shadow-sm:  0 1px 3px rgba(0,0,0,.08), 0 1px 2px rgba(0,0,0,.06);
+      --shadow-md:  0 4px 16px rgba(0,0,0,.10);
+      --shadow-lg:  0 10px 40px rgba(0,0,0,.14);
+      --shadow-card:0 2px 12px rgba(30,58,110,.08);
+
+      --spacing-xs: 8px;
+      --spacing-sm: 16px;
+      --spacing-md: 24px;
+      --spacing-lg: 48px;
+      --spacing-xl: 80px;
+      --spacing-2xl:120px;
+
+      --max-width: 1200px;
+      --transition: 0.25s cubic-bezier(.4,0,.2,1);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--ff-body);
+      color: var(--clr-text-dark);
+      background: var(--clr-bg-white);
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    img { display: block; max-width: 100%; }
+
+    a { text-decoration: none; color: inherit; }
+
+    /* ── BUTTONS ─────────────────────────────── */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: var(--ff-display);
+      font-weight: 600;
+      font-size: 15px;
+      padding: 14px 30px;
+      border-radius: var(--radius-pill);
+      border: 2px solid transparent;
+      cursor: pointer;
+      transition: transform var(--transition), box-shadow var(--transition), background var(--transition);
+      white-space: nowrap;
+    }
+    .btn:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
+    .btn:active { transform: translateY(0); }
+
+    .btn-primary {
+      background: var(--clr-accent);
+      color: var(--clr-text-dark);
+      border-color: var(--clr-accent);
+    }
+    .btn-primary:hover { background: #E8940A; border-color: #E8940A; }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--clr-bg-white);
+      border-color: rgba(255,255,255,0.6);
+    }
+    .btn-outline:hover { background: rgba(255,255,255,0.12); border-color: #fff; }
+
+    .btn-outline-dark {
+      background: transparent;
+      color: var(--clr-primary);
+      border-color: var(--clr-primary);
+    }
+    .btn-outline-dark:hover { background: var(--clr-primary); color: #fff; }
+
+    .btn-nav {
+      background: var(--clr-secondary);
+      color: #fff;
+      border-color: var(--clr-secondary);
+      padding: 10px 22px;
+      font-size: 14px;
+    }
+    .btn-nav:hover { background: #d44460; border-color: #d44460; }
+
+    .btn-lg {
+      font-size: 17px;
+      padding: 18px 40px;
+    }
+
+    /* ── SECTION LABELS ──────────────────────── */
+    .section-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(30,58,110,.08);
+      color: var(--clr-primary);
+      font-family: var(--ff-display);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      padding: 6px 14px;
+      border-radius: var(--radius-pill);
+      margin-bottom: 16px;
+    }
+    .section-label.rose {
+      background: rgba(232,83,106,.1);
+      color: var(--clr-secondary);
+    }
+    .section-label.amber {
+      background: rgba(245,158,11,.12);
+      color: #92600A;
+    }
+
+    /* ── TYPOGRAPHY ──────────────────────────── */
+    .display-1 {
+      font-family: var(--ff-display);
+      font-size: clamp(36px, 5.5vw, 64px);
+      font-weight: 800;
+      line-height: 1.12;
+      letter-spacing: -0.02em;
+    }
+    .display-2 {
+      font-family: var(--ff-display);
+      font-size: clamp(28px, 3.5vw, 44px);
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+    }
+    .display-3 {
+      font-family: var(--ff-display);
+      font-size: clamp(22px, 2.5vw, 32px);
+      font-weight: 700;
+      line-height: 1.25;
+    }
+    .lead {
+      font-size: clamp(16px, 1.5vw, 19px);
+      color: var(--clr-text-body);
+      line-height: 1.7;
+    }
+    .text-gradient {
+      background: linear-gradient(135deg, var(--clr-secondary) 0%, var(--clr-accent) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+
+    /* ========================================
+       HEADER
+    ======================================== */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255,255,255,0.97);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--clr-border);
+      box-shadow: 0 2px 16px rgba(15,27,53,.06);
+    }
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 72px;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .logo-mark {
+      width: 44px;
+      height: 44px;
+      background: linear-gradient(135deg, var(--clr-primary) 0%, var(--clr-primary-light) 100%);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-family: var(--ff-display);
+      font-weight: 800;
+      font-size: 15px;
+      letter-spacing: .5px;
+    }
+    .logo-text {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.1;
+    }
+    .logo-text-main {
+      font-family: var(--ff-display);
+      font-weight: 800;
+      font-size: 20px;
+      color: var(--clr-primary);
+      letter-spacing: -0.5px;
+    }
+    .logo-text-sub {
+      font-size: 10px;
+      font-weight: 500;
+      color: var(--clr-secondary);
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+    .main-nav {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+    }
+    .main-nav a {
+      font-family: var(--ff-display);
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--clr-text-body);
+      transition: color var(--transition);
+    }
+    .main-nav a:hover { color: var(--clr-primary); }
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .sign-in-link {
+      font-family: var(--ff-display);
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--clr-primary);
+    }
+    .sign-in-link:hover { color: var(--clr-secondary); }
+
+
+    /* ========================================
+       SECTION 1 — HERO
+    ======================================== */
+    .hero {
+      background: linear-gradient(155deg, #0D2045 0%, #1E3A6E 45%, #2B52A0 100%);
+      min-height: 92vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -200px; right: -200px;
+      width: 700px; height: 700px;
+      background: radial-gradient(circle, rgba(232,83,106,.18) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: -150px; left: -150px;
+      width: 500px; height: 500px;
+      background: radial-gradient(circle, rgba(245,158,11,.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center;
+      padding: 100px 0 80px;
+      position: relative;
+      z-index: 1;
+    }
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(245,158,11,.15);
+      border: 1px solid rgba(245,158,11,.3);
+      color: var(--clr-accent-light);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      padding: 7px 14px;
+      border-radius: var(--radius-pill);
+      margin-bottom: 20px;
+    }
+    .hero-eyebrow span { font-size: 14px; }
+    .hero-title {
+      color: #fff;
+      margin-bottom: 22px;
+    }
+    .hero-title em {
+      font-style: normal;
+      background: linear-gradient(90deg, var(--clr-secondary-light) 0%, var(--clr-accent-light) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .hero-sub {
+      color: rgba(255,255,255,.75);
+      font-size: clamp(15px, 1.5vw, 18px);
+      line-height: 1.75;
+      margin-bottom: 36px;
+      max-width: 480px;
+    }
+    .hero-ctas {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-bottom: 44px;
+    }
+    .hero-badges {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .trust-badge {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: rgba(255,255,255,.85);
+      font-size: 13px;
+      font-weight: 500;
+    }
+    .trust-badge-icon {
+      width: 28px; height: 28px;
+      background: rgba(34,197,94,.2);
+      border: 1px solid rgba(34,197,94,.4);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+    }
+    /* Hero visual side */
+    .hero-visual {
+      position: relative;
+      display: flex;
+      justify-content: center;
+    }
+    .hero-img-wrap {
+      position: relative;
+      width: 100%;
+      max-width: 520px;
+    }
+    .hero-img-placeholder {
+      width: 100%;
+      aspect-ratio: 4/5;
+      border-radius: var(--radius-xl);
+      background: linear-gradient(145deg, #2B52A0 0%, #1a3060 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,.08);
+      box-shadow: var(--shadow-lg), 0 0 0 1px rgba(255,255,255,.05);
+    }
+    .couple-placeholder {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      padding: 40px;
+      text-align: center;
+      color: rgba(255,255,255,.5);
+    }
+    .couple-icon {
+      font-size: 80px;
+      opacity: .6;
+      line-height: 1;
+    }
+    .couple-placeholder p {
+      font-size: 13px;
+      line-height: 1.5;
+    }
+    .couple-placeholder strong {
+      display: block;
+      color: rgba(255,255,255,.8);
+      font-family: var(--ff-display);
+      font-size: 15px;
+      margin-bottom: 6px;
+    }
+    /* Floating cards */
+    .float-card {
+      position: absolute;
+      background: rgba(255,255,255,.97);
+      backdrop-filter: blur(8px);
+      border-radius: var(--radius-md);
+      padding: 12px 16px;
+      box-shadow: var(--shadow-lg);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      animation: float 4s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%,100% { transform: translateY(0); }
+      50%      { transform: translateY(-8px); }
+    }
+    .float-card-1 {
+      top: 12%;
+      left: -12%;
+      animation-delay: 0s;
+    }
+    .float-card-2 {
+      bottom: 18%;
+      right: -10%;
+      animation-delay: 1.5s;
+    }
+    .float-card-3 {
+      bottom: 36%;
+      left: -14%;
+      animation-delay: .75s;
+    }
+    .float-icon {
+      width: 36px; height: 36px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      flex-shrink: 0;
+    }
+    .float-icon.green  { background: rgba(34,197,94,.15); }
+    .float-icon.blue   { background: rgba(30,58,110,.12); }
+    .float-icon.rose   { background: rgba(232,83,106,.12); }
+    .float-card-text strong {
+      display: block;
+      font-family: var(--ff-display);
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--clr-text-dark);
+    }
+    .float-card-text span {
+      font-size: 11px;
+      color: var(--clr-text-muted);
+    }
+
+
+    /* ========================================
+       STATS STRIP
+    ======================================== */
+    .stats-strip {
+      background: var(--clr-primary);
+      padding: 28px 0;
+    }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      text-align: center;
+    }
+    .stat-item {}
+    .stat-number {
+      font-family: var(--ff-display);
+      font-size: clamp(26px, 3vw, 38px);
+      font-weight: 800;
+      color: #fff;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .stat-number span { color: var(--clr-accent); }
+    .stat-label {
+      font-size: 13px;
+      font-weight: 500;
+      color: rgba(255,255,255,.65);
+      letter-spacing: .02em;
+    }
+
+
+    /* ========================================
+       SECTION 2 — FEATURES
+    ======================================== */
+    .section-features {
+      padding: var(--spacing-2xl) 0;
+      background: var(--clr-bg);
+    }
+    .section-header {
+      text-align: center;
+      max-width: 640px;
+      margin: 0 auto 60px;
+    }
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+    .feature-card {
+      background: #fff;
+      border-radius: var(--radius-lg);
+      padding: 32px 28px;
+      border: 1px solid var(--clr-border);
+      box-shadow: var(--shadow-card);
+      transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+    .feature-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--clr-primary), var(--clr-secondary));
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform var(--transition);
+    }
+    .feature-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-lg);
+      border-color: rgba(30,58,110,.15);
+    }
+    .feature-card:hover::before { transform: scaleX(1); }
+    .feature-icon-wrap {
+      width: 56px; height: 56px;
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 26px;
+      margin-bottom: 20px;
+    }
+    .fi-blue   { background: rgba(30,58,110,.1); }
+    .fi-rose   { background: rgba(232,83,106,.1); }
+    .fi-amber  { background: rgba(245,158,11,.1); }
+    .fi-green  { background: rgba(34,197,94,.1); }
+    .feature-card h3 {
+      font-family: var(--ff-display);
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--clr-text-dark);
+      margin-bottom: 10px;
+      line-height: 1.3;
+    }
+    .feature-card p {
+      font-size: 14px;
+      color: var(--clr-text-body);
+      line-height: 1.65;
+    }
+
+
+    /* ========================================
+       SECTION 3 — HOW IT WORKS
+    ======================================== */
+    .section-how {
+      padding: var(--spacing-2xl) 0;
+      background: var(--clr-bg-white);
+    }
+    .how-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0;
+      position: relative;
+      margin-top: 60px;
+    }
+    .how-connector {
+      position: absolute;
+      top: 48px;
+      left: calc(100% / 6);
+      right: calc(100% / 6);
+      height: 2px;
+      background: linear-gradient(90deg, var(--clr-primary) 0%, var(--clr-secondary) 50%, var(--clr-accent) 100%);
+      z-index: 0;
+    }
+    .how-connector::before,
+    .how-connector::after {
+      content: '';
+      position: absolute;
+      top: 50%; transform: translateY(-50%);
+      width: 10px; height: 10px;
+      border-radius: 50%;
+      background: var(--clr-secondary);
+    }
+    .how-connector::before { left: 33.33%; }
+    .how-connector::after  { left: 66.66%; }
+    .how-step {
+      text-align: center;
+      padding: 0 32px;
+      position: relative;
+      z-index: 1;
+    }
+    .step-bubble {
+      width: 96px; height: 96px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 28px;
+      position: relative;
+      box-shadow: 0 0 0 6px rgba(30,58,110,.08);
+    }
+    .step-bubble.s1 { background: linear-gradient(135deg, #1E3A6E, #2B52A0); }
+    .step-bubble.s2 { background: linear-gradient(135deg, #E8536A, #F27A8E); }
+    .step-bubble.s3 { background: linear-gradient(135deg, #F59E0B, #FCD34D); }
+    .step-number {
+      position: absolute;
+      top: -6px; right: -6px;
+      width: 28px; height: 28px;
+      background: var(--clr-bg-white);
+      border: 2px solid var(--clr-border);
+      border-radius: 50%;
+      font-family: var(--ff-display);
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--clr-text-dark);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .step-icon { font-size: 36px; }
+    .step-title {
+      font-family: var(--ff-display);
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--clr-text-dark);
+      margin-bottom: 12px;
+    }
+    .step-desc {
+      font-size: 15px;
+      color: var(--clr-text-body);
+      line-height: 1.65;
+      max-width: 260px;
+      margin: 0 auto;
+    }
+    .how-note {
+      text-align: center;
+      margin-top: 56px;
+      padding: 20px 32px;
+      background: rgba(30,58,110,.05);
+      border: 1px solid rgba(30,58,110,.1);
+      border-radius: var(--radius-md);
+      max-width: 640px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .how-note p {
+      font-size: 15px;
+      color: var(--clr-text-body);
+    }
+    .how-note strong { color: var(--clr-primary); }
+
+
+    /* ========================================
+       SECTION 4 — TESTIMONIALS
+    ======================================== */
+    .section-testimonials {
+      padding: var(--spacing-2xl) 0;
+      background: var(--clr-bg);
+    }
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 52px;
+    }
+    .testimonial-card {
+      background: #fff;
+      border-radius: var(--radius-lg);
+      padding: 32px 28px;
+      border: 1px solid var(--clr-border);
+      box-shadow: var(--shadow-card);
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+    .testimonial-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+    }
+    .testimonial-stars {
+      display: flex;
+      gap: 3px;
+      color: var(--clr-accent);
+      font-size: 18px;
+    }
+    .testimonial-quote {
+      font-size: 15px;
+      color: var(--clr-text-body);
+      line-height: 1.75;
+      font-style: italic;
+      flex: 1;
+      position: relative;
+    }
+    .testimonial-quote::before {
+      content: '"';
+      font-size: 64px;
+      color: rgba(30,58,110,.08);
+      font-family: Georgia, serif;
+      line-height: 1;
+      position: absolute;
+      top: -16px;
+      left: -8px;
+    }
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding-top: 16px;
+      border-top: 1px solid var(--clr-border);
+    }
+    .author-avatar {
+      width: 48px; height: 48px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--clr-primary-light), var(--clr-secondary));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--ff-display);
+      font-size: 18px;
+      font-weight: 700;
+      color: #fff;
+      flex-shrink: 0;
+    }
+    .author-info strong {
+      display: block;
+      font-family: var(--ff-display);
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--clr-text-dark);
+      margin-bottom: 2px;
+    }
+    .author-info span {
+      font-size: 12px;
+      color: var(--clr-text-muted);
+    }
+    .verified-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      background: rgba(34,197,94,.1);
+      color: #16A34A;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 3px 8px;
+      border-radius: var(--radius-pill);
+      margin-top: 2px;
+    }
+
+
+    /* ========================================
+       SECTION 5 — FINAL CTA
+    ======================================== */
+    .section-cta {
+      padding: var(--spacing-2xl) 0;
+      background: linear-gradient(155deg, #0D2045 0%, #1E3A6E 55%, #2B52A0 100%);
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+    }
+    .section-cta::before {
+      content: '';
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 900px; height: 600px;
+      background: radial-gradient(ellipse, rgba(232,83,106,.15) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .cta-inner {
+      position: relative;
+      z-index: 1;
+      max-width: 760px;
+      margin: 0 auto;
+    }
+    .cta-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(245,158,11,.15);
+      border: 1px solid rgba(245,158,11,.25);
+      color: var(--clr-accent-light);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      padding: 7px 16px;
+      border-radius: var(--radius-pill);
+      margin-bottom: 24px;
+    }
+    .cta-title {
+      color: #fff;
+      margin-bottom: 20px;
+    }
+    .cta-sub {
+      color: rgba(255,255,255,.7);
+      font-size: clamp(15px, 1.5vw, 18px);
+      line-height: 1.7;
+      margin-bottom: 40px;
+    }
+    .cta-buttons {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 28px;
+    }
+    .watch-link {
+      color: rgba(255,255,255,.6);
+      font-size: 14px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: color var(--transition);
+    }
+    .watch-link:hover { color: #fff; }
+    .cta-disclaimers {
+      margin-top: 40px;
+      padding-top: 28px;
+      border-top: 1px solid rgba(255,255,255,.1);
+      display: flex;
+      gap: 32px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .disclaimer-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: rgba(255,255,255,.5);
+      font-size: 12px;
+    }
+    .disclaimer-icon { font-size: 14px; opacity: .7; }
+
+
+    /* ========================================
+       FOOTER
+    ======================================== */
+    .site-footer {
+      background: #0A1628;
+      color: rgba(255,255,255,.7);
+    }
+    .footer-top {
+      padding: 64px 0 48px;
+      border-bottom: 1px solid rgba(255,255,255,.07);
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 48px;
+    }
+    .footer-brand {
+      max-width: 280px;
+    }
+    .footer-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+    .footer-logo-mark {
+      width: 40px; height: 40px;
+      background: linear-gradient(135deg, var(--clr-primary-light), var(--clr-secondary));
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-family: var(--ff-display);
+      font-weight: 800;
+      font-size: 13px;
+    }
+    .footer-logo-name {
+      font-family: var(--ff-display);
+      font-size: 18px;
+      font-weight: 800;
+      color: #fff;
+      letter-spacing: -.3px;
+    }
+    .footer-tagline {
+      font-size: 13px;
+      line-height: 1.65;
+      color: rgba(255,255,255,.5);
+      margin-bottom: 20px;
+    }
+    .social-row {
+      display: flex;
+      gap: 10px;
+    }
+    .social-btn {
+      width: 36px; height: 36px;
+      background: rgba(255,255,255,.07);
+      border: 1px solid rgba(255,255,255,.1);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255,255,255,.6);
+      font-size: 15px;
+      transition: background var(--transition), color var(--transition);
+    }
+    .social-btn:hover { background: var(--clr-secondary); color: #fff; border-color: var(--clr-secondary); }
+    .footer-col h4 {
+      font-family: var(--ff-display);
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      color: #fff;
+      margin-bottom: 16px;
+    }
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .footer-links a {
+      font-size: 14px;
+      color: rgba(255,255,255,.5);
+      transition: color var(--transition);
+    }
+    .footer-links a:hover { color: var(--clr-accent-light); }
+    .footer-bottom {
+      padding: 20px 0;
+    }
+    .footer-bottom-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .footer-copy {
+      font-size: 12px;
+      color: rgba(255,255,255,.35);
+    }
+    .footer-legal {
+      display: flex;
+      gap: 20px;
+    }
+    .footer-legal a {
+      font-size: 12px;
+      color: rgba(255,255,255,.35);
+      transition: color var(--transition);
+    }
+    .footer-legal a:hover { color: rgba(255,255,255,.65); }
+    .not-affiliated {
+      font-size: 12px;
+      color: rgba(255,158,11,.5);
+    }
+
+
+    /* ========================================
+       RESPONSIVE
+    ======================================== */
+    @media (max-width: 1024px) {
+      .features-grid { grid-template-columns: repeat(2, 1fr); }
+      .footer-grid   { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 768px) {
+      .hero-grid           { grid-template-columns: 1fr; padding: 60px 0; }
+      .hero-visual         { display: none; }
+      .stats-grid          { grid-template-columns: repeat(2, 1fr); }
+      .how-grid            { grid-template-columns: 1fr; gap: 48px; }
+      .how-connector       { display: none; }
+      .testimonials-grid   { grid-template-columns: 1fr; }
+      .features-grid       { grid-template-columns: 1fr; }
+      .footer-grid         { grid-template-columns: 1fr; gap: 32px; }
+      .main-nav            { display: none; }
+      .footer-bottom-inner { flex-direction: column; text-align: center; }
+      .cta-disclaimers     { flex-direction: column; align-items: center; gap: 12px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ════════════════════════════════════════
+       HEADER
+  ════════════════════════════════════════ -->
+  <header class="site-header" role="banner">
+    <div class="container">
+      <div class="header-inner">
+
+        <a href="/" class="logo" aria-label="H2H Dating — Home">
+          <div class="logo-mark">H2H</div>
+          <div class="logo-text">
+            <span class="logo-text-main">H2H Dating</span>
+            <span class="logo-text-sub">Heart to Heart</span>
+          </div>
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="/">Home</a>
+          <a href="/register/">Sign Up</a>
+          <a href="#why-us">Why Choose Us</a>
+          <a href="#how-it-works">How It Works</a>
+          <a href="/contact/">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <a href="/login/" class="sign-in-link">Sign In</a>
+          <a href="/register/" class="btn btn-nav">Join Free</a>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+
+  <!-- ════════════════════════════════════════
+       SECTION 1 — HERO
+  ════════════════════════════════════════ -->
+  <section class="hero" aria-labelledby="hero-heading">
+    <div class="container">
+      <div class="hero-grid">
+
+        <!-- Left: Copy -->
+        <div class="hero-copy">
+          <div class="hero-eyebrow">
+            <span>💛</span>
+            Invite-Only · US-Based Community
+          </div>
+
+          <h1 class="display-1 hero-title" id="hero-heading">
+            Welcome to<br />
+            <em>100% Free,<br />AI-Free</em><br />
+            US Dating
+          </h1>
+
+          <p class="hero-sub">
+            No algorithms deciding your worth. No paywalls blocking your messages.
+            Just real humans, real conversations, and real connections — exactly
+            the way dating should be.
+          </p>
+
+          <div class="hero-ctas">
+            <a href="/register/" class="btn btn-primary btn-lg">
+              ❤️ Join Free — No Card Needed
+            </a>
+            <a href="#why-us" class="btn btn-outline btn-lg">
+              Why Choose Us
+            </a>
+          </div>
+
+          <div class="hero-badges">
+            <div class="trust-badge">
+              <div class="trust-badge-icon">✓</div>
+              Free Forever
+            </div>
+            <div class="trust-badge">
+              <div class="trust-badge-icon">✓</div>
+              No Algorithms
+            </div>
+            <div class="trust-badge">
+              <div class="trust-badge-icon">✓</div>
+              Verified Humans
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Visual -->
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-img-wrap">
+            <div class="hero-img-placeholder">
+              <div class="couple-placeholder">
+                <div class="couple-icon">👫</div>
+                <strong>Hero Image Placement</strong>
+                <p>Authentic couple photo<br />warm, diverse, US-based<br />WebP, 800×1000px recommended</p>
+              </div>
+            </div>
+
+            <!-- Floating UI Cards -->
+            <div class="float-card float-card-1">
+              <div class="float-icon green">✅</div>
+              <div class="float-card-text">
+                <strong>Human Verified</strong>
+                <span>No bots, no fake profiles</span>
+              </div>
+            </div>
+
+            <div class="float-card float-card-2">
+              <div class="float-icon blue">💬</div>
+              <div class="float-card-text">
+                <strong>Real-Time Chat</strong>
+                <span>Message & video call instantly</span>
+              </div>
+            </div>
+
+            <div class="float-card float-card-3">
+              <div class="float-icon rose">🚫</div>
+              <div class="float-card-text">
+                <strong>$0 Forever</strong>
+                <span>No hidden fees, ever</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════
+       STATS STRIP
+  ════════════════════════════════════════ -->
+  <div class="stats-strip" role="region" aria-label="Platform statistics">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">2,<span>400</span>+</div>
+          <div class="stat-label">Active Members</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">100<span>%</span></div>
+          <div class="stat-label">Verified Profiles</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">180<span>+</span></div>
+          <div class="stat-label">Success Stories</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number"><span>$</span>0</div>
+          <div class="stat-label">Charged to Any Member</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ════════════════════════════════════════
+       SECTION 2 — FEATURES
+  ════════════════════════════════════════ -->
+  <section class="section-features" id="why-us" aria-labelledby="features-heading">
+    <div class="container">
+
+      <div class="section-header">
+        <div class="section-label">Why H2H Dating</div>
+        <h2 class="display-2" id="features-heading">
+          What Makes Us <span class="text-gradient">Different</span>
+        </h2>
+        <p class="lead" style="margin-top:16px;">
+          Built on radical transparency. Every feature exists to serve you — not to extract money from you.
+        </p>
+      </div>
+
+      <div class="features-grid">
+
+        <article class="feature-card">
+          <div class="feature-icon-wrap fi-blue">🚫💰</div>
+          <h3>No Paywalls. Ever.</h3>
+          <p>Browse profiles, send messages, see who liked you, boost your profile — all free. We don't believe in charging people to find love.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon-wrap fi-rose">🎯</div>
+          <h3>No ELO Scores or Algorithms</h3>
+          <p>We don't rank you or hide you from others. Every member gets equal visibility. You choose who to connect with — not a black-box AI.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon-wrap fi-amber">📹</div>
+          <h3>Video Calling & Real-Time Chat</h3>
+          <p>Go from message to video call without leaving the platform. Built-in, free, no third-party app needed. Real chemistry requires real conversation.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon-wrap fi-green">🛡️</div>
+          <h3>Biometric-Free Human Verification</h3>
+          <p>Our trained human reviewers verify every member — no facial recognition required. This keeps out romance scammers and pig-butchering fraudsters.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════
+       SECTION 3 — HOW IT WORKS
+  ════════════════════════════════════════ -->
+  <section class="section-how" id="how-it-works" aria-labelledby="how-heading">
+    <div class="container">
+
+      <div class="section-header">
+        <div class="section-label rose">Get Started in Minutes</div>
+        <h2 class="display-2" id="how-heading">How It Works</h2>
+        <p class="lead" style="margin-top:16px;">
+          Three simple steps. No credit card. No biometric scans. No algorithms.
+        </p>
+      </div>
+
+      <div class="how-grid">
+        <div class="how-connector" aria-hidden="true"></div>
+
+        <div class="how-step">
+          <div class="step-bubble s1">
+            <span class="step-icon">📝</span>
+            <span class="step-number">1</span>
+          </div>
+          <h3 class="step-title">Sign Up Free</h3>
+          <p class="step-desc">
+            Create your profile in minutes. No subscription, no credit card, no hidden steps. Just you.
+          </p>
+        </div>
+
+        <div class="how-step">
+          <div class="step-bubble s2">
+            <span class="step-icon">🧑‍💼</span>
+            <span class="step-number">2</span>
+          </div>
+          <h3 class="step-title">Get Verified by a Real Human</h3>
+          <p class="step-desc">
+            A real person on our team reviews your profile — no AI, no biometrics — to confirm you're genuine.
+          </p>
+        </div>
+
+        <div class="how-step">
+          <div class="step-bubble s3">
+            <span class="step-icon">💞</span>
+            <span class="step-number">3</span>
+          </div>
+          <h3 class="step-title">Connect & Video Call</h3>
+          <p class="step-desc">
+            Browse freely, message anyone, and jump on a video call — all within the platform, all free.
+          </p>
+        </div>
+      </div>
+
+      <div class="how-note">
+        <p>
+          <strong>Invite-only community</strong> — H2H Dating grows through genuine word-of-mouth.
+          We keep the community small and quality-focused so every member gets real attention.
+          <a href="/register/" style="color: var(--clr-primary); font-weight:600;">Request your invite →</a>
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════
+       SECTION 4 — TESTIMONIALS
+  ════════════════════════════════════════ -->
+  <section class="section-testimonials" aria-labelledby="testimonials-heading">
+    <div class="container">
+
+      <div class="section-header">
+        <div class="section-label amber">Member Stories</div>
+        <h2 class="display-2" id="testimonials-heading">
+          Real People. <span class="text-gradient">Real Results.</span>
+        </h2>
+        <p class="lead" style="margin-top:16px;">
+          Don't take our word for it — hear from members who found genuine connections here.
+        </p>
+      </div>
+
+      <div class="testimonials-grid">
+
+        <article class="testimonial-card">
+          <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <div class="testimonial-quote">
+            <p>
+              "I was so tired of apps charging me just to see who liked me. H2H is completely different — I can message anyone, see everything, and the people here are actually real. Met someone special after just 2 weeks."
+            </p>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar" aria-hidden="true">D</div>
+            <div class="author-info">
+              <strong>Damari Kent</strong>
+              <span>Atlanta, GA</span>
+              <div class="verified-badge">✓ Verified Member</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial-card">
+          <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <div class="testimonial-quote">
+            <p>
+              "The human verification process actually made me feel safe. No fake profiles, no scammers trying to hit me up. Just genuine people looking for real relationships. The video call feature sealed the deal."
+            </p>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background: linear-gradient(135deg, #F59E0B, #E8536A);" aria-hidden="true">L</div>
+            <div class="author-info">
+              <strong>Larry T.</strong>
+              <span>Chicago, IL</span>
+              <div class="verified-badge">✓ Verified Member</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial-card">
+          <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <div class="testimonial-quote">
+            <p>
+              "Finally — a dating site that doesn't treat you like a wallet. No pay-to-message, no pay-to-see-likes, nothing. The community is small which actually makes it better. Everyone is genuinely here to connect."
+            </p>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background: linear-gradient(135deg, #1E3A6E, #E8536A);" aria-hidden="true">M</div>
+            <div class="author-info">
+              <strong>Michael Malroy</strong>
+              <span>Houston, TX</span>
+              <div class="verified-badge">✓ Verified Member</div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════
+       SECTION 5 — FINAL CTA
+  ════════════════════════════════════════ -->
+  <section class="section-cta" aria-labelledby="cta-heading">
+    <div class="container">
+      <div class="cta-inner">
+
+        <div class="cta-eyebrow">
+          <span>💛</span> 100% Free · No Credit Card · No Algorithms
+        </div>
+
+        <h2 class="display-1 cta-title" id="cta-heading">
+          Stop Paying for Love.<br />
+          <em style="font-style:normal; color: var(--clr-accent-light);">Start Finding It.</em>
+        </h2>
+
+        <p class="cta-sub">
+          Join thousands of real, verified US singles who chose honesty over algorithms.
+          Your next meaningful connection is one click away — and it won't cost you a thing.
+        </p>
+
+        <div class="cta-buttons">
+          <a href="/register/" class="btn btn-primary btn-lg">
+            ❤️ Join H2H Free Now
+          </a>
+          <a href="#how-it-works" class="btn btn-outline btn-lg">
+            ▶ Watch How It Works
+          </a>
+        </div>
+
+        <div class="watch-link">
+          <a href="/register/" class="watch-link">Already a member? <strong style="color:rgba(255,255,255,.85); margin-left:4px;">Sign in here →</strong></a>
+        </div>
+
+        <div class="cta-disclaimers">
+          <div class="disclaimer-item">
+            <span class="disclaimer-icon">🏛️</span>
+            Not affiliated with Match Group or any commercial dating platform
+          </div>
+          <div class="disclaimer-item">
+            <span class="disclaimer-icon">🇺🇸</span>
+            US-based, invite-only community
+          </div>
+          <div class="disclaimer-item">
+            <span class="disclaimer-icon">🔒</span>
+            Your data is never sold or shared
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <div class="footer-logo-mark">H2H</div>
+              <span class="footer-logo-name">H2H Dating</span>
+            </div>
+            <p class="footer-tagline">
+              Organic, AI-Free online dating built on honesty, human connection,
+              and radical transparency. Free forever — because love shouldn't have a paywall.
+            </p>
+            <div class="social-row" aria-label="Social media links">
+              <a href="#" class="social-btn" aria-label="Facebook">f</a>
+              <a href="#" class="social-btn" aria-label="Instagram">📷</a>
+              <a href="#" class="social-btn" aria-label="Twitter / X">𝕏</a>
+              <a href="#" class="social-btn" aria-label="TikTok">♪</a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Platform</h4>
+            <div class="footer-links">
+              <a href="/register/">Join Free</a>
+              <a href="/login/">Sign In</a>
+              <a href="#how-it-works">How It Works</a>
+              <a href="#why-us">Why H2H</a>
+              <a href="/members/">Browse Members</a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Community</h4>
+            <div class="footer-links">
+              <a href="/blog/">Dating Blog</a>
+              <a href="/success-stories/">Success Stories</a>
+              <a href="/safety-tips/">Safety Tips</a>
+              <a href="/verification/">Verification Info</a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Company</h4>
+            <div class="footer-links">
+              <a href="/about/">About Us</a>
+              <a href="/contact/">Contact</a>
+              <a href="/privacy/">Privacy Policy</a>
+              <a href="/terms/">Terms of Service</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-bottom-inner">
+          <p class="footer-copy">© 2026 H2H Dating. All rights reserved.</p>
+          <p class="not-affiliated">⚠️ Not affiliated with Match Group, Tinder, Hinge, or any commercial dating platform.</p>
+          <div class="footer-legal">
+            <a href="/privacy/">Privacy</a>
+            <a href="/terms/">Terms</a>
+            <a href="/cookies/">Cookies</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
