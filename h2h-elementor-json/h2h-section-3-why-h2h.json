@@ -1,0 +1,379 @@
+{
+  "version": "0.4",
+  "title": "H2H Section 3 — Why Choose H2H",
+  "type": "page",
+  "content": [
+    {
+      "id": "s3out001",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "flex_direction": "column",
+        "content_width": "full",
+        "background_background": "classic",
+        "background_color": "#F7F7F7",
+        "padding": { "unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "s3inn001",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "flex_direction": "row",
+            "align_items": "center",
+            "content_width": "boxed",
+            "width": { "unit": "px", "size": 1280 },
+            "padding": { "unit": "px", "top": "90", "right": "24", "bottom": "90", "left": "24", "isLinked": false },
+            "padding_tablet": { "unit": "px", "top": "64", "right": "20", "bottom": "64", "left": "20", "isLinked": false },
+            "padding_mobile": { "unit": "px", "top": "48", "right": "16", "bottom": "48", "left": "16", "isLinked": false },
+            "flex_gap": { "unit": "px", "size": 80 },
+            "flex_direction_tablet": "column",
+            "flex_direction_mobile": "column"
+          },
+          "elements": [
+
+            {
+              "id": "s3left01",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "flex_direction": "column",
+                "align_items": "flex-start",
+                "flex_gap": { "unit": "px", "size": 40 },
+                "width": { "unit": "%", "size": 52 },
+                "width_tablet": { "unit": "%", "size": 100 },
+                "width_mobile": { "unit": "%", "size": 100 }
+              },
+              "elements": [
+
+                {
+                  "id": "s3hdr001",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "flex_direction": "column",
+                    "align_items": "flex-start",
+                    "flex_gap": { "unit": "px", "size": 16 }
+                  },
+                  "elements": [
+                    {
+                      "id": "s3eyeb01",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Why Choose H2H",
+                        "header_size": "h6",
+                        "title_color": "#BE0002",
+                        "align": "left",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Poppins",
+                        "typography_font_size": { "unit": "px", "size": 13 },
+                        "typography_font_weight": "700",
+                        "typography_letter_spacing": { "unit": "em", "size": 0.12 },
+                        "typography_text_transform": "uppercase"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "s3head01",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Simple to Use.<br>Smart to Choose.",
+                        "header_size": "h2",
+                        "title_color": "#000000",
+                        "align": "left",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Poppins",
+                        "typography_font_size": { "unit": "px", "size": 42 },
+                        "typography_font_size_tablet": { "unit": "px", "size": 32 },
+                        "typography_font_size_mobile": { "unit": "px", "size": 28 },
+                        "typography_font_weight": "700",
+                        "typography_line_height": { "unit": "em", "size": 1.2 }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "s3lead01",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>While other dating apps milk your wallet, H2H Dating gives you everything — completely free, forever. Here's what makes us different.</p>",
+                        "text_color": "#666666",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Inter",
+                        "typography_font_size": { "unit": "px", "size": 17 },
+                        "typography_line_height": { "unit": "em", "size": 1.7 }
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+
+                {
+                  "id": "s3feat01",
+                  "elType": "widget",
+                  "widgetType": "icon-box",
+                  "settings": {
+                    "selected_icon": { "value": "fas fa-lock-open", "library": "fa-solid" },
+                    "view": "stacked",
+                    "shape": "circle",
+                    "icon_primary_color": "#BE0002",
+                    "icon_secondary_color": "#FFFFFF",
+                    "icon_size": { "unit": "px", "size": 22 },
+                    "icon_padding": { "unit": "em", "size": 0.6 },
+                    "icon_space": { "unit": "px", "size": 20 },
+                    "position": "left",
+                    "title_text": "Zero Paywalls. Zero Subscriptions.",
+                    "title_size": "h3",
+                    "description_text": "Every app charges $30+/month for basic features. H2H is 100% free — messaging, video calls, profile views — forever. No credit card ever.",
+                    "title_color": "#000000",
+                    "title_typography_typography": "custom",
+                    "title_typography_font_family": "Poppins",
+                    "title_typography_font_size": { "unit": "px", "size": 19 },
+                    "title_typography_font_weight": "700",
+                    "title_typography_line_height": { "unit": "em", "size": 1.3 },
+                    "description_color": "#666666",
+                    "description_typography_typography": "custom",
+                    "description_typography_font_family": "Inter",
+                    "description_typography_font_size": { "unit": "px", "size": 15 },
+                    "description_typography_line_height": { "unit": "em", "size": 1.65 }
+                  },
+                  "elements": []
+                },
+
+                {
+                  "id": "s3div001",
+                  "elType": "widget",
+                  "widgetType": "divider",
+                  "settings": {
+                    "style": "solid",
+                    "color": "#DDDDDD",
+                    "weight": { "unit": "px", "size": 1 },
+                    "gap": { "unit": "px", "size": 0 }
+                  },
+                  "elements": []
+                },
+
+                {
+                  "id": "s3feat02",
+                  "elType": "widget",
+                  "widgetType": "icon-box",
+                  "settings": {
+                    "selected_icon": { "value": "fas fa-user-check", "library": "fa-solid" },
+                    "view": "stacked",
+                    "shape": "circle",
+                    "icon_primary_color": "#BE0002",
+                    "icon_secondary_color": "#FFFFFF",
+                    "icon_size": { "unit": "px", "size": 22 },
+                    "icon_padding": { "unit": "em", "size": 0.6 },
+                    "icon_space": { "unit": "px", "size": 20 },
+                    "position": "left",
+                    "title_text": "Every Profile is Human-Verified",
+                    "title_size": "h3",
+                    "description_text": "Our team personally reviews every single account. No bots, no fake profiles, no catfishing. You only see real, verified people — guaranteed.",
+                    "title_color": "#000000",
+                    "title_typography_typography": "custom",
+                    "title_typography_font_family": "Poppins",
+                    "title_typography_font_size": { "unit": "px", "size": 19 },
+                    "title_typography_font_weight": "700",
+                    "title_typography_line_height": { "unit": "em", "size": 1.3 },
+                    "description_color": "#666666",
+                    "description_typography_typography": "custom",
+                    "description_typography_font_family": "Inter",
+                    "description_typography_font_size": { "unit": "px", "size": 15 },
+                    "description_typography_line_height": { "unit": "em", "size": 1.65 }
+                  },
+                  "elements": []
+                },
+
+                {
+                  "id": "s3div002",
+                  "elType": "widget",
+                  "widgetType": "divider",
+                  "settings": {
+                    "style": "solid",
+                    "color": "#DDDDDD",
+                    "weight": { "unit": "px", "size": 1 },
+                    "gap": { "unit": "px", "size": 0 }
+                  },
+                  "elements": []
+                },
+
+                {
+                  "id": "s3feat03",
+                  "elType": "widget",
+                  "widgetType": "icon-box",
+                  "settings": {
+                    "selected_icon": { "value": "fas fa-ban", "library": "fa-solid" },
+                    "view": "stacked",
+                    "shape": "circle",
+                    "icon_primary_color": "#BE0002",
+                    "icon_secondary_color": "#FFFFFF",
+                    "icon_size": { "unit": "px", "size": 22 },
+                    "icon_padding": { "unit": "em", "size": 0.6 },
+                    "icon_space": { "unit": "px", "size": 20 },
+                    "position": "left",
+                    "title_text": "AI-Free. Algorithm-Free.",
+                    "title_size": "h3",
+                    "description_text": "No ELO scores. No mysterious algorithm hiding profiles from you. Browse freely, message anyone, connect on your own terms — always.",
+                    "title_color": "#000000",
+                    "title_typography_typography": "custom",
+                    "title_typography_font_family": "Poppins",
+                    "title_typography_font_size": { "unit": "px", "size": 19 },
+                    "title_typography_font_weight": "700",
+                    "title_typography_line_height": { "unit": "em", "size": 1.3 },
+                    "description_color": "#666666",
+                    "description_typography_typography": "custom",
+                    "description_typography_font_family": "Inter",
+                    "description_typography_font_size": { "unit": "px", "size": 15 },
+                    "description_typography_line_height": { "unit": "em", "size": 1.65 }
+                  },
+                  "elements": []
+                },
+
+                {
+                  "id": "s3div003",
+                  "elType": "widget",
+                  "widgetType": "divider",
+                  "settings": {
+                    "style": "solid",
+                    "color": "#DDDDDD",
+                    "weight": { "unit": "px", "size": 1 },
+                    "gap": { "unit": "px", "size": 0 }
+                  },
+                  "elements": []
+                },
+
+                {
+                  "id": "s3feat04",
+                  "elType": "widget",
+                  "widgetType": "icon-box",
+                  "settings": {
+                    "selected_icon": { "value": "fas fa-video", "library": "fa-solid" },
+                    "view": "stacked",
+                    "shape": "circle",
+                    "icon_primary_color": "#BE0002",
+                    "icon_secondary_color": "#FFFFFF",
+                    "icon_size": { "unit": "px", "size": 22 },
+                    "icon_padding": { "unit": "em", "size": 0.6 },
+                    "icon_space": { "unit": "px", "size": 20 },
+                    "position": "left",
+                    "title_text": "Real-Time Chat & Video Calls",
+                    "title_size": "h3",
+                    "description_text": "Unlimited messaging and HD video calls — no tokens, no daily limits. Connect instantly with anyone on the platform, completely free.",
+                    "title_color": "#000000",
+                    "title_typography_typography": "custom",
+                    "title_typography_font_family": "Poppins",
+                    "title_typography_font_size": { "unit": "px", "size": 19 },
+                    "title_typography_font_weight": "700",
+                    "title_typography_line_height": { "unit": "em", "size": 1.3 },
+                    "description_color": "#666666",
+                    "description_typography_typography": "custom",
+                    "description_typography_font_family": "Inter",
+                    "description_typography_font_size": { "unit": "px", "size": 15 },
+                    "description_typography_line_height": { "unit": "em", "size": 1.65 }
+                  },
+                  "elements": []
+                }
+
+              ]
+            },
+
+            {
+              "id": "s3rght01",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "flex_direction": "column",
+                "align_items": "center",
+                "justify_content": "center",
+                "width": { "unit": "%", "size": 44 },
+                "width_tablet": { "unit": "%", "size": 100 },
+                "width_mobile": { "unit": "%", "size": 100 },
+                "position": "relative"
+              },
+              "elements": [
+                {
+                  "id": "s3img001",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "settings": {
+                    "image": {
+                      "url": "YOUR_FEATURES_COUPLE_IMAGE_URL",
+                      "id": "",
+                      "alt": "Happy couple using H2H Dating — the free, human-verified dating platform",
+                      "source": "library"
+                    },
+                    "image_size": "full",
+                    "width": { "unit": "%", "size": 100 },
+                    "border_radius": { "unit": "px", "top": "24", "right": "24", "bottom": "24", "left": "24", "isLinked": true }
+                  },
+                  "elements": []
+                },
+
+                {
+                  "id": "s3badg01",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "flex_direction": "column",
+                    "align_items": "center",
+                    "justify_content": "center",
+                    "background_background": "classic",
+                    "background_color": "#BE0002",
+                    "border_radius": { "unit": "px", "top": "20", "right": "20", "bottom": "20", "left": "20", "isLinked": true },
+                    "padding": { "unit": "px", "top": "24", "right": "32", "bottom": "24", "left": "32", "isLinked": false },
+                    "box_shadow_box_shadow_type": "yes",
+                    "box_shadow_box_shadow": { "horizontal": 0, "vertical": 12, "blur": 36, "spread": 0, "color": "rgba(190,0,2,0.45)" },
+                    "margin": { "unit": "px", "top": "24", "right": "0", "bottom": "0", "left": "0", "isLinked": false },
+                    "flex_gap": { "unit": "px", "size": 4 }
+                  },
+                  "elements": [
+                    {
+                      "id": "s3bdtx1",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "100% FREE",
+                        "header_size": "h3",
+                        "title_color": "#E5C162",
+                        "align": "center",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Poppins",
+                        "typography_font_size": { "unit": "px", "size": 28 },
+                        "typography_font_weight": "800",
+                        "typography_letter_spacing": { "unit": "em", "size": 0.03 }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "s3bdtx2",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Every Feature. Forever.",
+                        "header_size": "h6",
+                        "title_color": "rgba(255,255,255,0.85)",
+                        "align": "center",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Inter",
+                        "typography_font_size": { "unit": "px", "size": 14 },
+                        "typography_font_weight": "500"
+                      },
+                      "elements": []
+                    }
+                  ]
+                }
+
+              ]
+            }
+
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": {}
+}
