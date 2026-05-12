@@ -1,0 +1,425 @@
+{
+  "version": "0.4",
+  "title": "H2H Section 2 — How It Works",
+  "type": "page",
+  "content": [
+    {
+      "id": "s2out001",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "flex_direction": "column",
+        "content_width": "full",
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "padding": { "unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "s2inn001",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "flex_direction": "column",
+            "align_items": "center",
+            "content_width": "boxed",
+            "width": { "unit": "px", "size": 1280 },
+            "padding": { "unit": "px", "top": "90", "right": "24", "bottom": "90", "left": "24", "isLinked": false },
+            "padding_tablet": { "unit": "px", "top": "64", "right": "20", "bottom": "64", "left": "20", "isLinked": false },
+            "padding_mobile": { "unit": "px", "top": "48", "right": "16", "bottom": "48", "left": "16", "isLinked": false },
+            "flex_gap": { "unit": "px", "size": 56 }
+          },
+          "elements": [
+
+            {
+              "id": "s2hdr001",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "flex_direction": "column",
+                "align_items": "center",
+                "flex_gap": { "unit": "px", "size": 16 },
+                "width": { "unit": "px", "size": 640 },
+                "width_mobile": { "unit": "%", "size": 100 }
+              },
+              "elements": [
+                {
+                  "id": "s2eyeb01",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "How It Works",
+                    "header_size": "h6",
+                    "title_color": "#BE0002",
+                    "align": "center",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Poppins",
+                    "typography_font_size": { "unit": "px", "size": 13 },
+                    "typography_font_weight": "700",
+                    "typography_letter_spacing": { "unit": "em", "size": 0.12 },
+                    "typography_text_transform": "uppercase"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "s2head01",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "From Sign Up to <em>Hello</em> in Minutes",
+                    "header_size": "h2",
+                    "title_color": "#000000",
+                    "align": "center",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Poppins",
+                    "typography_font_size": { "unit": "px", "size": 44 },
+                    "typography_font_size_tablet": { "unit": "px", "size": 34 },
+                    "typography_font_size_mobile": { "unit": "px", "size": 28 },
+                    "typography_font_weight": "700",
+                    "typography_line_height": { "unit": "em", "size": 1.2 }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "s2lead01",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>Three simple steps between you and your next genuine connection. No credit card required.</p>",
+                    "text_color": "#666666",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Inter",
+                    "typography_font_size": { "unit": "px", "size": 18 },
+                    "align": "center"
+                  },
+                  "elements": []
+                }
+              ]
+            },
+
+            {
+              "id": "s2grid01",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "flex_direction": "row",
+                "align_items": "stretch",
+                "flex_wrap": "wrap",
+                "flex_gap": { "unit": "px", "size": 0 },
+                "flex_direction_mobile": "column"
+              },
+              "elements": [
+
+                {
+                  "id": "s2card01",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "flex_direction": "column",
+                    "align_items": "flex-start",
+                    "flex_gap": { "unit": "px", "size": 24 },
+                    "width": { "unit": "%", "size": 33 },
+                    "width_tablet": { "unit": "%", "size": 100 },
+                    "width_mobile": { "unit": "%", "size": 100 },
+                    "background_background": "classic",
+                    "background_color": "#BE0002",
+                    "padding": { "unit": "px", "top": "52", "right": "44", "bottom": "52", "left": "44", "isLinked": false },
+                    "padding_tablet": { "unit": "px", "top": "44", "right": "32", "bottom": "44", "left": "32", "isLinked": false },
+                    "padding_mobile": { "unit": "px", "top": "40", "right": "24", "bottom": "40", "left": "24", "isLinked": false }
+                  },
+                  "elements": [
+                    {
+                      "id": "s2num001",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "01",
+                        "header_size": "h2",
+                        "title_color": "rgba(229,193,98,0.25)",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Poppins",
+                        "typography_font_size": { "unit": "px", "size": 72 },
+                        "typography_font_weight": "800",
+                        "typography_line_height": { "unit": "em", "size": 1 }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "s2ico001",
+                      "elType": "widget",
+                      "widgetType": "icon",
+                      "settings": {
+                        "selected_icon": { "value": "fas fa-user-plus", "library": "fa-solid" },
+                        "size": { "unit": "px", "size": 44 },
+                        "primary_color": "#E5C162",
+                        "view": "default"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "s2tit001",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Create Your Free Profile",
+                        "header_size": "h3",
+                        "title_color": "#FFFFFF",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Poppins",
+                        "typography_font_size": { "unit": "px", "size": 22 },
+                        "typography_font_weight": "700",
+                        "typography_line_height": { "unit": "em", "size": 1.3 }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "s2dsc001",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>Sign up in under 2 minutes. No credit card. No subscription. Your profile goes live after our quick human review.</p>",
+                        "text_color": "rgba(255,255,255,0.8)",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Inter",
+                        "typography_font_size": { "unit": "px", "size": 15 },
+                        "typography_line_height": { "unit": "em", "size": 1.7 }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "s2btn001",
+                      "elType": "widget",
+                      "widgetType": "button",
+                      "settings": {
+                        "text": "Get Started →",
+                        "link": { "url": "/register/", "is_external": false, "nofollow": false },
+                        "background_color": "transparent",
+                        "button_text_color": "#E5C162",
+                        "button_text_color_hover": "#FFFFFF",
+                        "background_color_hover": "transparent",
+                        "border_width": { "unit": "px", "top": "2", "right": "2", "bottom": "2", "left": "2", "isLinked": true },
+                        "border_color": "rgba(229,193,98,0.5)",
+                        "border_color_hover": "#E5C162",
+                        "border_radius": { "unit": "px", "top": "100", "right": "100", "bottom": "100", "left": "100", "isLinked": true },
+                        "typography_typography": "custom",
+                        "typography_font_family": "Poppins",
+                        "typography_font_size": { "unit": "px", "size": 14 },
+                        "typography_font_weight": "600",
+                        "padding": { "unit": "px", "top": "10", "right": "24", "bottom": "10", "left": "24", "isLinked": false }
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+
+                {
+                  "id": "s2card02",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "flex_direction": "column",
+                    "align_items": "flex-start",
+                    "flex_gap": { "unit": "px", "size": 24 },
+                    "width": { "unit": "%", "size": 33 },
+                    "width_tablet": { "unit": "%", "size": 100 },
+                    "width_mobile": { "unit": "%", "size": 100 },
+                    "background_background": "classic",
+                    "background_color": "#E5C162",
+                    "padding": { "unit": "px", "top": "52", "right": "44", "bottom": "52", "left": "44", "isLinked": false },
+                    "padding_tablet": { "unit": "px", "top": "44", "right": "32", "bottom": "44", "left": "32", "isLinked": false },
+                    "padding_mobile": { "unit": "px", "top": "40", "right": "24", "bottom": "40", "left": "24", "isLinked": false }
+                  },
+                  "elements": [
+                    {
+                      "id": "s2num002",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "02",
+                        "header_size": "h2",
+                        "title_color": "rgba(0,0,0,0.12)",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Poppins",
+                        "typography_font_size": { "unit": "px", "size": 72 },
+                        "typography_font_weight": "800",
+                        "typography_line_height": { "unit": "em", "size": 1 }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "s2ico002",
+                      "elType": "widget",
+                      "widgetType": "icon",
+                      "settings": {
+                        "selected_icon": { "value": "fas fa-user-shield", "library": "fa-solid" },
+                        "size": { "unit": "px", "size": 44 },
+                        "primary_color": "#000000",
+                        "view": "default"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "s2tit002",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Get Human-Verified",
+                        "header_size": "h3",
+                        "title_color": "#000000",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Poppins",
+                        "typography_font_size": { "unit": "px", "size": 22 },
+                        "typography_font_weight": "700",
+                        "typography_line_height": { "unit": "em", "size": 1.3 }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "s2dsc002",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>Our team personally reviews every account — keeping the community real and safe. Most verifications complete within 24 hours.</p>",
+                        "text_color": "#333333",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Inter",
+                        "typography_font_size": { "unit": "px", "size": 15 },
+                        "typography_line_height": { "unit": "em", "size": 1.7 }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "s2btn002",
+                      "elType": "widget",
+                      "widgetType": "button",
+                      "settings": {
+                        "text": "Learn More →",
+                        "link": { "url": "/how-it-works/", "is_external": false, "nofollow": false },
+                        "background_color": "transparent",
+                        "button_text_color": "#000000",
+                        "button_text_color_hover": "#BE0002",
+                        "background_color_hover": "transparent",
+                        "border_width": { "unit": "px", "top": "2", "right": "2", "bottom": "2", "left": "2", "isLinked": true },
+                        "border_color": "rgba(0,0,0,0.3)",
+                        "border_color_hover": "#BE0002",
+                        "border_radius": { "unit": "px", "top": "100", "right": "100", "bottom": "100", "left": "100", "isLinked": true },
+                        "typography_typography": "custom",
+                        "typography_font_family": "Poppins",
+                        "typography_font_size": { "unit": "px", "size": 14 },
+                        "typography_font_weight": "600",
+                        "padding": { "unit": "px", "top": "10", "right": "24", "bottom": "10", "left": "24", "isLinked": false }
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+
+                {
+                  "id": "s2card03",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "flex_direction": "column",
+                    "align_items": "flex-start",
+                    "flex_gap": { "unit": "px", "size": 24 },
+                    "width": { "unit": "%", "size": 33 },
+                    "width_tablet": { "unit": "%", "size": 100 },
+                    "width_mobile": { "unit": "%", "size": 100 },
+                    "background_background": "classic",
+                    "background_color": "#111111",
+                    "padding": { "unit": "px", "top": "52", "right": "44", "bottom": "52", "left": "44", "isLinked": false },
+                    "padding_tablet": { "unit": "px", "top": "44", "right": "32", "bottom": "44", "left": "32", "isLinked": false },
+                    "padding_mobile": { "unit": "px", "top": "40", "right": "24", "bottom": "40", "left": "24", "isLinked": false }
+                  },
+                  "elements": [
+                    {
+                      "id": "s2num003",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "03",
+                        "header_size": "h2",
+                        "title_color": "rgba(190,0,2,0.2)",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Poppins",
+                        "typography_font_size": { "unit": "px", "size": 72 },
+                        "typography_font_weight": "800",
+                        "typography_line_height": { "unit": "em", "size": 1 }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "s2ico003",
+                      "elType": "widget",
+                      "widgetType": "icon",
+                      "settings": {
+                        "selected_icon": { "value": "fas fa-heart", "library": "fa-solid" },
+                        "size": { "unit": "px", "size": 44 },
+                        "primary_color": "#E5C162",
+                        "view": "default"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "s2tit003",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Connect & Meet",
+                        "header_size": "h3",
+                        "title_color": "#FFFFFF",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Poppins",
+                        "typography_font_size": { "unit": "px", "size": 22 },
+                        "typography_font_weight": "700",
+                        "typography_line_height": { "unit": "em", "size": 1.3 }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "s2dsc003",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>Browse real profiles, send unlimited messages, video call — all completely free. When you find someone special, that's your H2H story.</p>",
+                        "text_color": "#AAAAAA",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Inter",
+                        "typography_font_size": { "unit": "px", "size": 15 },
+                        "typography_line_height": { "unit": "em", "size": 1.7 }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "s2btn003",
+                      "elType": "widget",
+                      "widgetType": "button",
+                      "settings": {
+                        "text": "Join Free →",
+                        "link": { "url": "/register/", "is_external": false, "nofollow": false },
+                        "background_color": "#BE0002",
+                        "button_text_color": "#E5C162",
+                        "button_text_color_hover": "#FFFFFF",
+                        "background_color_hover": "#9A0002",
+                        "border_radius": { "unit": "px", "top": "100", "right": "100", "bottom": "100", "left": "100", "isLinked": true },
+                        "typography_typography": "custom",
+                        "typography_font_family": "Poppins",
+                        "typography_font_size": { "unit": "px", "size": 14 },
+                        "typography_font_weight": "600",
+                        "padding": { "unit": "px", "top": "10", "right": "24", "bottom": "10", "left": "24", "isLinked": false }
+                      },
+                      "elements": []
+                    }
+                  ]
+                }
+
+              ]
+            }
+
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": {}
+}

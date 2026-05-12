@@ -1,8 +1,8 @@
-# H2H Dating — Elementor JSON Import Guide
+# H2H Dating — Elementor JSON Import Guide (v2)
 
-**Brand Colors:** #BE0002 · #E5C162 · #000000  
-**Stack:** WordPress · Elementor Pro (Flexbox Containers) · Ultimate Member  
-**Files:** 7 JSON templates + SEO content
+**Brand Colors:** #BE0002 (Red) · #E5C162 (Gold) · #000000 (Black)
+**Stack:** WordPress · Elementor Pro 3.6+ (Flexbox Containers) · Ultimate Member
+**Design Style:** Asymmetric, premium — inspired by modern dating platforms
 
 ---
 
@@ -10,16 +10,42 @@
 
 ```
 h2h-elementor-json/
-├── README-import-guide.md          ← You are here
-├── seo-content.md                  ← All homepage copy + SEO meta tags
-├── h2h-header.json                 ← Sticky black header (Theme Builder)
-├── h2h-footer.json                 ← Dark footer (Theme Builder)
-├── h2h-section-1-hero.json         ← Hero + stats strip
-├── h2h-section-2-features.json     ← "Finally, a Dating Site That Respects You"
-├── h2h-section-3-how-it-works.json ← 3-step process
-├── h2h-section-4-testimonials.json ← Testimonials + stats
-└── h2h-section-5-cta.json          ← Final CTA banner (red)
+├── README-import-guide.md             ← You are here
+├── seo-content.md                     ← All homepage copy + meta tags + FAQ schema
+│
+├── h2h-header.json                    ← Sticky black header (Theme Builder)
+├── h2h-footer.json                    ← Dark footer (Theme Builder)
+│
+├── h2h-section-1-hero.json            ← Hero + animated stats strip
+├── h2h-section-2-how-it-works.json    ← 3-step process (Red / Gold / Black cards)
+├── h2h-section-3-why-h2h.json         ← Icon-box accordion + image (like reference site)
+├── h2h-section-4-testimonials.json    ← Large photo + quote + 2 mini cards
+└── h2h-section-5-cta.json             ← Red CTA banner + feature checklist
 ```
+
+### Recommended Homepage Section Order
+Insert sections in this order for best conversion flow:
+1. Hero → 2. How It Works → 3. Why H2H → 4. Testimonials → 5. CTA
+
+---
+
+## Widgets Used (All Proper Elementor Widgets — No Raw HTML)
+
+| Widget | Used For |
+|--------|----------|
+| `heading` | All headings (H1–H6), eyebrow labels, stat numbers, trust badges |
+| `text-editor` | Body paragraphs only — plain `<p>` tags |
+| `button` | All CTA buttons |
+| `image` | All photos |
+| `icon` | Standalone decorative icons (trust badges in hero) |
+| `icon-box` | Feature items in Section 3 (icon + title + description combined) |
+| `counter` | Animated stat numbers in hero stats strip |
+| `star-rating` | Review stars in testimonials |
+| `divider` | Separator lines between features |
+| `nav-menu` | Header navigation (requires Elementor Pro) |
+
+> **Note:** No complex HTML is embedded in text-editor widgets.
+> Icons use Font Awesome via Elementor's native icon picker.
 
 ---
 
@@ -28,17 +54,17 @@ h2h-elementor-json/
 ### A. Enable Flexbox Containers
 1. **Elementor → Settings → Features**
 2. Toggle **Flexbox Container** → ON
-3. Save Settings
+3. Click **Save Settings**
 
 ### B. Add Google Fonts (Global CSS)
 1. **Elementor → Site Settings → Custom CSS**
-2. Paste:
+2. Paste this at the top:
 ```css
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap');
 ```
 
 ### C. Set Global Colors
-**Elementor → Site Settings → Global Colors** — Add these:
+**Elementor → Site Settings → Global Colors** → Add:
 
 | Name           | Hex       |
 |----------------|-----------|
@@ -46,107 +72,89 @@ h2h-elementor-json/
 | H2H Gold       | #E5C162   |
 | H2H Black      | #000000   |
 | H2H White      | #FFFFFF   |
-| H2H Light Gray | #F5F5F5   |
-| H2H Text Gray  | #555555   |
+| H2H Gray       | #F7F7F7   |
 
 ### D. Set Global Fonts
 **Elementor → Site Settings → Global Fonts:**
-- Primary Font → **Poppins** (headings)
-- Secondary Font → **Inter** (body)
+- Primary → **Poppins** (headings)
+- Secondary → **Inter** (body text)
 
-### E. Upload Your Logo
-1. **WordPress → Media → Add New**
-2. Upload your H2H logo file
-3. **Copy the URL** — you'll need it when setting up the header
+### E. Upload Images to Media Library
+Upload these before building (see seo-content.md for AI generation prompts):
 
----
-
-## Step 1 — Import the Header
-
-The header is imported via **Theme Builder** (requires Elementor Pro).
-
-1. Go to **Elementor → Templates → Theme Builder**
-2. Click **Add New** → Choose type: **Header**
-3. Give it a name: `H2H Header`
-4. In the Elementor editor, click the **folder icon** (Add Template)
-5. Go to **My Templates** tab → click **Import Templates**
-6. Upload `h2h-header.json`
-7. The header template will appear — click **Insert**
-8. **Find the Image widget** (logo placeholder) → click it
-9. Replace `YOUR_LOGO_URL_HERE` with your actual logo from Media Library
-10. Click **Publish** → Set display conditions:
-    - **Include → Entire Site**
-11. Click **Save & Close**
+| Image                          | Where Used         | Size           |
+|--------------------------------|--------------------|----------------|
+| H2H logo (black background)    | Header + Footer    | 240×120px      |
+| Hero couple photo              | Section 1, right   | 900×1100px     |
+| Features couple photo          | Section 3, right   | 800×1000px     |
+| Testimonial couple photo       | Section 4, left    | 700×900px      |
 
 ---
 
-## Step 2 — Import the Footer
+## Step 1 — Import the Header (Theme Builder)
 
-Same process as header:
+1. **Elementor → Templates → Theme Builder → Add New → Header**
+2. Name: `H2H Header` → Click **Create Template**
+3. In the editor, click the **folder icon** → **My Templates** tab
+4. Click **Import Templates** → upload `h2h-header.json`
+5. The template appears — click **Insert**
+6. Click the **Image widget** (logo) → replace `YOUR_LOGO_URL_HERE` with your logo
+7. Click the **Nav Menu widget** → select your WordPress menu from the dropdown
+8. Click **Publish** → Display Conditions: **Include → Entire Site** → **Save & Close**
+
+---
+
+## Step 2 — Import the Footer (Theme Builder)
 
 1. **Elementor → Templates → Theme Builder → Add New → Footer**
-2. Name: `H2H Footer`
-3. Click folder → My Templates → Import → Upload `h2h-footer.json`
-4. Insert the template
-5. **Find the Image widget** → replace `YOUR_LOGO_URL_HERE` with your logo URL
-6. Update all navigation links if your WordPress slugs are different
-7. **Publish** → Display conditions: **Include → Entire Site**
+2. Name: `H2H Footer` → **Create Template**
+3. Folder icon → My Templates → Import → `h2h-footer.json` → **Insert**
+4. Find the **Image widget** → replace `YOUR_LOGO_URL_HERE`
+5. Update navigation link URLs if your slugs differ from `/about/`, `/contact/`, etc.
+6. **Publish** → Display: **Entire Site** → **Save & Close**
 
 ---
 
-## Step 3 — Import Sections (Hero, Features, etc.)
+## Step 3 — Import Sections to Homepage
 
-Each section (1–5) imports as a **Saved Template** and gets added to a page.
+### A. Import All 5 Section Files
+1. **Elementor → Templates → Saved Templates → Import Templates**
+2. Upload files one by one:
+   - `h2h-section-1-hero.json`
+   - `h2h-section-2-how-it-works.json`
+   - `h2h-section-3-why-h2h.json`
+   - `h2h-section-4-testimonials.json`
+   - `h2h-section-5-cta.json`
 
-### A. Import All 5 Section JSON Files
-
-1. Go to **Elementor → Templates → Saved Templates**
-2. Click **Import Templates** (top right)
-3. Upload `h2h-section-1-hero.json` → Repeat for sections 2–5
-4. All 5 sections now appear in your Saved Templates list
-
-### B. Add Sections to Your Homepage
-
-1. Go to **WordPress → Pages** → Open your Homepage
-2. Click **Edit with Elementor**
-3. **Delete any existing content** (or start fresh on a blank page)
-4. Click the **"+" icon** to add a new section/template
-5. Click the **folder icon** → **My Templates** tab
-6. Find `H2H Section 1 — Hero` → click **Insert**
-7. Repeat for sections 2, 3, 4, 5 — insert them in order
-8. **Update/Publish** the page
+### B. Add to Homepage
+1. **WordPress → Pages** → open your Homepage → **Edit with Elementor**
+2. Delete existing content (start clean)
+3. Click **"+"** → click the **folder icon** → **My Templates**
+4. Insert sections in order: 1 → 2 → 3 → 4 → 5
+5. **Update/Publish**
 
 ---
 
 ## Step 4 — Replace Image Placeholders
 
-After importing, find and replace these placeholder URLs:
+After import, find these in the Elementor editor and replace:
 
-| Placeholder              | Widget Location              | What to Upload                        |
-|--------------------------|------------------------------|---------------------------------------|
-| `YOUR_LOGO_URL_HERE`     | Header & Footer Image widget | Your H2H logo PNG/WebP                |
-| `YOUR_HERO_COUPLE_IMAGE_URL` | Section 1, right column  | Hero couple photo (900×1100px, WebP)  |
-
-**How to replace an image:**
-1. Click the Image widget in Elementor
-2. Under "Image" → click the current image / URL
-3. Select from Media Library or upload new image
+| Placeholder                    | Widget      | Section   |
+|--------------------------------|-------------|-----------|
+| `YOUR_LOGO_URL_HERE`           | Image       | Header, Footer |
+| `YOUR_HERO_COUPLE_IMAGE_URL`   | Image       | Section 1 right column |
+| `YOUR_FEATURES_COUPLE_IMAGE_URL` | Image     | Section 3 right column |
+| `YOUR_TESTIMONIAL_COUPLE_IMAGE_URL` | Image  | Section 4 left column |
 
 ---
 
-## Step 5 — Update Navigation Links
+## Step 5 — Configure the Nav Menu Widget
 
-Check these URLs match your WordPress setup:
-
-| Button / Link     | Expected URL        |
-|-------------------|---------------------|
-| Join Free buttons | `/register/`        |
-| Sign In buttons   | `/login/`           |
-| Logo link         | `/`                 |
-
-If your UM registration page has a different slug, update all button links:
-1. Click the Button widget
-2. Under "Link" → change the URL
+1. **WordPress → Appearance → Menus → Create New Menu**
+2. Name it: `Main Menu`
+3. Add pages: Home, How It Works, About, Contact
+4. Save menu → assign to **Primary** location
+5. In Elementor header, click **Nav Menu widget** → select `Main Menu`
 
 ---
 
@@ -154,108 +162,77 @@ If your UM registration page has a different slug, update all button links:
 
 1. **WordPress → Settings → Reading**
 2. **Your homepage displays:** A static page
-3. **Homepage:** Select your H2H homepage page
-4. Save Changes
+3. **Homepage:** Select your H2H page
+4. **Save Changes**
 
 ---
 
 ## Step 7 — SEO Setup
 
 1. Open `seo-content.md` from this package
-2. **Rank Math / Yoast → Homepage settings:**
-   - Paste the SEO Title
-   - Paste the Meta Description
+2. In **Rank Math / Yoast** on the homepage:
+   - Paste the SEO Title (under 60 chars)
+   - Paste Meta Description (under 160 chars)
    - Set Focus Keyword: `free online dating site USA`
-3. Add FAQ schema (see seo-content.md → FAQ Schema section)
+3. Add FAQ Schema (copy from seo-content.md)
+
+---
+
+## Design System Reference
+
+### Section Backgrounds
+| Section          | Background | Text Colors              |
+|------------------|------------|--------------------------|
+| Hero             | #000000    | White H1, Gold accent    |
+| Stats Strip      | #BE0002    | Gold numbers, White labels |
+| How It Works     | #FFFFFF    | 3 cards: Red / Gold / Black |
+| Why H2H          | #F7F7F7    | Black text, Red icons    |
+| Testimonials     | #000000    | White, Gold stars        |
+| CTA              | #BE0002    | White headline, Gold button |
+| Header           | #000000    | White nav, Gold hover    |
+| Footer           | #000000    | Gray text, Gold column titles |
+
+### Button Types Used
+| Style            | Where         | bg → text              |
+|------------------|---------------|------------------------|
+| Gold Primary     | Hero, CTA     | #E5C162 → #000000      |
+| White Outline    | Hero (Sign In)| transparent → #FFFFFF  |
+| Gold Outline     | How It Works card 1 | transparent → #E5C162 |
+| Black Outline    | How It Works card 2 | transparent → #000000 |
+| Red Filled       | How It Works card 3 | #BE0002 → #E5C162  |
+
+### Typography Scale
+| Element         | Font    | Size (desktop) | Weight |
+|-----------------|---------|----------------|--------|
+| H1 (Hero)       | Poppins | 62px           | 800    |
+| H2 (Sections)   | Poppins | 42–44px        | 700    |
+| H3 (Cards)      | Poppins | 19–22px        | 700    |
+| Eyebrow Labels  | Poppins | 13px           | 700    |
+| Body Text       | Inter   | 15–18px        | 400    |
+| Counter Numbers | Poppins | 42px           | 800    |
 
 ---
 
 ## Troubleshooting
 
-### "Container not found" or layout broken after import
-- Make sure **Flexbox Containers** is enabled (Step 0A above)
-- If using older Elementor without containers, upgrade to Elementor 3.6+
-
-### Nav Menu widget shows "No menu" 
-- Go to **WordPress → Appearance → Menus**
-- Create a menu named `main-menu` with your nav links
-- Assign it to the Primary location
-- The Nav Menu widget will auto-populate
-
-### Fonts not loading
-- Make sure the Google Fonts @import is in **Site Settings → Custom CSS**
-- Or install the fonts via **Elementor → Site Settings → Global Fonts** using the Elementor font library
-
-### Logo appears too large/small
-- Click the Image widget → adjust the **Width** setting
-- Recommended: 110–140px for header, 110px for footer
-
-### Colors look wrong
-- All colors are hardcoded in the JSON (#BE0002, #E5C162, #000000)
-- If you set up Global Colors in Step 0C, you can optionally remap them in each widget
-
----
-
-## Design Reference
-
-### Color System
-| Color   | Hex       | Usage                                    |
-|---------|-----------|------------------------------------------|
-| Red     | #BE0002   | Primary CTAs, eyebrow chips, step numbers, accents |
-| Gold    | #E5C162   | Highlighted words, button text on red, stars, accent |
-| Black   | #000000   | Hero bg, testimonials bg, dark cards     |
-| White   | #FFFFFF   | Light section backgrounds, card bgs      |
-| Gray    | #F5F5F5   | How It Works section background          |
-| Text    | #555555   | Body text on light backgrounds           |
-
-### Section Layout
-| Section | Background | Key Color |
-|---------|------------|-----------|
-| Hero    | Black      | Gold headline, Red stat bar |
-| Features | White     | Red card top borders, Black accent card |
-| How It Works | Light Gray | Red step numbers, Black featured card |
-| Testimonials | Black   | Red/dark cards, Red featured card center |
-| CTA     | Red        | Gold headline, Gold CTA button |
-
-### Button Hierarchy
-1. **Gold button** (most important CTAs): bg `#E5C162`, text `#000000`
-2. **Red button** (section CTAs): bg `#BE0002`, text `#E5C162`, border `#E5C162`
-3. **Outline white** (secondary on dark): transparent bg, white border & text
-4. **Header Join Free**: Red bg, Gold text, Gold border
-
----
-
-## Required Elementor Pro Widgets Used
-
-| Widget       | Used In              | Notes                               |
-|--------------|----------------------|-------------------------------------|
-| Container    | All sections         | Flexbox layout — requires Elementor Pro or free 3.6+ |
-| Heading      | All sections         | Free widget                         |
-| Text Editor  | All sections         | Free widget (used for rich HTML chips/cards) |
-| Button       | Hero, Steps, CTA     | Free widget                         |
-| Image        | Header, Footer, Hero | Free widget                         |
-| Nav Menu     | Header               | **Requires Elementor Pro**          |
-| Divider      | Footer, Stats strip  | Free widget                         |
-
-> **Note:** The Nav Menu widget in the header requires **Elementor Pro**. If you don't
-> have Pro, replace it with a Text Editor widget containing `<nav>` HTML links styled
-> to match (white text, Poppins 15px, horizontal flex row).
+| Problem | Fix |
+|---------|-----|
+| "Container" not recognized | Enable Flexbox Containers in Elementor → Settings → Features |
+| Icons not showing | Elementor uses Font Awesome — ensure it's loaded (Elementor → Settings → Experiments or via enqueue) |
+| Counter widget not animating | Add `data-counter` or check Elementor version ≥ 3.4 |
+| Nav Menu shows "No menu" | Create menu in WP Admin → Appearance → Menus first |
+| Fonts look wrong | Check @import in Site Settings → Custom CSS |
+| Logo too large | Click Image widget → adjust Width to 110px in header, 90px in footer |
 
 ---
 
 ## Ultimate Member Integration
 
-All "Join Free" buttons link to `/register/` — UM handles this page automatically.
+All "Join Free" buttons → `/register/` (UM handles this page)
+All "Sign In" links → `/login/`
 
-**For conditional content (logged-in vs logged-out):**
+For conditional display:
 ```
-[um_loggedout]
-  <!-- Hero section, Join CTAs — show to guests only -->
-[/um_loggedout]
-
-[um_loggedin]
-  Welcome back, [current_user_displayname]! 
-[/um_loggedin]
+[um_loggedout]  Show hero + CTAs to guests only  [/um_loggedout]
+[um_loggedin]   Show welcome message to members  [/um_loggedin]
 ```
-
-Wrap the hero section shortcode widget if you want to hide it from logged-in users.
