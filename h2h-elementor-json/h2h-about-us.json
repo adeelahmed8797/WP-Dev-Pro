@@ -1,10 +1,11 @@
 {
   "version": "0.4",
-  "title": "H2H About Us Section",
+  "title": "H2H About Us — Full Page",
   "type": "page",
   "content": [
+
     {
-      "id": "ab000001",
+      "id": "ab1s0001",
       "elType": "container",
       "isInner": false,
       "settings": {
@@ -15,9 +16,8 @@
         "padding": { "unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": false }
       },
       "elements": [
-
         {
-          "id": "ab001000",
+          "id": "ab1s0002",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -35,7 +35,7 @@
           "elements": [
 
             {
-              "id": "ab001L01",
+              "id": "ab1s0003",
               "elType": "container",
               "isInner": true,
               "settings": {
@@ -47,9 +47,8 @@
                 "width_mobile": { "unit": "%", "size": 100 }
               },
               "elements": [
-
                 {
-                  "id": "ab001E01",
+                  "id": "ab1e0001",
                   "elType": "widget",
                   "widgetType": "heading",
                   "settings": {
@@ -66,9 +65,8 @@
                   },
                   "elements": []
                 },
-
                 {
-                  "id": "ab001H01",
+                  "id": "ab1h0001",
                   "elType": "widget",
                   "widgetType": "heading",
                   "settings": {
@@ -86,9 +84,8 @@
                   },
                   "elements": []
                 },
-
                 {
-                  "id": "ab001T01",
+                  "id": "ab1t0001",
                   "elType": "widget",
                   "widgetType": "text-editor",
                   "settings": {
@@ -101,9 +98,8 @@
                   },
                   "elements": []
                 },
-
                 {
-                  "id": "ab001T02",
+                  "id": "ab1t0002",
                   "elType": "widget",
                   "widgetType": "text-editor",
                   "settings": {
@@ -116,9 +112,8 @@
                   },
                   "elements": []
                 },
-
                 {
-                  "id": "ab001B01",
+                  "id": "ab1b0001",
                   "elType": "widget",
                   "widgetType": "button",
                   "settings": {
@@ -139,12 +134,11 @@
                   },
                   "elements": []
                 }
-
               ]
             },
 
             {
-              "id": "ab001R01",
+              "id": "ab1s0004",
               "elType": "container",
               "isInner": true,
               "settings": {
@@ -156,16 +150,15 @@
                 "width_mobile": { "unit": "%", "size": 100 }
               },
               "elements": [
-
                 {
-                  "id": "ab001IMG",
+                  "id": "ab1img001",
                   "elType": "widget",
                   "widgetType": "image",
                   "settings": {
                     "image": {
                       "url": "YOUR_ABOUT_IMAGE_URL",
                       "id": "",
-                      "alt": "H2H Dating team — building America's most genuine free dating platform",
+                      "alt": "H2H Dating — building America's most genuine free dating platform",
                       "source": "library"
                     },
                     "image_size": "full",
@@ -174,9 +167,8 @@
                   },
                   "elements": []
                 },
-
                 {
-                  "id": "ab001STA",
+                  "id": "ab1sta001",
                   "elType": "container",
                   "isInner": true,
                   "settings": {
@@ -186,7 +178,7 @@
                   },
                   "elements": [
                     {
-                      "id": "ab001S1",
+                      "id": "ab1sc001",
                       "elType": "container",
                       "isInner": true,
                       "settings": {
@@ -202,7 +194,7 @@
                       },
                       "elements": [
                         {
-                          "id": "ab001SN1",
+                          "id": "ab1sn001",
                           "elType": "widget",
                           "widgetType": "counter",
                           "settings": {
@@ -230,7 +222,7 @@
                       ]
                     },
                     {
-                      "id": "ab001S2",
+                      "id": "ab1sc002",
                       "elType": "container",
                       "isInner": true,
                       "settings": {
@@ -246,7 +238,7 @@
                       },
                       "elements": [
                         {
-                          "id": "ab001SN2",
+                          "id": "ab1sn002",
                           "elType": "widget",
                           "widgetType": "counter",
                           "settings": {
@@ -275,457 +267,179 @@
                     }
                   ]
                 }
-
               ]
             }
 
           ]
-        },
+        }
+      ]
+    },
 
+    {
+      "id": "ab2s0001",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "flex_direction": "column",
+        "content_width": "full",
+        "background_background": "classic",
+        "background_color": "#000000",
+        "padding": { "unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": false }
+      },
+      "elements": [
         {
-          "id": "ab002000",
+          "id": "ab2s0002",
           "elType": "container",
           "isInner": true,
           "settings": {
             "flex_direction": "column",
-            "content_width": "full",
-            "background_background": "classic",
-            "background_color": "#000000",
-            "padding": { "unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": false }
+            "align_items": "center",
+            "content_width": "boxed",
+            "width": { "unit": "px", "size": 1280 },
+            "padding": { "unit": "px", "top": "80", "right": "24", "bottom": "80", "left": "24", "isLinked": false },
+            "padding_tablet": { "unit": "px", "top": "60", "right": "20", "bottom": "60", "left": "20", "isLinked": false },
+            "padding_mobile": { "unit": "px", "top": "48", "right": "16", "bottom": "48", "left": "16", "isLinked": false },
+            "flex_gap": { "unit": "px", "size": 52 }
           },
           "elements": [
+
             {
-              "id": "ab002INN",
+              "id": "ab2hdr01",
               "elType": "container",
               "isInner": true,
               "settings": {
                 "flex_direction": "column",
                 "align_items": "center",
-                "content_width": "boxed",
-                "width": { "unit": "px", "size": 1280 },
-                "padding": { "unit": "px", "top": "80", "right": "24", "bottom": "80", "left": "24", "isLinked": false },
-                "padding_tablet": { "unit": "px", "top": "60", "right": "20", "bottom": "60", "left": "20", "isLinked": false },
-                "padding_mobile": { "unit": "px", "top": "48", "right": "16", "bottom": "48", "left": "16", "isLinked": false },
-                "flex_gap": { "unit": "px", "size": 52 }
+                "flex_gap": { "unit": "px", "size": 16 },
+                "width": { "unit": "px", "size": 640 },
+                "width_mobile": { "unit": "%", "size": 100 }
               },
               "elements": [
-
                 {
-                  "id": "ab002HDR",
-                  "elType": "container",
-                  "isInner": true,
+                  "id": "ab2e0001",
+                  "elType": "widget",
+                  "widgetType": "heading",
                   "settings": {
-                    "flex_direction": "column",
-                    "align_items": "center",
-                    "flex_gap": { "unit": "px", "size": 16 },
-                    "width": { "unit": "px", "size": 640 },
-                    "width_mobile": { "unit": "%", "size": 100 }
+                    "title": "Our Core Values",
+                    "header_size": "h6",
+                    "title_color": "#BE0002",
+                    "align": "center",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Poppins",
+                    "typography_font_size": { "unit": "px", "size": 13 },
+                    "typography_font_weight": "700",
+                    "typography_letter_spacing": { "unit": "em", "size": 0.12 },
+                    "typography_text_transform": "uppercase"
                   },
-                  "elements": [
-                    {
-                      "id": "ab002E01",
-                      "elType": "widget",
-                      "widgetType": "heading",
-                      "settings": {
-                        "title": "Our Core Values",
-                        "header_size": "h6",
-                        "title_color": "#BE0002",
-                        "align": "center",
-                        "typography_typography": "custom",
-                        "typography_font_family": "Poppins",
-                        "typography_font_size": { "unit": "px", "size": 13 },
-                        "typography_font_weight": "700",
-                        "typography_letter_spacing": { "unit": "em", "size": 0.12 },
-                        "typography_text_transform": "uppercase"
-                      },
-                      "elements": []
-                    },
-                    {
-                      "id": "ab002H01",
-                      "elType": "widget",
-                      "widgetType": "heading",
-                      "settings": {
-                        "title": "What We Stand For",
-                        "header_size": "h2",
-                        "title_color": "#FFFFFF",
-                        "align": "center",
-                        "typography_typography": "custom",
-                        "typography_font_family": "Poppins",
-                        "typography_font_size": { "unit": "px", "size": 40 },
-                        "typography_font_size_tablet": { "unit": "px", "size": 32 },
-                        "typography_font_size_mobile": { "unit": "px", "size": 26 },
-                        "typography_font_weight": "700",
-                        "typography_line_height": { "unit": "em", "size": 1.2 }
-                      },
-                      "elements": []
-                    },
-                    {
-                      "id": "ab002P01",
-                      "elType": "widget",
-                      "widgetType": "text-editor",
-                      "settings": {
-                        "editor": "<p>Every decision we make at H2H Dating comes back to one question: is this good for our members?</p>",
-                        "text_color": "#888888",
-                        "typography_typography": "custom",
-                        "typography_font_family": "Inter",
-                        "typography_font_size": { "unit": "px", "size": 17 },
-                        "align": "center"
-                      },
-                      "elements": []
-                    }
-                  ]
+                  "elements": []
                 },
-
                 {
-                  "id": "ab002GRD",
-                  "elType": "container",
-                  "isInner": true,
+                  "id": "ab2h0001",
+                  "elType": "widget",
+                  "widgetType": "heading",
                   "settings": {
-                    "flex_direction": "row",
-                    "align_items": "stretch",
-                    "flex_wrap": "wrap",
-                    "flex_gap": { "unit": "px", "size": 24 },
-                    "flex_direction_mobile": "column"
+                    "title": "What We Stand For",
+                    "header_size": "h2",
+                    "title_color": "#FFFFFF",
+                    "align": "center",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Poppins",
+                    "typography_font_size": { "unit": "px", "size": 40 },
+                    "typography_font_size_tablet": { "unit": "px", "size": 32 },
+                    "typography_font_size_mobile": { "unit": "px", "size": 26 },
+                    "typography_font_weight": "700",
+                    "typography_line_height": { "unit": "em", "size": 1.2 }
                   },
-                  "elements": [
-
-                    {
-                      "id": "ab002C01",
-                      "elType": "container",
-                      "isInner": true,
-                      "settings": {
-                        "flex_direction": "column",
-                        "flex_gap": { "unit": "px", "size": 20 },
-                        "width": { "unit": "calc", "string": "calc(25% - 18px)" },
-                        "width_tablet": { "unit": "calc", "string": "calc(50% - 12px)" },
-                        "width_mobile": { "unit": "%", "size": 100 },
-                        "background_background": "classic",
-                        "background_color": "#111111",
-                        "border_radius": { "unit": "px", "top": "20", "right": "20", "bottom": "20", "left": "20", "isLinked": true },
-                        "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true },
-                        "border_color": "#222222",
-                        "padding": { "unit": "px", "top": "36", "right": "32", "bottom": "36", "left": "32", "isLinked": false },
-                        "custom_css": "border-top: 4px solid #BE0002;"
-                      },
-                      "elements": [
-                        {
-                          "id": "ab002I01",
-                          "elType": "widget",
-                          "widgetType": "icon",
-                          "settings": {
-                            "selected_icon": { "value": "fas fa-hand-holding-heart", "library": "fa-solid" },
-                            "size": { "unit": "px", "size": 36 },
-                            "primary_color": "#BE0002",
-                            "view": "default"
-                          },
-                          "elements": []
-                        },
-                        {
-                          "id": "ab002V1H",
-                          "elType": "widget",
-                          "widgetType": "heading",
-                          "settings": {
-                            "title": "Radical Honesty",
-                            "header_size": "h3",
-                            "title_color": "#FFFFFF",
-                            "typography_typography": "custom",
-                            "typography_font_family": "Poppins",
-                            "typography_font_size": { "unit": "px", "size": 20 },
-                            "typography_font_weight": "700",
-                            "typography_line_height": { "unit": "em", "size": 1.3 }
-                          },
-                          "elements": []
-                        },
-                        {
-                          "id": "ab002V1T",
-                          "elType": "widget",
-                          "widgetType": "text-editor",
-                          "settings": {
-                            "editor": "<p>We tell you exactly what we are: free. No hidden fees, no bait-and-switch premium features, no surprise charges. Ever.</p>",
-                            "text_color": "#888888",
-                            "typography_typography": "custom",
-                            "typography_font_family": "Inter",
-                            "typography_font_size": { "unit": "px", "size": 15 },
-                            "typography_line_height": { "unit": "em", "size": 1.7 }
-                          },
-                          "elements": []
-                        }
-                      ]
-                    },
-
-                    {
-                      "id": "ab002C02",
-                      "elType": "container",
-                      "isInner": true,
-                      "settings": {
-                        "flex_direction": "column",
-                        "flex_gap": { "unit": "px", "size": 20 },
-                        "width": { "unit": "calc", "string": "calc(25% - 18px)" },
-                        "width_tablet": { "unit": "calc", "string": "calc(50% - 12px)" },
-                        "width_mobile": { "unit": "%", "size": 100 },
-                        "background_background": "classic",
-                        "background_color": "#BE0002",
-                        "border_radius": { "unit": "px", "top": "20", "right": "20", "bottom": "20", "left": "20", "isLinked": true },
-                        "padding": { "unit": "px", "top": "36", "right": "32", "bottom": "36", "left": "32", "isLinked": false },
-                        "box_shadow_box_shadow_type": "yes",
-                        "box_shadow_box_shadow": { "horizontal": 0, "vertical": 16, "blur": 48, "spread": 0, "color": "rgba(190,0,2,0.3)" }
-                      },
-                      "elements": [
-                        {
-                          "id": "ab002I02",
-                          "elType": "widget",
-                          "widgetType": "icon",
-                          "settings": {
-                            "selected_icon": { "value": "fas fa-users", "library": "fa-solid" },
-                            "size": { "unit": "px", "size": 36 },
-                            "primary_color": "#E5C162",
-                            "view": "default"
-                          },
-                          "elements": []
-                        },
-                        {
-                          "id": "ab002V2H",
-                          "elType": "widget",
-                          "widgetType": "heading",
-                          "settings": {
-                            "title": "People First",
-                            "header_size": "h3",
-                            "title_color": "#FFFFFF",
-                            "typography_typography": "custom",
-                            "typography_font_family": "Poppins",
-                            "typography_font_size": { "unit": "px", "size": 20 },
-                            "typography_font_weight": "700",
-                            "typography_line_height": { "unit": "em", "size": 1.3 }
-                          },
-                          "elements": []
-                        },
-                        {
-                          "id": "ab002V2T",
-                          "elType": "widget",
-                          "widgetType": "text-editor",
-                          "settings": {
-                            "editor": "<p>We manually verify every single profile. Real humans reviewing real people — because your safety and trust matter more than our convenience.</p>",
-                            "text_color": "rgba(255,255,255,0.85)",
-                            "typography_typography": "custom",
-                            "typography_font_family": "Inter",
-                            "typography_font_size": { "unit": "px", "size": 15 },
-                            "typography_line_height": { "unit": "em", "size": 1.7 }
-                          },
-                          "elements": []
-                        }
-                      ]
-                    },
-
-                    {
-                      "id": "ab002C03",
-                      "elType": "container",
-                      "isInner": true,
-                      "settings": {
-                        "flex_direction": "column",
-                        "flex_gap": { "unit": "px", "size": 20 },
-                        "width": { "unit": "calc", "string": "calc(25% - 18px)" },
-                        "width_tablet": { "unit": "calc", "string": "calc(50% - 12px)" },
-                        "width_mobile": { "unit": "%", "size": 100 },
-                        "background_background": "classic",
-                        "background_color": "#111111",
-                        "border_radius": { "unit": "px", "top": "20", "right": "20", "bottom": "20", "left": "20", "isLinked": true },
-                        "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true },
-                        "border_color": "#222222",
-                        "padding": { "unit": "px", "top": "36", "right": "32", "bottom": "36", "left": "32", "isLinked": false },
-                        "custom_css": "border-top: 4px solid #E5C162;"
-                      },
-                      "elements": [
-                        {
-                          "id": "ab002I03",
-                          "elType": "widget",
-                          "widgetType": "icon",
-                          "settings": {
-                            "selected_icon": { "value": "fas fa-shield-alt", "library": "fa-solid" },
-                            "size": { "unit": "px", "size": 36 },
-                            "primary_color": "#E5C162",
-                            "view": "default"
-                          },
-                          "elements": []
-                        },
-                        {
-                          "id": "ab002V3H",
-                          "elType": "widget",
-                          "widgetType": "heading",
-                          "settings": {
-                            "title": "Safety Always",
-                            "header_size": "h3",
-                            "title_color": "#E5C162",
-                            "typography_typography": "custom",
-                            "typography_font_family": "Poppins",
-                            "typography_font_size": { "unit": "px", "size": 20 },
-                            "typography_font_weight": "700",
-                            "typography_line_height": { "unit": "em", "size": 1.3 }
-                          },
-                          "elements": []
-                        },
-                        {
-                          "id": "ab002V3T",
-                          "elType": "widget",
-                          "widgetType": "text-editor",
-                          "settings": {
-                            "editor": "<p>No bots. No catfishing. No scammers. Our human verification and community reporting keep H2H Dating a safe space for genuine connections.</p>",
-                            "text_color": "#888888",
-                            "typography_typography": "custom",
-                            "typography_font_family": "Inter",
-                            "typography_font_size": { "unit": "px", "size": 15 },
-                            "typography_line_height": { "unit": "em", "size": 1.7 }
-                          },
-                          "elements": []
-                        }
-                      ]
-                    },
-
-                    {
-                      "id": "ab002C04",
-                      "elType": "container",
-                      "isInner": true,
-                      "settings": {
-                        "flex_direction": "column",
-                        "flex_gap": { "unit": "px", "size": 20 },
-                        "width": { "unit": "calc", "string": "calc(25% - 18px)" },
-                        "width_tablet": { "unit": "calc", "string": "calc(50% - 12px)" },
-                        "width_mobile": { "unit": "%", "size": 100 },
-                        "background_background": "classic",
-                        "background_color": "#111111",
-                        "border_radius": { "unit": "px", "top": "20", "right": "20", "bottom": "20", "left": "20", "isLinked": true },
-                        "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true },
-                        "border_color": "#222222",
-                        "padding": { "unit": "px", "top": "36", "right": "32", "bottom": "36", "left": "32", "isLinked": false },
-                        "custom_css": "border-top: 4px solid #BE0002;"
-                      },
-                      "elements": [
-                        {
-                          "id": "ab002I04",
-                          "elType": "widget",
-                          "widgetType": "icon",
-                          "settings": {
-                            "selected_icon": { "value": "fas fa-infinity", "library": "fa-solid" },
-                            "size": { "unit": "px", "size": 36 },
-                            "primary_color": "#BE0002",
-                            "view": "default"
-                          },
-                          "elements": []
-                        },
-                        {
-                          "id": "ab002V4H",
-                          "elType": "widget",
-                          "widgetType": "heading",
-                          "settings": {
-                            "title": "Free Forever",
-                            "header_size": "h3",
-                            "title_color": "#FFFFFF",
-                            "typography_typography": "custom",
-                            "typography_font_family": "Poppins",
-                            "typography_font_size": { "unit": "px", "size": 20 },
-                            "typography_font_weight": "700",
-                            "typography_line_height": { "unit": "em", "size": 1.3 }
-                          },
-                          "elements": []
-                        },
-                        {
-                          "id": "ab002V4T",
-                          "elType": "widget",
-                          "widgetType": "text-editor",
-                          "settings": {
-                            "editor": "<p>Free isn't a promotion. It's our promise. H2H Dating will always be 100% free. That's not a tagline — it's the foundation our platform is built on.</p>",
-                            "text_color": "#888888",
-                            "typography_typography": "custom",
-                            "typography_font_family": "Inter",
-                            "typography_font_size": { "unit": "px", "size": 15 },
-                            "typography_line_height": { "unit": "em", "size": 1.7 }
-                          },
-                          "elements": []
-                        }
-                      ]
-                    }
-
-                  ]
+                  "elements": []
+                },
+                {
+                  "id": "ab2p0001",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>Every decision we make at H2H Dating comes back to one question: is this good for our members?</p>",
+                    "text_color": "#888888",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Inter",
+                    "typography_font_size": { "unit": "px", "size": 17 },
+                    "align": "center"
+                  },
+                  "elements": []
                 }
-
               ]
-            }
-          ]
-        },
+            },
 
-        {
-          "id": "ab003000",
-          "elType": "container",
-          "isInner": true,
-          "settings": {
-            "flex_direction": "row",
-            "align_items": "center",
-            "content_width": "full",
-            "background_background": "classic",
-            "background_color": "#F7F7F7",
-            "padding": { "unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": false }
-          },
-          "elements": [
             {
-              "id": "ab003INN",
+              "id": "ab2grd01",
               "elType": "container",
               "isInner": true,
               "settings": {
                 "flex_direction": "row",
-                "align_items": "center",
-                "justify_content": "space-between",
-                "content_width": "boxed",
-                "width": { "unit": "px", "size": 1280 },
-                "padding": { "unit": "px", "top": "64", "right": "24", "bottom": "64", "left": "24", "isLinked": false },
-                "padding_tablet": { "unit": "px", "top": "48", "right": "20", "bottom": "48", "left": "20", "isLinked": false },
-                "padding_mobile": { "unit": "px", "top": "48", "right": "16", "bottom": "48", "left": "16", "isLinked": false },
-                "flex_gap": { "unit": "px", "size": 40 },
+                "align_items": "stretch",
                 "flex_wrap": "wrap",
+                "flex_gap": { "unit": "px", "size": 24 },
                 "flex_direction_mobile": "column"
               },
               "elements": [
 
                 {
-                  "id": "ab003TXT",
+                  "id": "ab2c0001",
                   "elType": "container",
                   "isInner": true,
                   "settings": {
                     "flex_direction": "column",
-                    "align_items": "flex-start",
-                    "flex_gap": { "unit": "px", "size": 12 },
-                    "width": { "unit": "%", "size": 60 },
-                    "width_tablet": { "unit": "%", "size": 100 },
-                    "width_mobile": { "unit": "%", "size": 100 }
+                    "flex_gap": { "unit": "px", "size": 20 },
+                    "width": { "unit": "calc", "string": "calc(25% - 18px)" },
+                    "width_tablet": { "unit": "calc", "string": "calc(50% - 12px)" },
+                    "width_mobile": { "unit": "%", "size": 100 },
+                    "background_background": "classic",
+                    "background_color": "#111111",
+                    "border_radius": { "unit": "px", "top": "20", "right": "20", "bottom": "20", "left": "20", "isLinked": true },
+                    "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true },
+                    "border_color": "#222222",
+                    "padding": { "unit": "px", "top": "36", "right": "32", "bottom": "36", "left": "32", "isLinked": false },
+                    "custom_css": "border-top: 4px solid #BE0002;"
                   },
                   "elements": [
                     {
-                      "id": "ab003H01",
+                      "id": "ab2i0001",
+                      "elType": "widget",
+                      "widgetType": "icon",
+                      "settings": {
+                        "selected_icon": { "value": "fas fa-hand-holding-heart", "library": "fa-solid" },
+                        "size": { "unit": "px", "size": 36 },
+                        "primary_color": "#BE0002",
+                        "view": "default"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "ab2vh001",
                       "elType": "widget",
                       "widgetType": "heading",
                       "settings": {
-                        "title": "Ready to find your person?",
+                        "title": "Radical Honesty",
                         "header_size": "h3",
-                        "title_color": "#000000",
-                        "align": "left",
+                        "title_color": "#FFFFFF",
                         "typography_typography": "custom",
                         "typography_font_family": "Poppins",
-                        "typography_font_size": { "unit": "px", "size": 30 },
-                        "typography_font_size_mobile": { "unit": "px", "size": 24 },
+                        "typography_font_size": { "unit": "px", "size": 20 },
                         "typography_font_weight": "700",
                         "typography_line_height": { "unit": "em", "size": 1.3 }
                       },
                       "elements": []
                     },
                     {
-                      "id": "ab003P01",
+                      "id": "ab2vt001",
                       "elType": "widget",
                       "widgetType": "text-editor",
                       "settings": {
-                        "editor": "<p>Join 50,000+ verified Americans already using H2H Dating. It's completely free — now and always.</p>",
-                        "text_color": "#666666",
+                        "editor": "<p>We tell you exactly what we are: free. No hidden fees, no bait-and-switch premium features, no surprise charges. Ever.</p>",
+                        "text_color": "#888888",
                         "typography_typography": "custom",
                         "typography_font_family": "Inter",
-                        "typography_font_size": { "unit": "px", "size": 17 },
-                        "typography_line_height": { "unit": "em", "size": 1.6 }
+                        "typography_font_size": { "unit": "px", "size": 15 },
+                        "typography_line_height": { "unit": "em", "size": 1.7 }
                       },
                       "elements": []
                     }
@@ -733,58 +447,190 @@
                 },
 
                 {
-                  "id": "ab003BTN",
+                  "id": "ab2c0002",
                   "elType": "container",
                   "isInner": true,
                   "settings": {
-                    "flex_direction": "row",
-                    "align_items": "center",
-                    "flex_gap": { "unit": "px", "size": 16 },
-                    "flex_wrap": "wrap"
+                    "flex_direction": "column",
+                    "flex_gap": { "unit": "px", "size": 20 },
+                    "width": { "unit": "calc", "string": "calc(25% - 18px)" },
+                    "width_tablet": { "unit": "calc", "string": "calc(50% - 12px)" },
+                    "width_mobile": { "unit": "%", "size": 100 },
+                    "background_background": "classic",
+                    "background_color": "#BE0002",
+                    "border_radius": { "unit": "px", "top": "20", "right": "20", "bottom": "20", "left": "20", "isLinked": true },
+                    "padding": { "unit": "px", "top": "36", "right": "32", "bottom": "36", "left": "32", "isLinked": false },
+                    "box_shadow_box_shadow_type": "yes",
+                    "box_shadow_box_shadow": { "horizontal": 0, "vertical": 16, "blur": 48, "spread": 0, "color": "rgba(190,0,2,0.3)" }
                   },
                   "elements": [
                     {
-                      "id": "ab003B01",
+                      "id": "ab2i0002",
                       "elType": "widget",
-                      "widgetType": "button",
+                      "widgetType": "icon",
                       "settings": {
-                        "text": "Create Free Profile",
-                        "link": { "url": "/register/", "is_external": false, "nofollow": false },
-                        "background_color": "#BE0002",
-                        "button_text_color": "#E5C162",
-                        "button_text_color_hover": "#FFFFFF",
-                        "background_color_hover": "#9A0002",
-                        "border_width": { "unit": "px", "top": "2", "right": "2", "bottom": "2", "left": "2", "isLinked": true },
-                        "border_color": "#E5C162",
-                        "border_radius": { "unit": "px", "top": "100", "right": "100", "bottom": "100", "left": "100", "isLinked": true },
-                        "typography_typography": "custom",
-                        "typography_font_family": "Poppins",
-                        "typography_font_size": { "unit": "px", "size": 16 },
-                        "typography_font_weight": "700",
-                        "padding": { "unit": "px", "top": "15", "right": "36", "bottom": "15", "left": "36", "isLinked": false }
+                        "selected_icon": { "value": "fas fa-users", "library": "fa-solid" },
+                        "size": { "unit": "px", "size": 36 },
+                        "primary_color": "#E5C162",
+                        "view": "default"
                       },
                       "elements": []
                     },
                     {
-                      "id": "ab003B02",
+                      "id": "ab2vh002",
                       "elType": "widget",
-                      "widgetType": "button",
+                      "widgetType": "heading",
                       "settings": {
-                        "text": "Learn How It Works",
-                        "link": { "url": "/how-it-works/", "is_external": false, "nofollow": false },
-                        "background_color": "transparent",
-                        "button_text_color": "#000000",
-                        "button_text_color_hover": "#BE0002",
-                        "background_color_hover": "transparent",
-                        "border_width": { "unit": "px", "top": "2", "right": "2", "bottom": "2", "left": "2", "isLinked": true },
-                        "border_color": "#CCCCCC",
-                        "border_color_hover": "#BE0002",
-                        "border_radius": { "unit": "px", "top": "100", "right": "100", "bottom": "100", "left": "100", "isLinked": true },
+                        "title": "People First",
+                        "header_size": "h3",
+                        "title_color": "#FFFFFF",
                         "typography_typography": "custom",
                         "typography_font_family": "Poppins",
-                        "typography_font_size": { "unit": "px", "size": 16 },
-                        "typography_font_weight": "600",
-                        "padding": { "unit": "px", "top": "15", "right": "36", "bottom": "15", "left": "36", "isLinked": false }
+                        "typography_font_size": { "unit": "px", "size": 20 },
+                        "typography_font_weight": "700",
+                        "typography_line_height": { "unit": "em", "size": 1.3 }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "ab2vt002",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>We manually verify every single profile. Real humans reviewing real people — because your safety and trust matter more than our convenience.</p>",
+                        "text_color": "rgba(255,255,255,0.85)",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Inter",
+                        "typography_font_size": { "unit": "px", "size": 15 },
+                        "typography_line_height": { "unit": "em", "size": 1.7 }
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+
+                {
+                  "id": "ab2c0003",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "flex_direction": "column",
+                    "flex_gap": { "unit": "px", "size": 20 },
+                    "width": { "unit": "calc", "string": "calc(25% - 18px)" },
+                    "width_tablet": { "unit": "calc", "string": "calc(50% - 12px)" },
+                    "width_mobile": { "unit": "%", "size": 100 },
+                    "background_background": "classic",
+                    "background_color": "#111111",
+                    "border_radius": { "unit": "px", "top": "20", "right": "20", "bottom": "20", "left": "20", "isLinked": true },
+                    "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true },
+                    "border_color": "#222222",
+                    "padding": { "unit": "px", "top": "36", "right": "32", "bottom": "36", "left": "32", "isLinked": false },
+                    "custom_css": "border-top: 4px solid #E5C162;"
+                  },
+                  "elements": [
+                    {
+                      "id": "ab2i0003",
+                      "elType": "widget",
+                      "widgetType": "icon",
+                      "settings": {
+                        "selected_icon": { "value": "fas fa-shield-alt", "library": "fa-solid" },
+                        "size": { "unit": "px", "size": 36 },
+                        "primary_color": "#E5C162",
+                        "view": "default"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "ab2vh003",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Safety Always",
+                        "header_size": "h3",
+                        "title_color": "#E5C162",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Poppins",
+                        "typography_font_size": { "unit": "px", "size": 20 },
+                        "typography_font_weight": "700",
+                        "typography_line_height": { "unit": "em", "size": 1.3 }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "ab2vt003",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>No bots. No catfishing. No scammers. Our human verification and community reporting keep H2H Dating a safe space for genuine connections.</p>",
+                        "text_color": "#888888",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Inter",
+                        "typography_font_size": { "unit": "px", "size": 15 },
+                        "typography_line_height": { "unit": "em", "size": 1.7 }
+                      },
+                      "elements": []
+                    }
+                  ]
+                },
+
+                {
+                  "id": "ab2c0004",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "flex_direction": "column",
+                    "flex_gap": { "unit": "px", "size": 20 },
+                    "width": { "unit": "calc", "string": "calc(25% - 18px)" },
+                    "width_tablet": { "unit": "calc", "string": "calc(50% - 12px)" },
+                    "width_mobile": { "unit": "%", "size": 100 },
+                    "background_background": "classic",
+                    "background_color": "#111111",
+                    "border_radius": { "unit": "px", "top": "20", "right": "20", "bottom": "20", "left": "20", "isLinked": true },
+                    "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true },
+                    "border_color": "#222222",
+                    "padding": { "unit": "px", "top": "36", "right": "32", "bottom": "36", "left": "32", "isLinked": false },
+                    "custom_css": "border-top: 4px solid #BE0002;"
+                  },
+                  "elements": [
+                    {
+                      "id": "ab2i0004",
+                      "elType": "widget",
+                      "widgetType": "icon",
+                      "settings": {
+                        "selected_icon": { "value": "fas fa-infinity", "library": "fa-solid" },
+                        "size": { "unit": "px", "size": 36 },
+                        "primary_color": "#BE0002",
+                        "view": "default"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "ab2vh004",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Free Forever",
+                        "header_size": "h3",
+                        "title_color": "#FFFFFF",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Poppins",
+                        "typography_font_size": { "unit": "px", "size": 20 },
+                        "typography_font_weight": "700",
+                        "typography_line_height": { "unit": "em", "size": 1.3 }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "ab2vt004",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>Free isn't a promotion. It's our promise. H2H Dating will always be 100% free. That's not a tagline — it's the foundation our platform is built on.</p>",
+                        "text_color": "#888888",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Inter",
+                        "typography_font_size": { "unit": "px", "size": 15 },
+                        "typography_line_height": { "unit": "em", "size": 1.7 }
                       },
                       "elements": []
                     }
@@ -793,11 +639,750 @@
 
               ]
             }
+
           ]
         }
+      ]
+    },
 
+    {
+      "id": "ab3s0001",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "flex_direction": "column",
+        "content_width": "full",
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "padding": { "unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "ab3s0002",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "flex_direction": "column",
+            "align_items": "center",
+            "content_width": "boxed",
+            "width": { "unit": "px", "size": 1280 },
+            "padding": { "unit": "px", "top": "90", "right": "24", "bottom": "90", "left": "24", "isLinked": false },
+            "padding_tablet": { "unit": "px", "top": "64", "right": "20", "bottom": "64", "left": "20", "isLinked": false },
+            "padding_mobile": { "unit": "px", "top": "48", "right": "16", "bottom": "48", "left": "16", "isLinked": false },
+            "flex_gap": { "unit": "px", "size": 56 }
+          },
+          "elements": [
+
+            {
+              "id": "ab3hdr01",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "flex_direction": "column",
+                "align_items": "center",
+                "flex_gap": { "unit": "px", "size": 16 },
+                "width": { "unit": "px", "size": 680 },
+                "width_mobile": { "unit": "%", "size": 100 }
+              },
+              "elements": [
+                {
+                  "id": "ab3e0001",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Our Journey",
+                    "header_size": "h6",
+                    "title_color": "#BE0002",
+                    "align": "center",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Poppins",
+                    "typography_font_size": { "unit": "px", "size": 13 },
+                    "typography_font_weight": "700",
+                    "typography_letter_spacing": { "unit": "em", "size": 0.12 },
+                    "typography_text_transform": "uppercase"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "ab3h0001",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "How H2H Dating<br>Came to Be",
+                    "header_size": "h2",
+                    "title_color": "#000000",
+                    "align": "center",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Poppins",
+                    "typography_font_size": { "unit": "px", "size": 40 },
+                    "typography_font_size_tablet": { "unit": "px", "size": 32 },
+                    "typography_font_size_mobile": { "unit": "px", "size": 26 },
+                    "typography_font_weight": "700",
+                    "typography_line_height": { "unit": "em", "size": 1.2 }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "ab3p0001",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>Every great platform has an origin story. Ours started with a $29.99 monthly charge and a question: why should love cost this much?</p>",
+                    "text_color": "#666666",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Inter",
+                    "typography_font_size": { "unit": "px", "size": 17 },
+                    "align": "center"
+                  },
+                  "elements": []
+                }
+              ]
+            },
+
+            {
+              "id": "ab3tl001",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "flex_direction": "column",
+                "flex_gap": { "unit": "px", "size": 20 },
+                "width": { "unit": "%", "size": 100 }
+              },
+              "elements": [
+
+                {
+                  "id": "ab3ti001",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "flex_direction": "row",
+                    "align_items": "flex-start",
+                    "flex_gap": { "unit": "px", "size": 32 },
+                    "flex_direction_tablet": "column",
+                    "flex_direction_mobile": "column"
+                  },
+                  "elements": [
+                    {
+                      "id": "ab3ti001L",
+                      "elType": "container",
+                      "isInner": true,
+                      "settings": {
+                        "flex_direction": "column",
+                        "align_items": "center",
+                        "justify_content": "center",
+                        "width": { "unit": "px", "size": 130 },
+                        "width_tablet": { "unit": "%", "size": 100 },
+                        "width_mobile": { "unit": "%", "size": 100 },
+                        "background_background": "classic",
+                        "background_color": "#BE0002",
+                        "border_radius": { "unit": "px", "top": "12", "right": "12", "bottom": "12", "left": "12", "isLinked": true },
+                        "padding": { "unit": "px", "top": "18", "right": "12", "bottom": "18", "left": "12", "isLinked": false }
+                      },
+                      "elements": [
+                        {
+                          "id": "ab3ti001Y",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "settings": {
+                            "title": "2021",
+                            "header_size": "h6",
+                            "title_color": "#E5C162",
+                            "align": "center",
+                            "typography_typography": "custom",
+                            "typography_font_family": "Poppins",
+                            "typography_font_size": { "unit": "px", "size": 16 },
+                            "typography_font_weight": "800"
+                          },
+                          "elements": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "ab3ti001R",
+                      "elType": "container",
+                      "isInner": true,
+                      "settings": {
+                        "flex_direction": "column",
+                        "flex_gap": { "unit": "px", "size": 12 },
+                        "width_tablet": { "unit": "%", "size": 100 },
+                        "width_mobile": { "unit": "%", "size": 100 },
+                        "background_background": "classic",
+                        "background_color": "#F7F7F7",
+                        "border_radius": { "unit": "px", "top": "0", "right": "16", "bottom": "16", "left": "0", "isLinked": false },
+                        "padding": { "unit": "px", "top": "28", "right": "32", "bottom": "28", "left": "32", "isLinked": false },
+                        "custom_css": "border-left: 4px solid #BE0002; flex: 1;"
+                      },
+                      "elements": [
+                        {
+                          "id": "ab3ti001H",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "settings": {
+                            "title": "The Breaking Point",
+                            "header_size": "h4",
+                            "title_color": "#000000",
+                            "typography_typography": "custom",
+                            "typography_font_family": "Poppins",
+                            "typography_font_size": { "unit": "px", "size": 20 },
+                            "typography_font_weight": "700"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "ab3ti001T",
+                          "elType": "widget",
+                          "widgetType": "text-editor",
+                          "settings": {
+                            "editor": "<p>Our founders, frustrated with yet another $29.99 monthly charge just to see who liked their profile, decided: enough. The idea for H2H Dating was born in a moment of genuine frustration — and a genuine desire to fix what was broken.</p>",
+                            "text_color": "#666666",
+                            "typography_typography": "custom",
+                            "typography_font_family": "Inter",
+                            "typography_font_size": { "unit": "px", "size": 16 },
+                            "typography_line_height": { "unit": "em", "size": 1.75 }
+                          },
+                          "elements": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+
+                {
+                  "id": "ab3ti002",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "flex_direction": "row",
+                    "align_items": "flex-start",
+                    "flex_gap": { "unit": "px", "size": 32 },
+                    "flex_direction_tablet": "column",
+                    "flex_direction_mobile": "column"
+                  },
+                  "elements": [
+                    {
+                      "id": "ab3ti002L",
+                      "elType": "container",
+                      "isInner": true,
+                      "settings": {
+                        "flex_direction": "column",
+                        "align_items": "center",
+                        "justify_content": "center",
+                        "width": { "unit": "px", "size": 130 },
+                        "width_tablet": { "unit": "%", "size": 100 },
+                        "width_mobile": { "unit": "%", "size": 100 },
+                        "background_background": "classic",
+                        "background_color": "#000000",
+                        "border_radius": { "unit": "px", "top": "12", "right": "12", "bottom": "12", "left": "12", "isLinked": true },
+                        "padding": { "unit": "px", "top": "18", "right": "12", "bottom": "18", "left": "12", "isLinked": false }
+                      },
+                      "elements": [
+                        {
+                          "id": "ab3ti002Y",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "settings": {
+                            "title": "2022",
+                            "header_size": "h6",
+                            "title_color": "#E5C162",
+                            "align": "center",
+                            "typography_typography": "custom",
+                            "typography_font_family": "Poppins",
+                            "typography_font_size": { "unit": "px", "size": 16 },
+                            "typography_font_weight": "800"
+                          },
+                          "elements": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "ab3ti002R",
+                      "elType": "container",
+                      "isInner": true,
+                      "settings": {
+                        "flex_direction": "column",
+                        "flex_gap": { "unit": "px", "size": 12 },
+                        "width_tablet": { "unit": "%", "size": 100 },
+                        "width_mobile": { "unit": "%", "size": 100 },
+                        "background_background": "classic",
+                        "background_color": "#F7F7F7",
+                        "border_radius": { "unit": "px", "top": "0", "right": "16", "bottom": "16", "left": "0", "isLinked": false },
+                        "padding": { "unit": "px", "top": "28", "right": "32", "bottom": "28", "left": "32", "isLinked": false },
+                        "custom_css": "border-left: 4px solid #000000; flex: 1;"
+                      },
+                      "elements": [
+                        {
+                          "id": "ab3ti002H",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "settings": {
+                            "title": "Building Something Better",
+                            "header_size": "h4",
+                            "title_color": "#000000",
+                            "typography_typography": "custom",
+                            "typography_font_family": "Poppins",
+                            "typography_font_size": { "unit": "px", "size": 20 },
+                            "typography_font_weight": "700"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "ab3ti002T",
+                          "elType": "widget",
+                          "widgetType": "text-editor",
+                          "settings": {
+                            "editor": "<p>18 months of development, zero venture capital, and a simple mission: build the dating platform we always wanted but could never find. No investors telling us to add paywalls. No pressure to monetize trust.</p>",
+                            "text_color": "#666666",
+                            "typography_typography": "custom",
+                            "typography_font_family": "Inter",
+                            "typography_font_size": { "unit": "px", "size": 16 },
+                            "typography_line_height": { "unit": "em", "size": 1.75 }
+                          },
+                          "elements": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+
+                {
+                  "id": "ab3ti003",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "flex_direction": "row",
+                    "align_items": "flex-start",
+                    "flex_gap": { "unit": "px", "size": 32 },
+                    "flex_direction_tablet": "column",
+                    "flex_direction_mobile": "column"
+                  },
+                  "elements": [
+                    {
+                      "id": "ab3ti003L",
+                      "elType": "container",
+                      "isInner": true,
+                      "settings": {
+                        "flex_direction": "column",
+                        "align_items": "center",
+                        "justify_content": "center",
+                        "width": { "unit": "px", "size": 130 },
+                        "width_tablet": { "unit": "%", "size": 100 },
+                        "width_mobile": { "unit": "%", "size": 100 },
+                        "background_background": "classic",
+                        "background_color": "#BE0002",
+                        "border_radius": { "unit": "px", "top": "12", "right": "12", "bottom": "12", "left": "12", "isLinked": true },
+                        "padding": { "unit": "px", "top": "18", "right": "12", "bottom": "18", "left": "12", "isLinked": false }
+                      },
+                      "elements": [
+                        {
+                          "id": "ab3ti003Y",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "settings": {
+                            "title": "Early 2023",
+                            "header_size": "h6",
+                            "title_color": "#E5C162",
+                            "align": "center",
+                            "typography_typography": "custom",
+                            "typography_font_family": "Poppins",
+                            "typography_font_size": { "unit": "px", "size": 14 },
+                            "typography_font_weight": "800"
+                          },
+                          "elements": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "ab3ti003R",
+                      "elType": "container",
+                      "isInner": true,
+                      "settings": {
+                        "flex_direction": "column",
+                        "flex_gap": { "unit": "px", "size": 12 },
+                        "width_tablet": { "unit": "%", "size": 100 },
+                        "width_mobile": { "unit": "%", "size": 100 },
+                        "background_background": "classic",
+                        "background_color": "#F7F7F7",
+                        "border_radius": { "unit": "px", "top": "0", "right": "16", "bottom": "16", "left": "0", "isLinked": false },
+                        "padding": { "unit": "px", "top": "28", "right": "32", "bottom": "28", "left": "32", "isLinked": false },
+                        "custom_css": "border-left: 4px solid #BE0002; flex: 1;"
+                      },
+                      "elements": [
+                        {
+                          "id": "ab3ti003H",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "settings": {
+                            "title": "We Go Live",
+                            "header_size": "h4",
+                            "title_color": "#000000",
+                            "typography_typography": "custom",
+                            "typography_font_family": "Poppins",
+                            "typography_font_size": { "unit": "px", "size": 20 },
+                            "typography_font_weight": "700"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "ab3ti003T",
+                          "elType": "widget",
+                          "widgetType": "text-editor",
+                          "settings": {
+                            "editor": "<p>H2H Dating launches publicly. 1,000 verified members in the first 30 days — all without spending a single dollar on paid advertising. Word of mouth from people who finally found what they were looking for.</p>",
+                            "text_color": "#666666",
+                            "typography_typography": "custom",
+                            "typography_font_family": "Inter",
+                            "typography_font_size": { "unit": "px", "size": 16 },
+                            "typography_line_height": { "unit": "em", "size": 1.75 }
+                          },
+                          "elements": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+
+                {
+                  "id": "ab3ti004",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "flex_direction": "row",
+                    "align_items": "flex-start",
+                    "flex_gap": { "unit": "px", "size": 32 },
+                    "flex_direction_tablet": "column",
+                    "flex_direction_mobile": "column"
+                  },
+                  "elements": [
+                    {
+                      "id": "ab3ti004L",
+                      "elType": "container",
+                      "isInner": true,
+                      "settings": {
+                        "flex_direction": "column",
+                        "align_items": "center",
+                        "justify_content": "center",
+                        "width": { "unit": "px", "size": 130 },
+                        "width_tablet": { "unit": "%", "size": 100 },
+                        "width_mobile": { "unit": "%", "size": 100 },
+                        "background_background": "classic",
+                        "background_color": "#000000",
+                        "border_radius": { "unit": "px", "top": "12", "right": "12", "bottom": "12", "left": "12", "isLinked": true },
+                        "padding": { "unit": "px", "top": "18", "right": "12", "bottom": "18", "left": "12", "isLinked": false }
+                      },
+                      "elements": [
+                        {
+                          "id": "ab3ti004Y",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "settings": {
+                            "title": "Late 2023",
+                            "header_size": "h6",
+                            "title_color": "#E5C162",
+                            "align": "center",
+                            "typography_typography": "custom",
+                            "typography_font_family": "Poppins",
+                            "typography_font_size": { "unit": "px", "size": 14 },
+                            "typography_font_weight": "800"
+                          },
+                          "elements": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "ab3ti004R",
+                      "elType": "container",
+                      "isInner": true,
+                      "settings": {
+                        "flex_direction": "column",
+                        "flex_gap": { "unit": "px", "size": 12 },
+                        "width_tablet": { "unit": "%", "size": 100 },
+                        "width_mobile": { "unit": "%", "size": 100 },
+                        "background_background": "classic",
+                        "background_color": "#F7F7F7",
+                        "border_radius": { "unit": "px", "top": "0", "right": "16", "bottom": "16", "left": "0", "isLinked": false },
+                        "padding": { "unit": "px", "top": "28", "right": "32", "bottom": "28", "left": "32", "isLinked": false },
+                        "custom_css": "border-left: 4px solid #000000; flex: 1;"
+                      },
+                      "elements": [
+                        {
+                          "id": "ab3ti004H",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "settings": {
+                            "title": "Real Couples, Real Results",
+                            "header_size": "h4",
+                            "title_color": "#000000",
+                            "typography_typography": "custom",
+                            "typography_font_family": "Poppins",
+                            "typography_font_size": { "unit": "px", "size": 20 },
+                            "typography_font_weight": "700"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "ab3ti004T",
+                          "elType": "widget",
+                          "widgetType": "text-editor",
+                          "settings": {
+                            "editor": "<p>Our first 1,000 couples connect through H2H. Every single one joined for free. Every single one used full features from day one. No paywall unlocks. No premium tiers. Just real people finding real connection.</p>",
+                            "text_color": "#666666",
+                            "typography_typography": "custom",
+                            "typography_font_family": "Inter",
+                            "typography_font_size": { "unit": "px", "size": 16 },
+                            "typography_line_height": { "unit": "em", "size": 1.75 }
+                          },
+                          "elements": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+
+                {
+                  "id": "ab3ti005",
+                  "elType": "container",
+                  "isInner": true,
+                  "settings": {
+                    "flex_direction": "row",
+                    "align_items": "flex-start",
+                    "flex_gap": { "unit": "px", "size": 32 },
+                    "flex_direction_tablet": "column",
+                    "flex_direction_mobile": "column"
+                  },
+                  "elements": [
+                    {
+                      "id": "ab3ti005L",
+                      "elType": "container",
+                      "isInner": true,
+                      "settings": {
+                        "flex_direction": "column",
+                        "align_items": "center",
+                        "justify_content": "center",
+                        "width": { "unit": "px", "size": 130 },
+                        "width_tablet": { "unit": "%", "size": 100 },
+                        "width_mobile": { "unit": "%", "size": 100 },
+                        "background_background": "classic",
+                        "background_color": "#E5C162",
+                        "border_radius": { "unit": "px", "top": "12", "right": "12", "bottom": "12", "left": "12", "isLinked": true },
+                        "padding": { "unit": "px", "top": "18", "right": "12", "bottom": "18", "left": "12", "isLinked": false }
+                      },
+                      "elements": [
+                        {
+                          "id": "ab3ti005Y",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "settings": {
+                            "title": "Today",
+                            "header_size": "h6",
+                            "title_color": "#000000",
+                            "align": "center",
+                            "typography_typography": "custom",
+                            "typography_font_family": "Poppins",
+                            "typography_font_size": { "unit": "px", "size": 16 },
+                            "typography_font_weight": "800"
+                          },
+                          "elements": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "ab3ti005R",
+                      "elType": "container",
+                      "isInner": true,
+                      "settings": {
+                        "flex_direction": "column",
+                        "flex_gap": { "unit": "px", "size": 12 },
+                        "width_tablet": { "unit": "%", "size": 100 },
+                        "width_mobile": { "unit": "%", "size": 100 },
+                        "background_background": "classic",
+                        "background_color": "#000000",
+                        "border_radius": { "unit": "px", "top": "0", "right": "16", "bottom": "16", "left": "0", "isLinked": false },
+                        "padding": { "unit": "px", "top": "28", "right": "32", "bottom": "28", "left": "32", "isLinked": false },
+                        "custom_css": "border-left: 4px solid #E5C162; flex: 1;"
+                      },
+                      "elements": [
+                        {
+                          "id": "ab3ti005H",
+                          "elType": "widget",
+                          "widgetType": "heading",
+                          "settings": {
+                            "title": "50,000 Strong — and Growing",
+                            "header_size": "h4",
+                            "title_color": "#E5C162",
+                            "typography_typography": "custom",
+                            "typography_font_family": "Poppins",
+                            "typography_font_size": { "unit": "px", "size": 20 },
+                            "typography_font_weight": "700"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "ab3ti005T",
+                          "elType": "widget",
+                          "widgetType": "text-editor",
+                          "settings": {
+                            "editor": "<p>Over 50,000 verified members trust H2H Dating. 12,000+ couples have found real connection here. We're still bootstrapped, still independent, and still 100% free — now and always. This is just the beginning.</p>",
+                            "text_color": "rgba(255,255,255,0.8)",
+                            "typography_typography": "custom",
+                            "typography_font_family": "Inter",
+                            "typography_font_size": { "unit": "px", "size": 16 },
+                            "typography_line_height": { "unit": "em", "size": 1.75 }
+                          },
+                          "elements": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+
+              ]
+            }
+
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "ab4s0001",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "flex_direction": "column",
+        "content_width": "full",
+        "background_background": "classic",
+        "background_color": "#F7F7F7",
+        "padding": { "unit": "px", "top": "0", "right": "0", "bottom": "0", "left": "0", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "ab4s0002",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "flex_direction": "row",
+            "align_items": "center",
+            "justify_content": "space-between",
+            "content_width": "boxed",
+            "width": { "unit": "px", "size": 1280 },
+            "padding": { "unit": "px", "top": "64", "right": "24", "bottom": "64", "left": "24", "isLinked": false },
+            "padding_tablet": { "unit": "px", "top": "48", "right": "20", "bottom": "48", "left": "20", "isLinked": false },
+            "padding_mobile": { "unit": "px", "top": "48", "right": "16", "bottom": "48", "left": "16", "isLinked": false },
+            "flex_gap": { "unit": "px", "size": 40 },
+            "flex_wrap": "wrap",
+            "flex_direction_mobile": "column"
+          },
+          "elements": [
+            {
+              "id": "ab4txt01",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "flex_direction": "column",
+                "align_items": "flex-start",
+                "flex_gap": { "unit": "px", "size": 12 },
+                "width": { "unit": "%", "size": 60 },
+                "width_tablet": { "unit": "%", "size": 100 },
+                "width_mobile": { "unit": "%", "size": 100 }
+              },
+              "elements": [
+                {
+                  "id": "ab4h0001",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Ready to find your person?",
+                    "header_size": "h3",
+                    "title_color": "#000000",
+                    "align": "left",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Poppins",
+                    "typography_font_size": { "unit": "px", "size": 30 },
+                    "typography_font_size_mobile": { "unit": "px", "size": 24 },
+                    "typography_font_weight": "700",
+                    "typography_line_height": { "unit": "em", "size": 1.3 }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "ab4p0001",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>Join 50,000+ verified Americans already using H2H Dating. It's completely free — now and always.</p>",
+                    "text_color": "#666666",
+                    "typography_typography": "custom",
+                    "typography_font_family": "Inter",
+                    "typography_font_size": { "unit": "px", "size": 17 },
+                    "typography_line_height": { "unit": "em", "size": 1.6 }
+                  },
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "ab4btn01",
+              "elType": "container",
+              "isInner": true,
+              "settings": {
+                "flex_direction": "row",
+                "align_items": "center",
+                "flex_gap": { "unit": "px", "size": 16 },
+                "flex_wrap": "wrap"
+              },
+              "elements": [
+                {
+                  "id": "ab4b0001",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Create Free Profile",
+                    "link": { "url": "/register/", "is_external": false, "nofollow": false },
+                    "background_color": "#BE0002",
+                    "button_text_color": "#E5C162",
+                    "button_text_color_hover": "#FFFFFF",
+                    "background_color_hover": "#9A0002",
+                    "border_width": { "unit": "px", "top": "2", "right": "2", "bottom": "2", "left": "2", "isLinked": true },
+                    "border_color": "#E5C162",
+                    "border_radius": { "unit": "px", "top": "100", "right": "100", "bottom": "100", "left": "100", "isLinked": true },
+                    "typography_typography": "custom",
+                    "typography_font_family": "Poppins",
+                    "typography_font_size": { "unit": "px", "size": 16 },
+                    "typography_font_weight": "700",
+                    "padding": { "unit": "px", "top": "15", "right": "36", "bottom": "15", "left": "36", "isLinked": false }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "ab4b0002",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Learn How It Works",
+                    "link": { "url": "/how-it-works/", "is_external": false, "nofollow": false },
+                    "background_color": "transparent",
+                    "button_text_color": "#000000",
+                    "button_text_color_hover": "#BE0002",
+                    "background_color_hover": "transparent",
+                    "border_width": { "unit": "px", "top": "2", "right": "2", "bottom": "2", "left": "2", "isLinked": true },
+                    "border_color": "#CCCCCC",
+                    "border_color_hover": "#BE0002",
+                    "border_radius": { "unit": "px", "top": "100", "right": "100", "bottom": "100", "left": "100", "isLinked": true },
+                    "typography_typography": "custom",
+                    "typography_font_family": "Poppins",
+                    "typography_font_size": { "unit": "px", "size": 16 },
+                    "typography_font_weight": "600",
+                    "padding": { "unit": "px", "top": "15", "right": "36", "bottom": "15", "left": "36", "isLinked": false }
+                  },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        }
       ]
     }
+
   ],
   "page_settings": {}
 }
