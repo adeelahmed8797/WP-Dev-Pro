@@ -1,191 +1,51 @@
 /* ============================================================
-   H2H DATING — UM THEME BRANDING CSS
+   H2H DATING — UM THEME BRANDING CSS (Safe Version)
    Colors: #BE0002 (Red) | #E5C162 (Gold) | #000000 (Black)
    Fonts:  Poppins (headings) | Inter (body)
+   Strategy: Color + font overrides only — no layout changes
    ============================================================ */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
 
 /* ============================================================
-   1. GLOBAL BASE
+   1. GLOBAL FONTS
    ============================================================ */
 
-body {
-    font-family: 'Inter', sans-serif;
-    background-color: #f7f7f7;
-    color: #111111;
+body,
+.um,
+.um-form,
+.um-field,
+.um-field-label,
+.um-field-area {
+    font-family: 'Inter', sans-serif !important;
 }
 
 h1, h2, h3, h4, h5, h6,
-.um h1, .um h2, .um h3, .um h4 {
-    font-family: 'Poppins', sans-serif;
-}
-
-a {
-    color: #BE0002;
-    transition: color 0.2s ease;
-}
-
-a:hover {
-    color: #E5C162;
+.um h1, .um h2, .um h3, .um h4,
+.um-form-title,
+.um-profile-name,
+.um-name {
+    font-family: 'Poppins', sans-serif !important;
 }
 
 /* ============================================================
-   2. LOGIN PAGE
+   2. BUTTONS — Primary (Red + Gold)
    ============================================================ */
 
-body.um-page-login,
-body.page-id-login {
-    background-color: #000000;
-}
-
-.um-page-login .um-outermost,
-body.um-page-login > .um {
-    background: transparent;
-}
-
-.um-login .um-form,
-.um-login.um {
-    background: #111111;
-    border-radius: 16px;
-    border-top: 4px solid #BE0002;
-    box-shadow: 0 24px 64px rgba(0, 0, 0, 0.5);
-    padding: 40px 40px 36px;
-    max-width: 480px;
-    margin: 60px auto;
-}
-
-.um-login .um-col-1 {
-    padding: 0;
-}
-
-/* Login heading */
-.um-login .um-form-title,
-.um-login .um-form h3 {
-    font-family: 'Poppins', sans-serif;
-    color: #FFFFFF;
-    font-size: 26px;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 28px;
-}
-
-/* ============================================================
-   3. REGISTER PAGE
-   ============================================================ */
-
-body.um-page-register {
-    background-color: #000000;
-}
-
-.um-register .um-form,
-.um-register.um {
-    background: #111111;
-    border-radius: 16px;
-    border-top: 4px solid #BE0002;
-    box-shadow: 0 24px 64px rgba(0, 0, 0, 0.5);
-    padding: 40px 40px 36px;
-    max-width: 560px;
-    margin: 60px auto;
-}
-
-.um-register .um-form-title,
-.um-register .um-form h3 {
-    font-family: 'Poppins', sans-serif;
-    color: #FFFFFF;
-    font-size: 26px;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 28px;
-}
-
-/* ============================================================
-   4. FORM FIELDS (Login + Register shared)
-   ============================================================ */
-
-.um .um-field-label label,
-.um .um-field-label .um-field-label-text {
-    font-family: 'Inter', sans-serif;
-    color: rgba(255, 255, 255, 0.7);
-    font-size: 13px;
-    font-weight: 500;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    margin-bottom: 6px;
-}
-
-.um .um-field-area input[type="text"],
-.um .um-field-area input[type="email"],
-.um .um-field-area input[type="password"],
-.um .um-field-area input[type="url"],
-.um .um-field-area input[type="number"],
-.um .um-field-area input[type="tel"],
-.um .um-field-area textarea,
-.um .um-field-area select {
-    background-color: #1a1a1a;
-    border: 1px solid #333333;
-    border-radius: 8px;
-    color: #FFFFFF;
-    font-family: 'Inter', sans-serif;
-    font-size: 15px;
-    padding: 13px 16px;
-    width: 100%;
-    transition: border-color 0.2s ease, box-shadow 0.2s ease;
-    outline: none;
-    -webkit-appearance: none;
-}
-
-.um .um-field-area input:focus,
-.um .um-field-area textarea:focus,
-.um .um-field-area select:focus {
-    border-color: #BE0002;
-    box-shadow: 0 0 0 3px rgba(190, 0, 2, 0.15);
-}
-
-.um .um-field-area input::placeholder,
-.um .um-field-area textarea::placeholder {
-    color: rgba(255, 255, 255, 0.3);
-}
-
-/* Password show/hide icon */
-.um .um-field-area .um-field-password-icon {
-    color: rgba(255, 255, 255, 0.4);
-}
-
-/* Select dropdown */
-.um .um-field-area select option {
-    background-color: #1a1a1a;
-    color: #FFFFFF;
-}
-
-/* Checkboxes and Radios */
-.um .um-field-checkbox input[type="checkbox"]:checked + span::before,
-.um .um-field-radio input[type="radio"]:checked + span::before {
-    background-color: #BE0002;
-    border-color: #BE0002;
-}
-
-/* ============================================================
-   5. BUTTONS
-   ============================================================ */
-
-/* Primary submit button */
 .um .um-button,
 .um input[type="submit"],
-.um-button,
-a.um-button {
+a.um-button,
+button.um-button {
     background-color: #BE0002 !important;
     color: #E5C162 !important;
-    font-family: 'Poppins', sans-serif !important;
-    font-size: 16px !important;
-    font-weight: 700 !important;
     border: 2px solid #E5C162 !important;
     border-radius: 100px !important;
-    padding: 14px 36px !important;
-    width: 100%;
-    cursor: pointer;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 700 !important;
+    font-size: 15px !important;
+    letter-spacing: 0.02em !important;
     transition: background-color 0.2s ease, color 0.2s ease !important;
-    letter-spacing: 0.01em;
+    cursor: pointer !important;
 }
 
 .um .um-button:hover,
@@ -195,107 +55,134 @@ a.um-button:hover {
     color: #FFFFFF !important;
 }
 
-/* Secondary / alt button */
+/* Alt / secondary button */
 .um .um-alt-button,
 a.um-alt-button {
     background-color: transparent !important;
-    color: #E5C162 !important;
-    border: 2px solid #E5C162 !important;
+    color: #BE0002 !important;
+    border: 2px solid #BE0002 !important;
     border-radius: 100px !important;
     font-family: 'Poppins', sans-serif !important;
     font-weight: 600 !important;
-    padding: 12px 28px !important;
     transition: all 0.2s ease !important;
 }
 
 .um .um-alt-button:hover,
 a.um-alt-button:hover {
-    background-color: #E5C162 !important;
-    color: #000000 !important;
-}
-
-/* ============================================================
-   6. FORM LINKS (Forgot Password, Login link, etc.)
-   ============================================================ */
-
-.um .um-login-forgot,
-.um .um-link,
-.um a.um-link,
-.um .um-form a {
-    color: #E5C162 !important;
-    font-family: 'Inter', sans-serif;
-    font-size: 13px;
-    text-decoration: none;
-}
-
-.um .um-login-forgot:hover,
-.um .um-link:hover,
-.um .um-form a:hover {
+    background-color: #BE0002 !important;
     color: #FFFFFF !important;
-    text-decoration: underline;
 }
 
 /* ============================================================
-   7. PROFILE PAGE
+   3. FORM INPUTS — Focus State
    ============================================================ */
 
-.um-profile .um-profile-body {
-    background-color: #FFFFFF;
+.um .um-field-area input[type="text"],
+.um .um-field-area input[type="email"],
+.um .um-field-area input[type="password"],
+.um .um-field-area input[type="url"],
+.um .um-field-area input[type="number"],
+.um .um-field-area input[type="tel"],
+.um .um-field-area textarea,
+.um .um-field-area select {
+    border-color: #dddddd !important;
+    border-radius: 8px !important;
+    font-family: 'Inter', sans-serif !important;
+    font-size: 15px !important;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
+    outline: none !important;
 }
 
-/* Cover area */
-.um .um-cover {
-    background-color: #111111;
-    border-bottom: 3px solid #BE0002;
+.um .um-field-area input[type="text"]:focus,
+.um .um-field-area input[type="email"]:focus,
+.um .um-field-area input[type="password"]:focus,
+.um .um-field-area input[type="url"]:focus,
+.um .um-field-area input[type="number"]:focus,
+.um .um-field-area input[type="tel"]:focus,
+.um .um-field-area textarea:focus,
+.um .um-field-area select:focus {
+    border-color: #BE0002 !important;
+    box-shadow: 0 0 0 3px rgba(190, 0, 2, 0.12) !important;
+    outline: none !important;
 }
 
-.um .um-cover-add,
-.um .um-cover-e {
-    background: rgba(190, 0, 2, 0.7);
-    color: #E5C162;
-    border-radius: 8px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 13px;
-    font-weight: 600;
+/* Field labels */
+.um .um-field-label label,
+.um .um-field-label .um-field-label-text {
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 600 !important;
+    font-size: 13px !important;
+    color: #444444 !important;
 }
 
-/* Profile photo */
-.um .um-profile-photo {
-    border: 4px solid #FFFFFF;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-    border-radius: 50%;
+/* ============================================================
+   4. LINKS
+   ============================================================ */
+
+.um a,
+.um .um-login-forgot,
+.um .um-link {
+    color: #BE0002 !important;
+    transition: color 0.2s ease !important;
+    text-decoration: none !important;
 }
 
-.um .um-profile-photo-overlay {
-    background: rgba(190, 0, 2, 0.7);
-    border-radius: 50%;
+.um a:hover,
+.um .um-login-forgot:hover,
+.um .um-link:hover {
+    color: #9a0002 !important;
 }
 
-/* Profile name */
+/* ============================================================
+   5. PROFILE — TABS
+   ============================================================ */
+
+.um .um-profile-nav-item a {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    color: #555555 !important;
+    transition: color 0.2s ease !important;
+    text-decoration: none !important;
+}
+
+.um .um-profile-nav-item a:hover {
+    color: #BE0002 !important;
+}
+
+.um .um-profile-nav-item.active a,
+.um .um-profile-nav-item.current a {
+    color: #BE0002 !important;
+    font-weight: 700 !important;
+    border-bottom: 3px solid #BE0002 !important;
+}
+
+/* ============================================================
+   6. PROFILE — NAME & META
+   ============================================================ */
+
 .um .um-name a,
 .um .um-name {
-    font-family: 'Poppins', sans-serif;
-    font-size: 26px;
-    font-weight: 700;
-    color: #000000;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 700 !important;
+    color: #000000 !important;
+    text-decoration: none !important;
 }
 
-/* Profile meta (location, age, etc.) */
-.um .um-profile-meta,
-.um .um-meta,
-.um .um-meta-text {
-    font-family: 'Inter', sans-serif;
-    color: #666666;
-    font-size: 14px;
+.um .um-name a:hover {
+    color: #BE0002 !important;
 }
 
-/* Profile header icons (message, friend, etc.) */
+/* ============================================================
+   7. PROFILE — HEADER BUTTONS (Message, Friend, etc.)
+   ============================================================ */
+
 .um .um-profile-headericon a,
 .um-profile-headericon .um-tip {
     background-color: #BE0002 !important;
     color: #E5C162 !important;
-    border-radius: 8px;
-    transition: background-color 0.2s ease;
+    border-radius: 8px !important;
+    transition: background-color 0.2s ease !important;
 }
 
 .um .um-profile-headericon a:hover {
@@ -303,436 +190,154 @@ a.um-alt-button:hover {
     color: #000000 !important;
 }
 
-/* Profile tabs */
-.um .um-profile-nav,
-.um .um-profile-nav-item {
-    border-bottom: 2px solid #eeeeee;
-    font-family: 'Poppins', sans-serif;
-}
-
-.um .um-profile-nav-item a {
-    color: #666666;
-    font-size: 14px;
-    font-weight: 500;
-    padding: 12px 20px;
-    transition: color 0.2s ease;
-    text-decoration: none;
-}
-
-.um .um-profile-nav-item a:hover {
-    color: #BE0002;
-}
-
-.um .um-profile-nav-item.active a,
-.um .um-profile-nav-item.current a {
-    color: #BE0002;
-    border-bottom: 3px solid #BE0002;
-    font-weight: 700;
-}
-
-/* Profile fields */
-.um .um-field-label label {
-    color: #888888;
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-}
-
-.um .um-field-value,
-.um .um-field-area p {
-    font-family: 'Inter', sans-serif;
-    color: #222222;
-    font-size: 15px;
-}
-
-/* Online indicator */
-.um .um-online-icon {
-    background-color: #22c55e;
-    border: 2px solid #FFFFFF;
-}
-
-/* Verified badge */
-.um .um-verified-icon,
-.um-verified {
-    color: #BE0002;
-}
-
 /* ============================================================
-   8. MEMBERS DIRECTORY
+   8. MEMBERS DIRECTORY — CARDS
    ============================================================ */
 
-.um-directory .um-members-grid {
-    background-color: #f7f7f7;
-}
-
-/* Individual member card */
 .um-directory .um-member {
-    background: #FFFFFF;
-    border-radius: 16px;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
-    overflow: hidden;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    border: 1px solid #eeeeee;
+    border-radius: 12px !important;
+    transition: box-shadow 0.2s ease, transform 0.2s ease !important;
+    overflow: hidden !important;
 }
 
 .um-directory .um-member:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 32px rgba(190, 0, 2, 0.12);
-    border-color: #BE0002;
+    box-shadow: 0 8px 32px rgba(190, 0, 2, 0.12) !important;
+    transform: translateY(-3px) !important;
 }
 
-/* Member photo in directory */
-.um-directory .um-member-photo img,
-.um-directory .um-member-photo a {
-    width: 100%;
-    display: block;
-}
-
-/* Member name in card */
 .um-directory .um-member-name a {
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-    color: #000000;
-    text-decoration: none;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 600 !important;
+    color: #000000 !important;
+    text-decoration: none !important;
 }
 
 .um-directory .um-member-name a:hover {
-    color: #BE0002;
-}
-
-/* Member meta in card */
-.um-directory .um-member-meta {
-    font-family: 'Inter', sans-serif;
-    font-size: 13px;
-    color: #888888;
-}
-
-/* Directory search bar */
-.um-directory .um-search-wrapper input[type="text"],
-.um-directory .um-search-field input {
-    background: #FFFFFF;
-    border: 2px solid #dddddd;
-    border-radius: 100px;
-    padding: 12px 20px;
-    font-family: 'Inter', sans-serif;
-    font-size: 15px;
-    color: #111111;
-    transition: border-color 0.2s ease;
-}
-
-.um-directory .um-search-wrapper input:focus,
-.um-directory .um-search-field input:focus {
-    border-color: #BE0002;
-    outline: none;
-}
-
-/* Directory filter/sort buttons */
-.um-directory .um-sort-select,
-.um-directory select {
-    border: 2px solid #dddddd;
-    border-radius: 8px;
-    font-family: 'Inter', sans-serif;
-    padding: 10px 14px;
-    color: #111111;
-    background: #FFFFFF;
+    color: #BE0002 !important;
 }
 
 /* Load more button */
-.um-directory .um-load-more,
-.um-directory #um-load-more {
+.um-directory #um-load-more,
+.um-directory .um-load-more {
     background-color: #BE0002 !important;
     color: #E5C162 !important;
-    font-family: 'Poppins', sans-serif !important;
-    font-weight: 700 !important;
     border: 2px solid #E5C162 !important;
     border-radius: 100px !important;
-    padding: 14px 40px !important;
-    font-size: 15px !important;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 700 !important;
     transition: all 0.2s ease !important;
 }
 
+.um-directory #um-load-more:hover,
 .um-directory .um-load-more:hover {
     background-color: #9a0002 !important;
     color: #FFFFFF !important;
 }
 
 /* ============================================================
-   9. ACCOUNT PAGE
+   9. ACCOUNT PAGE — SIDEBAR TABS
    ============================================================ */
 
-.um-account-page .um-account-side {
-    background: #000000;
-    border-radius: 16px;
-    padding: 24px 0;
-}
-
 .um-account-page .um-account-side-item a {
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    color: rgba(255, 255, 255, 0.7);
-    padding: 12px 24px;
-    display: block;
-    transition: all 0.2s ease;
-    border-left: 3px solid transparent;
-    text-decoration: none;
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    color: #444444 !important;
+    transition: color 0.2s ease !important;
+    text-decoration: none !important;
 }
 
 .um-account-page .um-account-side-item a:hover {
-    color: #E5C162;
-    background: rgba(255, 255, 255, 0.05);
-    border-left-color: #E5C162;
+    color: #BE0002 !important;
 }
 
 .um-account-page .um-account-side-item.current a,
 .um-account-page .um-account-side-item.active a {
-    color: #E5C162;
-    background: rgba(190, 0, 2, 0.2);
-    border-left-color: #BE0002;
-    font-weight: 700;
-}
-
-.um-account-page .um-account-main {
-    background: #FFFFFF;
-    border-radius: 16px;
-    padding: 40px;
-    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
-}
-
-.um-account-page .um-account-tab-title,
-.um-account-page h3 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 22px;
-    font-weight: 700;
-    color: #000000;
-    padding-bottom: 16px;
-    border-bottom: 2px solid #eeeeee;
-    margin-bottom: 28px;
+    color: #BE0002 !important;
+    font-weight: 700 !important;
+    border-left: 3px solid #BE0002 !important;
 }
 
 /* ============================================================
-   10. PASSWORD RESET PAGE
+   10. NOTIFICATIONS
    ============================================================ */
-
-body.um-page-password-reset {
-    background-color: #000000;
-}
-
-.um-password-reset .um-form,
-.um-password-reset.um {
-    background: #111111;
-    border-radius: 16px;
-    border-top: 4px solid #BE0002;
-    box-shadow: 0 24px 64px rgba(0, 0, 0, 0.5);
-    padding: 40px;
-    max-width: 480px;
-    margin: 60px auto;
-}
-
-.um-password-reset .um-form-title {
-    font-family: 'Poppins', sans-serif;
-    color: #FFFFFF;
-    font-size: 24px;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 24px;
-}
-
-/* ============================================================
-   11. UM NOTIFICATIONS
-   ============================================================ */
-
-.um-notifications-icon {
-    color: #BE0002;
-}
 
 .um-notifications-count,
 .um-notification-count {
-    background-color: #BE0002;
-    color: #FFFFFF;
-    font-family: 'Poppins', sans-serif;
-    font-size: 11px;
-    font-weight: 700;
-    border-radius: 100px;
-    padding: 2px 6px;
-}
-
-.um-notifications-list,
-.um-notifications-dropdown {
-    background: #FFFFFF;
-    border-radius: 12px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
-    border: 1px solid #eeeeee;
-    overflow: hidden;
-}
-
-.um-notification-item {
-    padding: 14px 20px;
-    border-bottom: 1px solid #f5f5f5;
-    transition: background 0.15s ease;
-}
-
-.um-notification-item:hover {
-    background: #fef2f2;
+    background-color: #BE0002 !important;
+    color: #FFFFFF !important;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 700 !important;
+    border-radius: 100px !important;
 }
 
 .um-notification-item.unread {
-    background: #fef2f2;
-    border-left: 3px solid #BE0002;
-}
-
-.um-notification-item a {
-    font-family: 'Inter', sans-serif;
-    font-size: 14px;
-    color: #111111;
-    text-decoration: none;
-}
-
-.um-notification-time {
-    font-size: 12px;
-    color: #aaaaaa;
+    border-left: 3px solid #BE0002 !important;
+    background-color: rgba(190, 0, 2, 0.04) !important;
 }
 
 /* ============================================================
-   12. UM FRIENDS
+   11. FRIENDS BUTTONS
    ============================================================ */
 
 .um-friends-btn,
-.um-add-friend,
+a.um-add-friend,
 .um-friend-action {
     background-color: #BE0002 !important;
     color: #E5C162 !important;
     border: 2px solid #E5C162 !important;
     border-radius: 100px !important;
     font-family: 'Poppins', sans-serif !important;
-    font-size: 13px !important;
     font-weight: 600 !important;
-    padding: 8px 20px !important;
     transition: all 0.2s ease !important;
-    cursor: pointer;
 }
 
 .um-friends-btn:hover,
-.um-add-friend:hover {
+a.um-add-friend:hover {
     background-color: #9a0002 !important;
     color: #FFFFFF !important;
 }
 
-.um-friends-btn.um-cancel-friend,
-.um-cancel-friend-request {
-    background-color: transparent !important;
-    color: #888888 !important;
-    border-color: #cccccc !important;
+/* ============================================================
+   12. ALERTS & ERRORS
+   ============================================================ */
+
+.um .um-field-error,
+.um .um-notice {
+    border-left: 4px solid #BE0002 !important;
+    background-color: rgba(190, 0, 2, 0.06) !important;
+    color: #BE0002 !important;
+    border-radius: 6px !important;
+    font-family: 'Inter', sans-serif !important;
+    font-size: 13px !important;
 }
 
 /* ============================================================
-   13. UM ONLINE STATUS
+   13. ONLINE STATUS
    ============================================================ */
 
-.um-online-status .um-online {
-    color: #22c55e;
-    font-family: 'Inter', sans-serif;
-    font-size: 12px;
-    font-weight: 500;
-}
-
-.um-online-status .um-offline {
-    color: #aaaaaa;
-}
-
-/* Online dot in member cards */
-.um-member .um-online-status-icon {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    border: 2px solid #FFFFFF;
-    position: absolute;
-    bottom: 4px;
-    right: 4px;
-}
-
-.um-member .um-online-status-icon.online {
-    background-color: #22c55e;
+.um-online-icon,
+.um-online-status-icon.online {
+    background-color: #22c55e !important;
 }
 
 /* ============================================================
-   14. UM VERIFIED USERS
+   14. VERIFIED BADGE
    ============================================================ */
 
-.um-verified-badge,
-.um-verified-icon {
-    color: #BE0002;
-    font-size: 16px;
-}
-
-.um-profile .um-verified-text {
-    font-family: 'Inter', sans-serif;
-    font-size: 13px;
-    color: #BE0002;
-    font-weight: 600;
+.um-verified-icon,
+span.um-verified {
+    color: #BE0002 !important;
 }
 
 /* ============================================================
-   15. UM USER PHOTOS (Photo Gallery)
+   15. BETTER MESSAGES
    ============================================================ */
-
-.um-photos-grid .um-photo-item {
-    border-radius: 12px;
-    overflow: hidden;
-    transition: transform 0.2s ease;
-}
-
-.um-photos-grid .um-photo-item:hover {
-    transform: scale(1.02);
-}
-
-.um-photos-upload-btn {
-    background-color: #BE0002 !important;
-    color: #E5C162 !important;
-    border-radius: 100px !important;
-    font-family: 'Poppins', sans-serif !important;
-    font-weight: 600 !important;
-    border: 2px solid #E5C162 !important;
-}
-
-/* ============================================================
-   16. UM TERMS & CONDITIONS
-   ============================================================ */
-
-.um-field-type-terms_conditions .um-terms-link {
-    color: #E5C162;
-    font-weight: 600;
-    text-decoration: underline;
-}
-
-.um-field-type-terms_conditions .um-terms-link:hover {
-    color: #FFFFFF;
-}
-
-/* ============================================================
-   17. BETTER MESSAGES (Private Messaging)
-   ============================================================ */
-
-.bp-messages-wrap,
-.better-messages-wrap {
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
-}
-
-.better-messages-wrap .bm-thread-list-header,
-.better-messages-threads-header {
-    background: #000000;
-    color: #FFFFFF;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-}
 
 .better-messages-wrap .bm-send-button,
-.better-messages-send-btn {
+.better-messages-wrap button[type="submit"] {
     background-color: #BE0002 !important;
-    color: #E5C162 !important;
+    color: #FFFFFF !important;
     border-radius: 100px !important;
     border: none !important;
     font-family: 'Poppins', sans-serif !important;
@@ -743,210 +348,21 @@ body.um-page-password-reset {
     background-color: #9a0002 !important;
 }
 
-/* Sent message bubble */
-.better-messages-wrap .bm-message.sent .bm-message-content,
-.bm-message-sent .bm-bubble {
-    background-color: #BE0002 !important;
-    color: #FFFFFF !important;
-    border-radius: 16px 16px 4px 16px !important;
-}
-
-/* Received message bubble */
-.better-messages-wrap .bm-message.received .bm-message-content,
-.bm-message-received .bm-bubble {
-    background-color: #f0f0f0 !important;
-    color: #111111 !important;
-    border-radius: 16px 16px 16px 4px !important;
-}
-
-/* Message input */
-.better-messages-wrap .bm-input-field,
-.bm-message-input {
-    border: 2px solid #dddddd !important;
-    border-radius: 100px !important;
-    font-family: 'Inter', sans-serif !important;
-    padding: 12px 20px !important;
-    transition: border-color 0.2s ease !important;
-}
-
-.better-messages-wrap .bm-input-field:focus,
-.bm-message-input:focus {
-    border-color: #BE0002 !important;
-    outline: none !important;
-}
-
 /* ============================================================
-   18. UM FACETED SEARCH (SuitPlugins)
+   16. GENERAL WORDPRESS OVERRIDES
    ============================================================ */
 
-.um-fsearch-wrap .um-fsearch-filter {
-    background: #FFFFFF;
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
-    border: 1px solid #eeeeee;
-}
-
-.um-fsearch-wrap .um-fsearch-filter label {
-    font-family: 'Poppins', sans-serif;
-    font-size: 13px;
-    font-weight: 600;
-    color: #222222;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-}
-
-.um-fsearch-wrap .um-fsearch-filter input,
-.um-fsearch-wrap .um-fsearch-filter select {
-    border: 2px solid #dddddd;
-    border-radius: 8px;
-    font-family: 'Inter', sans-serif;
-    font-size: 14px;
-    color: #111111;
-    padding: 10px 14px;
-    width: 100%;
-    transition: border-color 0.2s ease;
-}
-
-.um-fsearch-wrap .um-fsearch-filter input:focus,
-.um-fsearch-wrap .um-fsearch-filter select:focus {
-    border-color: #BE0002;
-    outline: none;
-}
-
-.um-fsearch-btn,
-.um-fsearch-submit {
+/* WordPress default buttons */
+.wp-block-button .wp-block-button__link {
     background-color: #BE0002 !important;
     color: #E5C162 !important;
-    border: 2px solid #E5C162 !important;
     border-radius: 100px !important;
     font-family: 'Poppins', sans-serif !important;
     font-weight: 700 !important;
-    padding: 12px 32px !important;
 }
 
-/* ============================================================
-   19. ALERTS / NOTICES
-   ============================================================ */
-
-.um .um-notice,
-.um .um-field-error {
-    background-color: rgba(190, 0, 2, 0.1);
-    border-left: 4px solid #BE0002;
-    border-radius: 8px;
-    color: #BE0002;
-    font-family: 'Inter', sans-serif;
-    font-size: 14px;
-    padding: 12px 16px;
-    margin: 12px 0;
-}
-
-.um .um-notice-success {
-    background-color: rgba(34, 197, 94, 0.1);
-    border-left-color: #22c55e;
-    color: #16a34a;
-}
-
-/* ============================================================
-   20. NAVIGATION / HEADER UTILITY (UM User Dropdown)
-   ============================================================ */
-
-.um-user-dropdown,
-.um-account-dropdown {
-    background: #000000;
-    border-radius: 12px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-    border: 1px solid #222222;
-    overflow: hidden;
-    min-width: 200px;
-}
-
-.um-user-dropdown a,
-.um-account-dropdown a {
-    font-family: 'Inter', sans-serif;
-    font-size: 14px;
-    color: rgba(255, 255, 255, 0.8);
-    padding: 12px 20px;
-    display: block;
-    transition: all 0.15s ease;
-    text-decoration: none;
-    border-bottom: 1px solid #1a1a1a;
-}
-
-.um-user-dropdown a:hover,
-.um-account-dropdown a:hover {
-    background: rgba(190, 0, 2, 0.15);
-    color: #E5C162;
-}
-
-.um-user-dropdown a.logout,
-.um-account-dropdown .um-logout {
-    color: #BE0002;
-    font-weight: 600;
-}
-
-/* ============================================================
-   21. PAGE BACKGROUNDS (UM specific pages)
-   ============================================================ */
-
-/* Login + Register: dark */
-.um-page-login .site-content,
-.um-page-register .site-content,
-.um-page-password-reset .site-content {
-    background-color: #0a0a0a;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 40px 20px;
-}
-
-/* Profile + Directory: light */
-.um-page-user .site-content,
-.um-page-members .site-content {
-    background-color: #f7f7f7;
-    min-height: 100vh;
-    padding: 40px 20px;
-}
-
-/* ============================================================
-   22. RESPONSIVE
-   ============================================================ */
-
-@media (max-width: 768px) {
-    .um-login .um-form,
-    .um-login.um,
-    .um-register .um-form,
-    .um-register.um,
-    .um-password-reset .um-form {
-        padding: 28px 20px;
-        margin: 20px auto;
-        border-radius: 12px;
-    }
-
-    .um-account-page .um-account-side {
-        border-radius: 12px;
-        margin-bottom: 20px;
-    }
-
-    .um-account-page .um-account-main {
-        padding: 24px 20px;
-    }
-
-    .um .um-name a,
-    .um .um-name {
-        font-size: 22px;
-    }
-}
-
-@media (max-width: 480px) {
-    .um .um-button,
-    .um input[type="submit"] {
-        padding: 13px 24px !important;
-        font-size: 15px !important;
-    }
-
-    .um-directory .um-member {
-        border-radius: 12px;
-    }
+/* Selection highlight */
+::selection {
+    background-color: #BE0002;
+    color: #FFFFFF;
 }
