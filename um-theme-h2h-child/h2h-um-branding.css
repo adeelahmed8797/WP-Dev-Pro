@@ -349,7 +349,93 @@ span.um-verified {
 }
 
 /* ============================================================
-   16. GENERAL WORDPRESS OVERRIDES
+   16. WP ULIKE — HIDE DUPLICATE HEARTS ON PROFILE FIELDS
+   ============================================================ */
+
+/* Hide WP ULike buttons inside profile field rows */
+.um-profile .um-field .wpulike,
+.um-profile .um-field-area .wpulike,
+.um-profile .um-col-1 > .wpulike,
+.um-profile .um-col-2 > .wpulike,
+.um-profile .um-profile-body .wpulike,
+.um-profile-nav .wpulike,
+.um .um-field .wp_ulike_general_class,
+.um .um-profile-nav .wp_ulike_general_class,
+.um-tabs .wpulike,
+.um-tab .wpulike {
+    display: none !important;
+}
+
+/* Keep WP ULike only on photos and posts — hide on profile meta fields */
+.um-profile .um-field[data-key] .wpulike {
+    display: none !important;
+}
+
+/* Style the remaining visible WP ULike buttons */
+.wpulike .wp_ulike_btn,
+.wpulike .wp-ulike-pro-template {
+    color: #BE0002 !important;
+    transition: color 0.2s ease !important;
+}
+
+.wpulike .wp_ulike_btn:hover {
+    color: #9a0002 !important;
+}
+
+.wpulike .count-box,
+.wpulike .wp-ulike-counter {
+    font-family: 'Inter', sans-serif !important;
+    font-size: 12px !important;
+    color: #888888 !important;
+}
+
+/* ============================================================
+   17. PROFILE PAGE — CLEANUP
+   ============================================================ */
+
+/* Remove extra spacing from profile fields caused by hidden likes */
+.um-profile .um-field {
+    position: relative !important;
+}
+
+/* Profile cover area — keep existing theme style, just ensure text is readable */
+.um .um-cover-add,
+.um .um-cover-e {
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 600 !important;
+}
+
+/* Profile field label styling */
+.um-profile .um-field-label label {
+    font-family: 'Inter', sans-serif !important;
+    font-size: 11px !important;
+    font-weight: 600 !important;
+    color: #999999 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.08em !important;
+}
+
+/* Profile field value */
+.um-profile .um-field-value,
+.um-profile .um-field-area p,
+.um-profile .um-field-area span {
+    font-family: 'Inter', sans-serif !important;
+    font-size: 15px !important;
+    color: #222222 !important;
+}
+
+/* Online dot */
+.um-online-icon {
+    display: inline-block !important;
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50% !important;
+    background-color: #22c55e !important;
+    border: 2px solid #FFFFFF !important;
+}
+
+/* ============================================================
+   18. GENERAL WORDPRESS OVERRIDES
    ============================================================ */
 
 /* WordPress default buttons */
