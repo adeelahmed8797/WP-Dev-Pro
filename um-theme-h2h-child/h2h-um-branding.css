@@ -7,7 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
 
 /* ============================================================
-   1. GLOBAL FONTS & BASE
+   1. GLOBAL FONTS
    ============================================================ */
 
 body,
@@ -15,8 +15,7 @@ body,
 .um-form,
 .um-field,
 .um-field-label,
-.um-field-area,
-p, span, li, td, th {
+.um-field-area {
     font-family: 'Inter', sans-serif !important;
 }
 
@@ -28,52 +27,74 @@ h1, h2, h3, h4, h5, h6,
     font-family: 'Poppins', sans-serif !important;
 }
 
-a {
-    color: #BE0002;
-    transition: color 0.2s ease;
-}
-
-a:hover {
-    color: #9a0002;
-}
-
 /* ============================================================
-   2. LOGIN FORM
+   2. LOGIN FORM — DARK CARD STYLE
    ============================================================ */
 
-/* Form card */
-.um-login .um-col-1,
-.um.um-login {
-    background: #FFFFFF !important;
+.um.um-login,
+.um-login .um-col-1 {
+    background: #111111 !important;
     border-radius: 16px !important;
     border-top: 4px solid #BE0002 !important;
-    box-shadow: 0 8px 40px rgba(0,0,0,0.12) !important;
-    padding: 40px 36px 36px !important;
+    box-shadow: 0 24px 64px rgba(0,0,0,0.5) !important;
+    padding: 40px 36px !important;
 }
 
-/* Form title */
 .um-login .um-form-title {
     font-family: 'Poppins', sans-serif !important;
     font-size: 24px !important;
     font-weight: 700 !important;
-    color: #000000 !important;
+    color: #FFFFFF !important;
     text-align: center !important;
     margin-bottom: 8px !important;
 }
 
-/* Login subtitle text */
 .um-login .um-subtitle {
     font-family: 'Inter', sans-serif !important;
-    color: #888888 !important;
+    color: rgba(255,255,255,0.55) !important;
     text-align: center !important;
     font-size: 14px !important;
     margin-bottom: 24px !important;
 }
 
-/* Forgot password link */
+/* Login field labels — white/light */
+.um-login .um-field-label label,
+.um-login .um-field-label .um-field-label-text {
+    color: rgba(255,255,255,0.7) !important;
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 600 !important;
+    font-size: 13px !important;
+}
+
+/* Login inputs — dark */
+.um-login .um-field-area input[type="text"],
+.um-login .um-field-area input[type="email"],
+.um-login .um-field-area input[type="password"] {
+    background-color: #1a1a1a !important;
+    border: 1px solid #333333 !important;
+    border-radius: 8px !important;
+    color: #FFFFFF !important;
+    font-family: 'Inter', sans-serif !important;
+    font-size: 15px !important;
+    padding: 12px 16px !important;
+}
+
+.um-login .um-field-area input[type="text"]:focus,
+.um-login .um-field-area input[type="email"]:focus,
+.um-login .um-field-area input[type="password"]:focus {
+    border-color: #BE0002 !important;
+    box-shadow: 0 0 0 3px rgba(190,0,2,0.18) !important;
+    outline: none !important;
+}
+
+.um-login .um-field-area input::placeholder {
+    color: rgba(255,255,255,0.25) !important;
+}
+
+/* Forgot password */
 .um-login .um-login-forgot,
 .um-login a {
-    color: #BE0002 !important;
+    color: #E5C162 !important;
     font-family: 'Inter', sans-serif !important;
     font-size: 13px !important;
     text-decoration: none !important;
@@ -81,76 +102,128 @@ a:hover {
 
 .um-login .um-login-forgot:hover,
 .um-login a:hover {
-    color: #9a0002 !important;
+    color: #FFFFFF !important;
     text-decoration: underline !important;
 }
 
 /* Register link at bottom */
 .um-login .um-form-bottom,
 .um-login .um-register-link {
+    color: rgba(255,255,255,0.55) !important;
     font-family: 'Inter', sans-serif !important;
-    color: #666666 !important;
     font-size: 14px !important;
     text-align: center !important;
-    margin-top: 20px !important;
 }
 
-.um-login .um-form-bottom a,
-.um-login .um-register-link a {
-    color: #BE0002 !important;
+.um-login .um-form-bottom a {
+    color: #E5C162 !important;
     font-weight: 600 !important;
 }
 
+/* Password show/hide icon */
+.um-login .um-field-password-icon {
+    color: rgba(255,255,255,0.4) !important;
+}
+
 /* ============================================================
-   3. REGISTER FORM
+   3. REGISTER FORM — DARK CARD STYLE
    ============================================================ */
 
-.um-register .um-col-1,
-.um.um-register {
-    background: #FFFFFF !important;
+.um.um-register,
+.um-register .um-col-1 {
+    background: #111111 !important;
     border-radius: 16px !important;
     border-top: 4px solid #BE0002 !important;
-    box-shadow: 0 8px 40px rgba(0,0,0,0.12) !important;
-    padding: 40px 36px 36px !important;
+    box-shadow: 0 24px 64px rgba(0,0,0,0.5) !important;
+    padding: 40px 36px !important;
 }
 
 .um-register .um-form-title {
     font-family: 'Poppins', sans-serif !important;
     font-size: 24px !important;
     font-weight: 700 !important;
-    color: #000000 !important;
+    color: #FFFFFF !important;
     text-align: center !important;
     margin-bottom: 8px !important;
 }
 
 .um-register .um-subtitle {
     font-family: 'Inter', sans-serif !important;
-    color: #888888 !important;
+    color: rgba(255,255,255,0.55) !important;
     text-align: center !important;
     font-size: 14px !important;
-    margin-bottom: 24px !important;
 }
 
-.um-register .um-form-bottom a,
-.um-register .um-login-link a {
-    color: #BE0002 !important;
+/* Register field labels — white/light */
+.um-register .um-field-label label,
+.um-register .um-field-label .um-field-label-text {
+    color: rgba(255,255,255,0.7) !important;
+    font-family: 'Inter', sans-serif !important;
     font-weight: 600 !important;
+    font-size: 13px !important;
 }
 
-/* Step indicator (multi-step register) */
-.um-register .um-step-indicator {
-    background-color: #dddddd !important;
-    border-radius: 100px !important;
+/* Register inputs — dark */
+.um-register .um-field-area input[type="text"],
+.um-register .um-field-area input[type="email"],
+.um-register .um-field-area input[type="password"],
+.um-register .um-field-area input[type="url"],
+.um-register .um-field-area input[type="number"],
+.um-register .um-field-area input[type="tel"],
+.um-register .um-field-area input[type="date"],
+.um-register .um-field-area textarea,
+.um-register .um-field-area select {
+    background-color: #1a1a1a !important;
+    border: 1px solid #333333 !important;
+    border-radius: 8px !important;
+    color: #FFFFFF !important;
+    font-family: 'Inter', sans-serif !important;
+    font-size: 15px !important;
+    padding: 12px 16px !important;
 }
 
-.um-register .um-step-indicator.active,
-.um-register .um-step-indicator.completed {
-    background-color: #BE0002 !important;
+.um-register .um-field-area input:focus,
+.um-register .um-field-area textarea:focus,
+.um-register .um-field-area select:focus {
+    border-color: #BE0002 !important;
+    box-shadow: 0 0 0 3px rgba(190,0,2,0.18) !important;
+    outline: none !important;
+}
+
+.um-register .um-field-area input::placeholder,
+.um-register .um-field-area textarea::placeholder {
+    color: rgba(255,255,255,0.25) !important;
+}
+
+/* Register select dropdown dark */
+.um-register .um-field-area select option {
+    background-color: #1a1a1a !important;
+    color: #FFFFFF !important;
+}
+
+/* Register links */
+.um-register a {
+    color: #E5C162 !important;
+    text-decoration: none !important;
+}
+
+.um-register a:hover {
+    color: #FFFFFF !important;
+}
+
+/* Register required asterisk */
+.um-register .um-req {
+    color: #BE0002 !important;
+}
+
+/* Register bottom link */
+.um-register .um-form-bottom {
+    color: rgba(255,255,255,0.55) !important;
 }
 
 /* Progress bar */
 .um-register .um-progress-bar {
-    background-color: #f0f0f0 !important;
+    background-color: #333333 !important;
     border-radius: 100px !important;
 }
 
@@ -159,130 +232,95 @@ a:hover {
     border-radius: 100px !important;
 }
 
+/* Step indicators */
+.um-register .um-step-indicator {
+    background-color: #333333 !important;
+    border-radius: 100px !important;
+}
+
+.um-register .um-step-indicator.active,
+.um-register .um-step-indicator.completed {
+    background-color: #BE0002 !important;
+}
+
+/* Select2 dark */
+.um-register .select2-container .select2-selection--single {
+    background-color: #1a1a1a !important;
+    border: 1px solid #333333 !important;
+    border-radius: 8px !important;
+}
+
+.um-register .select2-container .select2-selection__rendered {
+    color: #FFFFFF !important;
+    font-family: 'Inter', sans-serif !important;
+}
+
+/* Radio & Checkbox */
+.um-register .um-field-radio input[type="radio"]:checked + span::before,
+.um-register .um-field-checkbox input[type="checkbox"]:checked + span::before {
+    background-color: #BE0002 !important;
+    border-color: #BE0002 !important;
+}
+
+/* Terms link */
+.um-register .um-field-type-terms_conditions a {
+    color: #E5C162 !important;
+    font-weight: 600 !important;
+    text-decoration: underline !important;
+}
+
 /* ============================================================
-   4. PASSWORD RESET FORM
+   4. PASSWORD RESET — DARK CARD STYLE
    ============================================================ */
 
-.um-password-reset .um-col-1,
-.um.um-password-reset {
-    background: #FFFFFF !important;
+.um.um-password-reset,
+.um-password-reset .um-col-1 {
+    background: #111111 !important;
     border-radius: 16px !important;
     border-top: 4px solid #BE0002 !important;
-    box-shadow: 0 8px 40px rgba(0,0,0,0.12) !important;
-    padding: 40px 36px 36px !important;
+    box-shadow: 0 24px 64px rgba(0,0,0,0.5) !important;
+    padding: 40px 36px !important;
 }
 
 .um-password-reset .um-form-title {
     font-family: 'Poppins', sans-serif !important;
     font-size: 22px !important;
     font-weight: 700 !important;
-    color: #000000 !important;
+    color: #FFFFFF !important;
     text-align: center !important;
 }
 
-/* ============================================================
-   5. FORM FIELDS — ALL FORMS
-   ============================================================ */
-
-/* Field labels */
-.um .um-field-label label,
-.um .um-field-label .um-field-label-text {
+.um-password-reset .um-field-label label {
+    color: rgba(255,255,255,0.7) !important;
     font-family: 'Inter', sans-serif !important;
     font-weight: 600 !important;
     font-size: 13px !important;
-    color: #333333 !important;
-    margin-bottom: 6px !important;
-    display: block !important;
 }
 
-/* Required asterisk */
-.um .um-field-label label .um-req {
-    color: #BE0002 !important;
-}
-
-/* Input fields */
-.um .um-field-area input[type="text"],
-.um .um-field-area input[type="email"],
-.um .um-field-area input[type="password"],
-.um .um-field-area input[type="url"],
-.um .um-field-area input[type="number"],
-.um .um-field-area input[type="tel"],
-.um .um-field-area input[type="date"],
-.um .um-field-area textarea,
-.um .um-field-area select {
-    border: 1px solid #dddddd !important;
+.um-password-reset .um-field-area input {
+    background-color: #1a1a1a !important;
+    border: 1px solid #333333 !important;
     border-radius: 8px !important;
+    color: #FFFFFF !important;
     font-family: 'Inter', sans-serif !important;
     font-size: 15px !important;
-    color: #111111 !important;
-    padding: 11px 14px !important;
-    width: 100% !important;
-    background-color: #fafafa !important;
-    transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
-    outline: none !important;
-    -webkit-appearance: none !important;
+    padding: 12px 16px !important;
 }
 
-/* Focus state */
-.um .um-field-area input[type="text"]:focus,
-.um .um-field-area input[type="email"]:focus,
-.um .um-field-area input[type="password"]:focus,
-.um .um-field-area input[type="url"]:focus,
-.um .um-field-area input[type="number"]:focus,
-.um .um-field-area input[type="tel"]:focus,
-.um .um-field-area input[type="date"]:focus,
-.um .um-field-area textarea:focus,
-.um .um-field-area select:focus {
+.um-password-reset .um-field-area input:focus {
     border-color: #BE0002 !important;
-    background-color: #FFFFFF !important;
-    box-shadow: 0 0 0 3px rgba(190, 0, 2, 0.1) !important;
+    box-shadow: 0 0 0 3px rgba(190,0,2,0.18) !important;
     outline: none !important;
 }
 
-/* Password show/hide icon */
-.um .um-field-area .um-field-password-icon {
-    color: #999999 !important;
-}
-
-/* Datepicker / select2 */
-.um .um-field-area .select2-container .select2-selection--single {
-    border: 1px solid #dddddd !important;
-    border-radius: 8px !important;
-    height: 44px !important;
-    background-color: #fafafa !important;
-}
-
-.um .um-field-area .select2-container--default .select2-selection--single .select2-selection__rendered {
-    font-family: 'Inter', sans-serif !important;
-    font-size: 15px !important;
-    color: #111111 !important;
-    line-height: 44px !important;
-    padding-left: 14px !important;
-}
-
-.um .select2-results__option--highlighted {
-    background-color: #BE0002 !important;
-}
-
-/* Radio & Checkbox */
-.um .um-field-radio input[type="radio"]:checked + span::before,
-.um .um-field-checkbox input[type="checkbox"]:checked + span::before {
-    background-color: #BE0002 !important;
-    border-color: #BE0002 !important;
-}
-
-/* Terms & Conditions link */
-.um .um-field-type-terms_conditions a {
-    color: #BE0002 !important;
-    font-weight: 600 !important;
-    text-decoration: underline !important;
+.um-password-reset a {
+    color: #E5C162 !important;
 }
 
 /* ============================================================
-   6. BUTTONS — ALL PAGES
+   5. BUTTONS — ALL PAGES
    ============================================================ */
 
-/* Primary button */
 .um .um-button,
 .um input[type="submit"],
 a.um-button,
@@ -299,7 +337,6 @@ button.um-button {
     transition: background-color 0.2s ease, color 0.2s ease !important;
     cursor: pointer !important;
     text-decoration: none !important;
-    display: inline-block !important;
 }
 
 .um .um-button:hover,
@@ -309,7 +346,7 @@ a.um-button:hover {
     color: #FFFFFF !important;
 }
 
-/* Secondary / alt button */
+/* Alt / secondary button */
 .um .um-alt-button,
 a.um-alt-button {
     background-color: transparent !important;
@@ -330,31 +367,13 @@ a.um-alt-button:hover {
 }
 
 /* ============================================================
-   7. LINKS — ALL FORMS
-   ============================================================ */
-
-.um a,
-.um .um-login-forgot,
-.um .um-link {
-    color: #BE0002 !important;
-    transition: color 0.2s ease !important;
-    text-decoration: none !important;
-}
-
-.um a:hover,
-.um .um-login-forgot:hover,
-.um .um-link:hover {
-    color: #9a0002 !important;
-}
-
-/* ============================================================
-   8. ALERTS & ERRORS
+   6. ALERTS & ERRORS
    ============================================================ */
 
 .um .um-field-error,
 .um .um-notice {
     border-left: 4px solid #BE0002 !important;
-    background-color: rgba(190, 0, 2, 0.06) !important;
+    background-color: rgba(190,0,2,0.08) !important;
     color: #BE0002 !important;
     border-radius: 0 6px 6px 0 !important;
     font-family: 'Inter', sans-serif !important;
@@ -362,17 +381,27 @@ a.um-alt-button:hover {
     padding: 10px 14px !important;
 }
 
+/* Dark form alerts */
+.um-login .um-field-error,
+.um-login .um-notice,
+.um-register .um-field-error,
+.um-register .um-notice,
+.um-password-reset .um-field-error,
+.um-password-reset .um-notice {
+    background-color: rgba(190,0,2,0.2) !important;
+    color: #ff6b6b !important;
+}
+
 .um .um-notice.um-notice-success {
     border-left-color: #22c55e !important;
-    background-color: rgba(34, 197, 94, 0.06) !important;
+    background-color: rgba(34,197,94,0.08) !important;
     color: #16a34a !important;
 }
 
 /* ============================================================
-   9. PROFILE PAGE
+   7. PROFILE PAGE
    ============================================================ */
 
-/* Profile name */
 .um .um-name a,
 .um .um-name {
     font-family: 'Poppins', sans-serif !important;
@@ -385,7 +414,6 @@ a.um-alt-button:hover {
     color: #BE0002 !important;
 }
 
-/* Profile meta (age, location, etc.) */
 .um .um-profile-meta,
 .um .um-meta,
 .um-profile .um-meta-text {
@@ -394,14 +422,7 @@ a.um-alt-button:hover {
     font-size: 14px !important;
 }
 
-/* Request verification link */
-.um-profile .um-request-verification {
-    color: #BE0002 !important;
-    font-size: 12px !important;
-    font-weight: 600 !important;
-}
-
-/* Profile header action buttons (Message, Friend, etc.) */
+/* Header action buttons */
 .um .um-profile-headericon a,
 .um-profile-headericon .um-tip {
     background-color: #BE0002 !important;
@@ -410,7 +431,7 @@ a.um-alt-button:hover {
     font-family: 'Poppins', sans-serif !important;
     font-size: 13px !important;
     font-weight: 600 !important;
-    transition: background-color 0.2s ease !important;
+    transition: all 0.2s ease !important;
     text-decoration: none !important;
 }
 
@@ -419,23 +440,17 @@ a.um-alt-button:hover {
     color: #000000 !important;
 }
 
-/* Profile cover edit button */
+/* Cover buttons */
 .um .um-cover-add,
 .um .um-cover-e {
-    background: rgba(190, 0, 2, 0.8) !important;
+    background: rgba(190,0,2,0.8) !important;
     color: #FFFFFF !important;
     font-family: 'Poppins', sans-serif !important;
     font-weight: 600 !important;
     border-radius: 8px !important;
 }
 
-/* Profile photo overlay */
-.um .um-profile-photo-overlay {
-    background: rgba(190, 0, 2, 0.6) !important;
-    border-radius: 50% !important;
-}
-
-/* Profile tabs navigation */
+/* Profile tabs */
 .um .um-profile-nav-item a,
 .um-profile-nav a {
     font-family: 'Poppins', sans-serif !important;
@@ -446,8 +461,7 @@ a.um-alt-button:hover {
     text-decoration: none !important;
 }
 
-.um .um-profile-nav-item a:hover,
-.um-profile-nav a:hover {
+.um .um-profile-nav-item a:hover {
     color: #E5C162 !important;
 }
 
@@ -492,17 +506,15 @@ a.um-alt-button:hover {
     transition: all 0.2s ease !important;
 }
 
-.um-profile .um-profile-edit-btn:hover,
-.um-profile a.um-profile-edit:hover {
+.um-profile .um-profile-edit-btn:hover {
     background-color: #9a0002 !important;
     color: #FFFFFF !important;
 }
 
 /* ============================================================
-   10. MEMBERS DIRECTORY
+   8. MEMBERS DIRECTORY
    ============================================================ */
 
-/* Member card */
 .um-directory .um-member {
     border-radius: 12px !important;
     overflow: hidden !important;
@@ -511,12 +523,11 @@ a.um-alt-button:hover {
 }
 
 .um-directory .um-member:hover {
-    box-shadow: 0 8px 32px rgba(190, 0, 2, 0.13) !important;
+    box-shadow: 0 8px 32px rgba(190,0,2,0.13) !important;
     transform: translateY(-4px) !important;
     border-color: #BE0002 !important;
 }
 
-/* Member name */
 .um-directory .um-member-name a {
     font-family: 'Poppins', sans-serif !important;
     font-weight: 600 !important;
@@ -528,7 +539,6 @@ a.um-alt-button:hover {
     color: #BE0002 !important;
 }
 
-/* Member meta text */
 .um-directory .um-member-meta,
 .um-directory .um-members-field {
     font-family: 'Inter', sans-serif !important;
@@ -538,7 +548,6 @@ a.um-alt-button:hover {
 
 /* Search input */
 .um-directory .um-search-wrapper input[type="text"],
-.um-directory .um-search-field input,
 .um-directory input.um-search {
     border: 2px solid #dddddd !important;
     border-radius: 100px !important;
@@ -554,13 +563,12 @@ a.um-alt-button:hover {
 .um-directory .um-search-wrapper input:focus,
 .um-directory input.um-search:focus {
     border-color: #BE0002 !important;
-    box-shadow: 0 0 0 3px rgba(190, 0, 2, 0.1) !important;
+    box-shadow: 0 0 0 3px rgba(190,0,2,0.1) !important;
 }
 
-/* Search button */
+/* Search submit */
 .um-directory .um-search-wrapper input[type="submit"],
-.um-directory .um-search-submit,
-.um-directory button.um-search-submit {
+.um-directory .um-search-submit {
     background-color: #BE0002 !important;
     color: #E5C162 !important;
     border: none !important;
@@ -572,15 +580,13 @@ a.um-alt-button:hover {
     transition: background-color 0.2s ease !important;
 }
 
-.um-directory .um-search-wrapper input[type="submit"]:hover,
-.um-directory .um-search-submit:hover {
+.um-directory .um-search-wrapper input[type="submit"]:hover {
     background-color: #9a0002 !important;
 }
 
-/* Filter/sort selects */
-.um-directory .um-sort-select,
+/* Filter selects */
 .um-directory select,
-.um-directory .um-filter-select {
+.um-directory .um-sort-select {
     border: 2px solid #dddddd !important;
     border-radius: 8px !important;
     font-family: 'Inter', sans-serif !important;
@@ -588,17 +594,14 @@ a.um-alt-button:hover {
     color: #111111 !important;
     padding: 9px 14px !important;
     background-color: #FFFFFF !important;
-    transition: border-color 0.2s ease !important;
     outline: none !important;
-    cursor: pointer !important;
 }
 
-.um-directory .um-sort-select:focus,
 .um-directory select:focus {
     border-color: #BE0002 !important;
 }
 
-/* Load more button */
+/* Load more */
 .um-directory #um-load-more,
 .um-directory .um-load-more,
 #um-load-more {
@@ -614,25 +617,38 @@ a.um-alt-button:hover {
     cursor: pointer !important;
 }
 
-.um-directory #um-load-more:hover,
-.um-directory .um-load-more:hover {
+.um-directory #um-load-more:hover {
     background-color: #9a0002 !important;
     color: #FFFFFF !important;
 }
 
-/* No results message */
-.um-directory .um-no-results {
+/* Pagination */
+.um-directory .um-members-pagination .page-numbers,
+.um-pagination .page-numbers {
     font-family: 'Poppins', sans-serif !important;
-    color: #666666 !important;
-    font-size: 18px !important;
-    text-align: center !important;
+    color: #555555 !important;
+    border: 2px solid #dddddd !important;
+    border-radius: 8px !important;
+    transition: all 0.2s ease !important;
+    text-decoration: none !important;
+}
+
+.um-directory .um-members-pagination .page-numbers:hover {
+    border-color: #BE0002 !important;
+    color: #BE0002 !important;
+}
+
+.um-directory .um-members-pagination .page-numbers.current {
+    background-color: #BE0002 !important;
+    border-color: #BE0002 !important;
+    color: #FFFFFF !important;
+    font-weight: 700 !important;
 }
 
 /* ============================================================
-   11. ACCOUNT PAGE
+   9. ACCOUNT PAGE
    ============================================================ */
 
-/* Sidebar nav */
 .um-account-page .um-account-side,
 .um-account-side {
     background: #000000 !important;
@@ -652,23 +668,20 @@ a.um-alt-button:hover {
     text-decoration: none !important;
 }
 
-.um-account-page .um-account-side-item a:hover,
-.um-account-side-item a:hover {
+.um-account-page .um-account-side-item a:hover {
     color: #E5C162 !important;
     background: rgba(255,255,255,0.06) !important;
     border-left-color: #E5C162 !important;
 }
 
 .um-account-page .um-account-side-item.current a,
-.um-account-page .um-account-side-item.active a,
-.um-account-side-item.current a {
+.um-account-page .um-account-side-item.active a {
     color: #E5C162 !important;
-    background: rgba(190, 0, 2, 0.2) !important;
+    background: rgba(190,0,2,0.2) !important;
     border-left-color: #BE0002 !important;
     font-weight: 700 !important;
 }
 
-/* Account main content */
 .um-account-page .um-account-main,
 .um-account-main {
     background: #FFFFFF !important;
@@ -676,7 +689,6 @@ a.um-alt-button:hover {
     box-shadow: 0 2px 16px rgba(0,0,0,0.06) !important;
 }
 
-/* Account tab title */
 .um-account-page .um-account-tab-title,
 .um-account-page .um-account-main h3 {
     font-family: 'Poppins', sans-serif !important;
@@ -688,8 +700,36 @@ a.um-alt-button:hover {
     margin-bottom: 24px !important;
 }
 
+/* Account page inputs */
+.um-account-page .um-field-label label {
+    color: #333333 !important;
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 600 !important;
+    font-size: 13px !important;
+}
+
+.um-account-page .um-field-area input,
+.um-account-page .um-field-area select,
+.um-account-page .um-field-area textarea {
+    background-color: #fafafa !important;
+    border: 1px solid #dddddd !important;
+    border-radius: 8px !important;
+    color: #111111 !important;
+    font-family: 'Inter', sans-serif !important;
+    font-size: 15px !important;
+    padding: 11px 14px !important;
+}
+
+.um-account-page .um-field-area input:focus,
+.um-account-page .um-field-area select:focus,
+.um-account-page .um-field-area textarea:focus {
+    border-color: #BE0002 !important;
+    box-shadow: 0 0 0 3px rgba(190,0,2,0.1) !important;
+    outline: none !important;
+}
+
 /* ============================================================
-   12. NOTIFICATIONS
+   10. NOTIFICATIONS
    ============================================================ */
 
 .um-notifications-count,
@@ -701,16 +741,12 @@ a.um-alt-button:hover {
     font-size: 11px !important;
     font-weight: 700 !important;
     border-radius: 100px !important;
-    padding: 2px 6px !important;
-    min-width: 18px !important;
-    text-align: center !important;
-    display: inline-block !important;
 }
 
 .um-notification-item.unread,
 .um-notifications-item.unread {
     border-left: 3px solid #BE0002 !important;
-    background-color: rgba(190, 0, 2, 0.04) !important;
+    background-color: rgba(190,0,2,0.04) !important;
 }
 
 .um-notification-item a,
@@ -720,24 +756,14 @@ a.um-alt-button:hover {
     text-decoration: none !important;
 }
 
-.um-notification-time,
-.um-notifications-time {
+.um-notification-time {
     font-size: 12px !important;
     color: #aaaaaa !important;
     font-family: 'Inter', sans-serif !important;
 }
 
-/* Mark all read button */
-.um-notifications-mark-read {
-    color: #BE0002 !important;
-    font-family: 'Inter', sans-serif !important;
-    font-size: 13px !important;
-    font-weight: 600 !important;
-    cursor: pointer !important;
-}
-
 /* ============================================================
-   13. FRIENDS
+   11. FRIENDS
    ============================================================ */
 
 .um-friends-btn,
@@ -753,18 +779,15 @@ a.um-add-friend,
     font-weight: 600 !important;
     padding: 8px 20px !important;
     transition: all 0.2s ease !important;
-    cursor: pointer !important;
     text-decoration: none !important;
 }
 
 .um-friends-btn:hover,
-a.um-add-friend:hover,
-.um-friends-button:hover {
+a.um-add-friend:hover {
     background-color: #9a0002 !important;
     color: #FFFFFF !important;
 }
 
-/* Cancel / pending state */
 .um-friends-btn.um-cancel-friend,
 .um-friend-pending {
     background-color: transparent !important;
@@ -773,7 +796,7 @@ a.um-add-friend:hover,
 }
 
 /* ============================================================
-   14. ONLINE STATUS
+   12. ONLINE STATUS
    ============================================================ */
 
 .um-online-icon,
@@ -786,25 +809,17 @@ a.um-add-friend:hover,
     display: inline-block !important;
 }
 
-.um-online-status .um-online {
-    color: #22c55e !important;
-    font-family: 'Inter', sans-serif !important;
-    font-size: 12px !important;
-    font-weight: 600 !important;
-}
-
 /* ============================================================
-   15. VERIFIED BADGE
+   13. VERIFIED BADGE
    ============================================================ */
 
 .um-verified-icon,
-span.um-verified,
-.um-profile .um-verified {
+span.um-verified {
     color: #BE0002 !important;
 }
 
 /* ============================================================
-   16. USER PHOTOS
+   14. USER PHOTOS
    ============================================================ */
 
 .um-photos-grid .um-photo-item {
@@ -817,8 +832,7 @@ span.um-verified,
     transform: scale(1.02) !important;
 }
 
-.um-photos-upload-btn,
-.um-photos-btn {
+.um-photos-upload-btn {
     background-color: #BE0002 !important;
     color: #E5C162 !important;
     border: 2px solid #E5C162 !important;
@@ -828,27 +842,23 @@ span.um-verified,
 }
 
 /* ============================================================
-   17. BETTER MESSAGES (Private Messaging)
+   15. BETTER MESSAGES
    ============================================================ */
 
-/* Send button */
 .better-messages-wrap .bm-send-button,
-.better-messages-wrap button[type="submit"],
-.better-messages-form .bm-send {
+.better-messages-wrap button[type="submit"] {
     background-color: #BE0002 !important;
     color: #FFFFFF !important;
     border-radius: 100px !important;
     border: none !important;
     font-family: 'Poppins', sans-serif !important;
     font-weight: 600 !important;
-    transition: background-color 0.2s ease !important;
 }
 
 .better-messages-wrap .bm-send-button:hover {
     background-color: #9a0002 !important;
 }
 
-/* Sent message bubble */
 .better-messages-wrap .message-item.sent .message-content,
 .bm-message-sent .message-text {
     background-color: #BE0002 !important;
@@ -856,15 +866,12 @@ span.um-verified,
     border-radius: 16px 16px 4px 16px !important;
 }
 
-/* Message input */
 .better-messages-wrap textarea.bm-input,
 .better-messages-wrap .bm-input-wrap textarea {
     border: 2px solid #dddddd !important;
     border-radius: 12px !important;
     font-family: 'Inter', sans-serif !important;
-    font-size: 14px !important;
     transition: border-color 0.2s ease !important;
-    resize: none !important;
 }
 
 .better-messages-wrap textarea.bm-input:focus {
@@ -872,14 +879,12 @@ span.um-verified,
     outline: none !important;
 }
 
-/* Thread list active */
 .better-messages-wrap .bm-thread.active,
 .better-messages-wrap .bm-thread:hover {
-    background-color: rgba(190, 0, 2, 0.06) !important;
+    background-color: rgba(190,0,2,0.06) !important;
     border-left: 3px solid #BE0002 !important;
 }
 
-/* New message badge */
 .better-messages-wrap .bm-badge,
 .bm-unread-count {
     background-color: #BE0002 !important;
@@ -887,14 +892,13 @@ span.um-verified,
     border-radius: 100px !important;
     font-size: 11px !important;
     font-weight: 700 !important;
-    font-family: 'Poppins', sans-serif !important;
 }
 
 /* ============================================================
-   18. FACETED SEARCH (SuitPlugins)
+   16. FACETED SEARCH
    ============================================================ */
 
-.um-fsearch-wrap .um-fsearch-filter label,
+.um-fsearch-wrap label,
 .suitePlugins-faceted-search label {
     font-family: 'Poppins', sans-serif !important;
     font-size: 12px !important;
@@ -905,9 +909,7 @@ span.um-verified,
 }
 
 .um-fsearch-wrap input,
-.um-fsearch-wrap select,
-.suitePlugins-faceted-search input,
-.suitePlugins-faceted-search select {
+.um-fsearch-wrap select {
     border: 2px solid #dddddd !important;
     border-radius: 8px !important;
     font-family: 'Inter', sans-serif !important;
@@ -925,8 +927,7 @@ span.um-verified,
 }
 
 .um-fsearch-btn,
-.um-fsearch-submit,
-.suitePlugins-faceted-search button[type="submit"] {
+.um-fsearch-submit {
     background-color: #BE0002 !important;
     color: #E5C162 !important;
     border: 2px solid #E5C162 !important;
@@ -938,14 +939,8 @@ span.um-verified,
     transition: all 0.2s ease !important;
 }
 
-.um-fsearch-btn:hover,
-.um-fsearch-submit:hover {
-    background-color: #9a0002 !important;
-    color: #FFFFFF !important;
-}
-
 /* ============================================================
-   19. WP ULIKE — HIDE DUPLICATE HEARTS ON PROFILE
+   17. WP ULIKE — HIDE DUPLICATE HEARTS ON PROFILE
    ============================================================ */
 
 .um-profile .um-field .wpulike,
@@ -962,15 +957,10 @@ span.um-verified,
     display: none !important;
 }
 
-/* Style remaining visible WP ULike buttons */
 .wpulike .wp_ulike_btn,
 .wpulike .wp-ulike-pro-template {
     color: #BE0002 !important;
     transition: color 0.2s ease !important;
-}
-
-.wpulike .wp_ulike_btn:hover {
-    color: #9a0002 !important;
 }
 
 .wpulike .count-box,
@@ -981,45 +971,18 @@ span.um-verified,
 }
 
 /* ============================================================
-   20. WORDPRESS ADMIN BAR & GENERAL
+   18. GENERAL
    ============================================================ */
 
-/* Selection highlight */
 ::selection {
     background-color: #BE0002;
     color: #FFFFFF;
 }
 
-/* WordPress default buttons */
 .wp-block-button .wp-block-button__link {
     background-color: #BE0002 !important;
     color: #E5C162 !important;
     border-radius: 100px !important;
     font-family: 'Poppins', sans-serif !important;
-    font-weight: 700 !important;
-}
-
-/* Pagination */
-.um-directory .um-members-pagination .page-numbers,
-.um-pagination .page-numbers {
-    font-family: 'Poppins', sans-serif !important;
-    color: #555555 !important;
-    border: 2px solid #dddddd !important;
-    border-radius: 8px !important;
-    transition: all 0.2s ease !important;
-    text-decoration: none !important;
-}
-
-.um-directory .um-members-pagination .page-numbers:hover,
-.um-pagination .page-numbers:hover {
-    border-color: #BE0002 !important;
-    color: #BE0002 !important;
-}
-
-.um-directory .um-members-pagination .page-numbers.current,
-.um-pagination .page-numbers.current {
-    background-color: #BE0002 !important;
-    border-color: #BE0002 !important;
-    color: #FFFFFF !important;
     font-weight: 700 !important;
 }
