@@ -1,14 +1,13 @@
 /* ============================================================
-   H2H DATING — UM THEME BRANDING CSS (Safe Version)
+   H2H DATING — UM THEME COMPLETE BRANDING CSS
    Colors: #BE0002 (Red) | #E5C162 (Gold) | #000000 (Black)
    Fonts:  Poppins (headings) | Inter (body)
-   Strategy: Color + font overrides only — no layout changes
    ============================================================ */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
 
 /* ============================================================
-   1. GLOBAL FONTS
+   1. GLOBAL FONTS & BASE
    ============================================================ */
 
 body,
@@ -16,7 +15,8 @@ body,
 .um-form,
 .um-field,
 .um-field-label,
-.um-field-area {
+.um-field-area,
+p, span, li, td, th {
     font-family: 'Inter', sans-serif !important;
 }
 
@@ -28,10 +28,261 @@ h1, h2, h3, h4, h5, h6,
     font-family: 'Poppins', sans-serif !important;
 }
 
+a {
+    color: #BE0002;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #9a0002;
+}
+
 /* ============================================================
-   2. BUTTONS — Primary (Red + Gold)
+   2. LOGIN FORM
    ============================================================ */
 
+/* Form card */
+.um-login .um-col-1,
+.um.um-login {
+    background: #FFFFFF !important;
+    border-radius: 16px !important;
+    border-top: 4px solid #BE0002 !important;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.12) !important;
+    padding: 40px 36px 36px !important;
+}
+
+/* Form title */
+.um-login .um-form-title {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 24px !important;
+    font-weight: 700 !important;
+    color: #000000 !important;
+    text-align: center !important;
+    margin-bottom: 8px !important;
+}
+
+/* Login subtitle text */
+.um-login .um-subtitle {
+    font-family: 'Inter', sans-serif !important;
+    color: #888888 !important;
+    text-align: center !important;
+    font-size: 14px !important;
+    margin-bottom: 24px !important;
+}
+
+/* Forgot password link */
+.um-login .um-login-forgot,
+.um-login a {
+    color: #BE0002 !important;
+    font-family: 'Inter', sans-serif !important;
+    font-size: 13px !important;
+    text-decoration: none !important;
+}
+
+.um-login .um-login-forgot:hover,
+.um-login a:hover {
+    color: #9a0002 !important;
+    text-decoration: underline !important;
+}
+
+/* Register link at bottom */
+.um-login .um-form-bottom,
+.um-login .um-register-link {
+    font-family: 'Inter', sans-serif !important;
+    color: #666666 !important;
+    font-size: 14px !important;
+    text-align: center !important;
+    margin-top: 20px !important;
+}
+
+.um-login .um-form-bottom a,
+.um-login .um-register-link a {
+    color: #BE0002 !important;
+    font-weight: 600 !important;
+}
+
+/* ============================================================
+   3. REGISTER FORM
+   ============================================================ */
+
+.um-register .um-col-1,
+.um.um-register {
+    background: #FFFFFF !important;
+    border-radius: 16px !important;
+    border-top: 4px solid #BE0002 !important;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.12) !important;
+    padding: 40px 36px 36px !important;
+}
+
+.um-register .um-form-title {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 24px !important;
+    font-weight: 700 !important;
+    color: #000000 !important;
+    text-align: center !important;
+    margin-bottom: 8px !important;
+}
+
+.um-register .um-subtitle {
+    font-family: 'Inter', sans-serif !important;
+    color: #888888 !important;
+    text-align: center !important;
+    font-size: 14px !important;
+    margin-bottom: 24px !important;
+}
+
+.um-register .um-form-bottom a,
+.um-register .um-login-link a {
+    color: #BE0002 !important;
+    font-weight: 600 !important;
+}
+
+/* Step indicator (multi-step register) */
+.um-register .um-step-indicator {
+    background-color: #dddddd !important;
+    border-radius: 100px !important;
+}
+
+.um-register .um-step-indicator.active,
+.um-register .um-step-indicator.completed {
+    background-color: #BE0002 !important;
+}
+
+/* Progress bar */
+.um-register .um-progress-bar {
+    background-color: #f0f0f0 !important;
+    border-radius: 100px !important;
+}
+
+.um-register .um-progress-bar-inner {
+    background-color: #BE0002 !important;
+    border-radius: 100px !important;
+}
+
+/* ============================================================
+   4. PASSWORD RESET FORM
+   ============================================================ */
+
+.um-password-reset .um-col-1,
+.um.um-password-reset {
+    background: #FFFFFF !important;
+    border-radius: 16px !important;
+    border-top: 4px solid #BE0002 !important;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.12) !important;
+    padding: 40px 36px 36px !important;
+}
+
+.um-password-reset .um-form-title {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 22px !important;
+    font-weight: 700 !important;
+    color: #000000 !important;
+    text-align: center !important;
+}
+
+/* ============================================================
+   5. FORM FIELDS — ALL FORMS
+   ============================================================ */
+
+/* Field labels */
+.um .um-field-label label,
+.um .um-field-label .um-field-label-text {
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 600 !important;
+    font-size: 13px !important;
+    color: #333333 !important;
+    margin-bottom: 6px !important;
+    display: block !important;
+}
+
+/* Required asterisk */
+.um .um-field-label label .um-req {
+    color: #BE0002 !important;
+}
+
+/* Input fields */
+.um .um-field-area input[type="text"],
+.um .um-field-area input[type="email"],
+.um .um-field-area input[type="password"],
+.um .um-field-area input[type="url"],
+.um .um-field-area input[type="number"],
+.um .um-field-area input[type="tel"],
+.um .um-field-area input[type="date"],
+.um .um-field-area textarea,
+.um .um-field-area select {
+    border: 1px solid #dddddd !important;
+    border-radius: 8px !important;
+    font-family: 'Inter', sans-serif !important;
+    font-size: 15px !important;
+    color: #111111 !important;
+    padding: 11px 14px !important;
+    width: 100% !important;
+    background-color: #fafafa !important;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
+    outline: none !important;
+    -webkit-appearance: none !important;
+}
+
+/* Focus state */
+.um .um-field-area input[type="text"]:focus,
+.um .um-field-area input[type="email"]:focus,
+.um .um-field-area input[type="password"]:focus,
+.um .um-field-area input[type="url"]:focus,
+.um .um-field-area input[type="number"]:focus,
+.um .um-field-area input[type="tel"]:focus,
+.um .um-field-area input[type="date"]:focus,
+.um .um-field-area textarea:focus,
+.um .um-field-area select:focus {
+    border-color: #BE0002 !important;
+    background-color: #FFFFFF !important;
+    box-shadow: 0 0 0 3px rgba(190, 0, 2, 0.1) !important;
+    outline: none !important;
+}
+
+/* Password show/hide icon */
+.um .um-field-area .um-field-password-icon {
+    color: #999999 !important;
+}
+
+/* Datepicker / select2 */
+.um .um-field-area .select2-container .select2-selection--single {
+    border: 1px solid #dddddd !important;
+    border-radius: 8px !important;
+    height: 44px !important;
+    background-color: #fafafa !important;
+}
+
+.um .um-field-area .select2-container--default .select2-selection--single .select2-selection__rendered {
+    font-family: 'Inter', sans-serif !important;
+    font-size: 15px !important;
+    color: #111111 !important;
+    line-height: 44px !important;
+    padding-left: 14px !important;
+}
+
+.um .select2-results__option--highlighted {
+    background-color: #BE0002 !important;
+}
+
+/* Radio & Checkbox */
+.um .um-field-radio input[type="radio"]:checked + span::before,
+.um .um-field-checkbox input[type="checkbox"]:checked + span::before {
+    background-color: #BE0002 !important;
+    border-color: #BE0002 !important;
+}
+
+/* Terms & Conditions link */
+.um .um-field-type-terms_conditions a {
+    color: #BE0002 !important;
+    font-weight: 600 !important;
+    text-decoration: underline !important;
+}
+
+/* ============================================================
+   6. BUTTONS — ALL PAGES
+   ============================================================ */
+
+/* Primary button */
 .um .um-button,
 .um input[type="submit"],
 a.um-button,
@@ -44,8 +295,11 @@ button.um-button {
     font-weight: 700 !important;
     font-size: 15px !important;
     letter-spacing: 0.02em !important;
+    padding: 13px 32px !important;
     transition: background-color 0.2s ease, color 0.2s ease !important;
     cursor: pointer !important;
+    text-decoration: none !important;
+    display: inline-block !important;
 }
 
 .um .um-button:hover,
@@ -55,7 +309,7 @@ a.um-button:hover {
     color: #FFFFFF !important;
 }
 
-/* Alt / secondary button */
+/* Secondary / alt button */
 .um .um-alt-button,
 a.um-alt-button {
     background-color: transparent !important;
@@ -64,7 +318,9 @@ a.um-alt-button {
     border-radius: 100px !important;
     font-family: 'Poppins', sans-serif !important;
     font-weight: 600 !important;
+    padding: 11px 28px !important;
     transition: all 0.2s ease !important;
+    text-decoration: none !important;
 }
 
 .um .um-alt-button:hover,
@@ -74,49 +330,7 @@ a.um-alt-button:hover {
 }
 
 /* ============================================================
-   3. FORM INPUTS — Focus State
-   ============================================================ */
-
-.um .um-field-area input[type="text"],
-.um .um-field-area input[type="email"],
-.um .um-field-area input[type="password"],
-.um .um-field-area input[type="url"],
-.um .um-field-area input[type="number"],
-.um .um-field-area input[type="tel"],
-.um .um-field-area textarea,
-.um .um-field-area select {
-    border-color: #dddddd !important;
-    border-radius: 8px !important;
-    font-family: 'Inter', sans-serif !important;
-    font-size: 15px !important;
-    transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
-    outline: none !important;
-}
-
-.um .um-field-area input[type="text"]:focus,
-.um .um-field-area input[type="email"]:focus,
-.um .um-field-area input[type="password"]:focus,
-.um .um-field-area input[type="url"]:focus,
-.um .um-field-area input[type="number"]:focus,
-.um .um-field-area input[type="tel"]:focus,
-.um .um-field-area textarea:focus,
-.um .um-field-area select:focus {
-    border-color: #BE0002 !important;
-    box-shadow: 0 0 0 3px rgba(190, 0, 2, 0.12) !important;
-    outline: none !important;
-}
-
-/* Field labels */
-.um .um-field-label label,
-.um .um-field-label .um-field-label-text {
-    font-family: 'Inter', sans-serif !important;
-    font-weight: 600 !important;
-    font-size: 13px !important;
-    color: #444444 !important;
-}
-
-/* ============================================================
-   4. LINKS
+   7. LINKS — ALL FORMS
    ============================================================ */
 
 .um a,
@@ -134,33 +348,31 @@ a.um-alt-button:hover {
 }
 
 /* ============================================================
-   5. PROFILE — TABS
+   8. ALERTS & ERRORS
    ============================================================ */
 
-.um .um-profile-nav-item a {
-    font-family: 'Poppins', sans-serif !important;
-    font-size: 14px !important;
-    font-weight: 500 !important;
-    color: #555555 !important;
-    transition: color 0.2s ease !important;
-    text-decoration: none !important;
+.um .um-field-error,
+.um .um-notice {
+    border-left: 4px solid #BE0002 !important;
+    background-color: rgba(190, 0, 2, 0.06) !important;
+    color: #BE0002 !important;
+    border-radius: 0 6px 6px 0 !important;
+    font-family: 'Inter', sans-serif !important;
+    font-size: 13px !important;
+    padding: 10px 14px !important;
 }
 
-.um .um-profile-nav-item a:hover {
-    color: #BE0002 !important;
-}
-
-.um .um-profile-nav-item.active a,
-.um .um-profile-nav-item.current a {
-    color: #BE0002 !important;
-    font-weight: 700 !important;
-    border-bottom: 3px solid #BE0002 !important;
+.um .um-notice.um-notice-success {
+    border-left-color: #22c55e !important;
+    background-color: rgba(34, 197, 94, 0.06) !important;
+    color: #16a34a !important;
 }
 
 /* ============================================================
-   6. PROFILE — NAME & META
+   9. PROFILE PAGE
    ============================================================ */
 
+/* Profile name */
 .um .um-name a,
 .um .um-name {
     font-family: 'Poppins', sans-serif !important;
@@ -173,16 +385,33 @@ a.um-alt-button:hover {
     color: #BE0002 !important;
 }
 
-/* ============================================================
-   7. PROFILE — HEADER BUTTONS (Message, Friend, etc.)
-   ============================================================ */
+/* Profile meta (age, location, etc.) */
+.um .um-profile-meta,
+.um .um-meta,
+.um-profile .um-meta-text {
+    font-family: 'Inter', sans-serif !important;
+    color: #666666 !important;
+    font-size: 14px !important;
+}
 
+/* Request verification link */
+.um-profile .um-request-verification {
+    color: #BE0002 !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+}
+
+/* Profile header action buttons (Message, Friend, etc.) */
 .um .um-profile-headericon a,
 .um-profile-headericon .um-tip {
     background-color: #BE0002 !important;
     color: #E5C162 !important;
     border-radius: 8px !important;
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
     transition: background-color 0.2s ease !important;
+    text-decoration: none !important;
 }
 
 .um .um-profile-headericon a:hover {
@@ -190,21 +419,104 @@ a.um-alt-button:hover {
     color: #000000 !important;
 }
 
+/* Profile cover edit button */
+.um .um-cover-add,
+.um .um-cover-e {
+    background: rgba(190, 0, 2, 0.8) !important;
+    color: #FFFFFF !important;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 600 !important;
+    border-radius: 8px !important;
+}
+
+/* Profile photo overlay */
+.um .um-profile-photo-overlay {
+    background: rgba(190, 0, 2, 0.6) !important;
+    border-radius: 50% !important;
+}
+
+/* Profile tabs navigation */
+.um .um-profile-nav-item a,
+.um-profile-nav a {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    color: rgba(255,255,255,0.75) !important;
+    transition: color 0.2s ease !important;
+    text-decoration: none !important;
+}
+
+.um .um-profile-nav-item a:hover,
+.um-profile-nav a:hover {
+    color: #E5C162 !important;
+}
+
+.um .um-profile-nav-item.active a,
+.um .um-profile-nav-item.current a {
+    color: #E5C162 !important;
+    font-weight: 700 !important;
+    border-bottom: 3px solid #E5C162 !important;
+}
+
+/* Profile field labels */
+.um-profile .um-field-label label {
+    font-family: 'Inter', sans-serif !important;
+    font-size: 11px !important;
+    font-weight: 600 !important;
+    color: #999999 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.08em !important;
+}
+
+/* Profile field values */
+.um-profile .um-field-value,
+.um-profile .um-field-area p,
+.um-profile .um-field-area span {
+    font-family: 'Inter', sans-serif !important;
+    font-size: 15px !important;
+    color: #222222 !important;
+}
+
+/* Profile edit button */
+.um-profile .um-profile-edit-btn,
+.um-profile a.um-profile-edit {
+    background-color: #BE0002 !important;
+    color: #E5C162 !important;
+    border: 2px solid #E5C162 !important;
+    border-radius: 100px !important;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 600 !important;
+    font-size: 13px !important;
+    padding: 8px 20px !important;
+    text-decoration: none !important;
+    transition: all 0.2s ease !important;
+}
+
+.um-profile .um-profile-edit-btn:hover,
+.um-profile a.um-profile-edit:hover {
+    background-color: #9a0002 !important;
+    color: #FFFFFF !important;
+}
+
 /* ============================================================
-   8. MEMBERS DIRECTORY — CARDS
+   10. MEMBERS DIRECTORY
    ============================================================ */
 
+/* Member card */
 .um-directory .um-member {
     border-radius: 12px !important;
-    transition: box-shadow 0.2s ease, transform 0.2s ease !important;
     overflow: hidden !important;
+    transition: box-shadow 0.25s ease, transform 0.25s ease !important;
+    border: 1px solid #eeeeee !important;
 }
 
 .um-directory .um-member:hover {
-    box-shadow: 0 8px 32px rgba(190, 0, 2, 0.12) !important;
-    transform: translateY(-3px) !important;
+    box-shadow: 0 8px 32px rgba(190, 0, 2, 0.13) !important;
+    transform: translateY(-4px) !important;
+    border-color: #BE0002 !important;
 }
 
+/* Member name */
 .um-directory .um-member-name a {
     font-family: 'Poppins', sans-serif !important;
     font-weight: 600 !important;
@@ -216,16 +528,90 @@ a.um-alt-button:hover {
     color: #BE0002 !important;
 }
 
+/* Member meta text */
+.um-directory .um-member-meta,
+.um-directory .um-members-field {
+    font-family: 'Inter', sans-serif !important;
+    font-size: 13px !important;
+    color: #888888 !important;
+}
+
+/* Search input */
+.um-directory .um-search-wrapper input[type="text"],
+.um-directory .um-search-field input,
+.um-directory input.um-search {
+    border: 2px solid #dddddd !important;
+    border-radius: 100px !important;
+    font-family: 'Inter', sans-serif !important;
+    font-size: 15px !important;
+    color: #111111 !important;
+    padding: 11px 20px !important;
+    background-color: #FFFFFF !important;
+    transition: border-color 0.2s ease !important;
+    outline: none !important;
+}
+
+.um-directory .um-search-wrapper input:focus,
+.um-directory input.um-search:focus {
+    border-color: #BE0002 !important;
+    box-shadow: 0 0 0 3px rgba(190, 0, 2, 0.1) !important;
+}
+
+/* Search button */
+.um-directory .um-search-wrapper input[type="submit"],
+.um-directory .um-search-submit,
+.um-directory button.um-search-submit {
+    background-color: #BE0002 !important;
+    color: #E5C162 !important;
+    border: none !important;
+    border-radius: 100px !important;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 700 !important;
+    padding: 11px 24px !important;
+    cursor: pointer !important;
+    transition: background-color 0.2s ease !important;
+}
+
+.um-directory .um-search-wrapper input[type="submit"]:hover,
+.um-directory .um-search-submit:hover {
+    background-color: #9a0002 !important;
+}
+
+/* Filter/sort selects */
+.um-directory .um-sort-select,
+.um-directory select,
+.um-directory .um-filter-select {
+    border: 2px solid #dddddd !important;
+    border-radius: 8px !important;
+    font-family: 'Inter', sans-serif !important;
+    font-size: 14px !important;
+    color: #111111 !important;
+    padding: 9px 14px !important;
+    background-color: #FFFFFF !important;
+    transition: border-color 0.2s ease !important;
+    outline: none !important;
+    cursor: pointer !important;
+}
+
+.um-directory .um-sort-select:focus,
+.um-directory select:focus {
+    border-color: #BE0002 !important;
+}
+
 /* Load more button */
 .um-directory #um-load-more,
-.um-directory .um-load-more {
+.um-directory .um-load-more,
+#um-load-more {
     background-color: #BE0002 !important;
     color: #E5C162 !important;
     border: 2px solid #E5C162 !important;
     border-radius: 100px !important;
     font-family: 'Poppins', sans-serif !important;
     font-weight: 700 !important;
+    font-size: 15px !important;
+    padding: 13px 40px !important;
     transition: all 0.2s ease !important;
+    cursor: pointer !important;
 }
 
 .um-directory #um-load-more:hover,
@@ -234,125 +620,334 @@ a.um-alt-button:hover {
     color: #FFFFFF !important;
 }
 
+/* No results message */
+.um-directory .um-no-results {
+    font-family: 'Poppins', sans-serif !important;
+    color: #666666 !important;
+    font-size: 18px !important;
+    text-align: center !important;
+}
+
 /* ============================================================
-   9. ACCOUNT PAGE — SIDEBAR TABS
+   11. ACCOUNT PAGE
    ============================================================ */
 
-.um-account-page .um-account-side-item a {
+/* Sidebar nav */
+.um-account-page .um-account-side,
+.um-account-side {
+    background: #000000 !important;
+    border-radius: 14px !important;
+}
+
+.um-account-page .um-account-side-item a,
+.um-account-side-item a {
     font-family: 'Poppins', sans-serif !important;
     font-size: 14px !important;
     font-weight: 500 !important;
-    color: #444444 !important;
-    transition: color 0.2s ease !important;
+    color: rgba(255,255,255,0.65) !important;
+    padding: 13px 22px !important;
+    display: block !important;
+    border-left: 3px solid transparent !important;
+    transition: all 0.2s ease !important;
     text-decoration: none !important;
 }
 
-.um-account-page .um-account-side-item a:hover {
-    color: #BE0002 !important;
+.um-account-page .um-account-side-item a:hover,
+.um-account-side-item a:hover {
+    color: #E5C162 !important;
+    background: rgba(255,255,255,0.06) !important;
+    border-left-color: #E5C162 !important;
 }
 
 .um-account-page .um-account-side-item.current a,
-.um-account-page .um-account-side-item.active a {
-    color: #BE0002 !important;
+.um-account-page .um-account-side-item.active a,
+.um-account-side-item.current a {
+    color: #E5C162 !important;
+    background: rgba(190, 0, 2, 0.2) !important;
+    border-left-color: #BE0002 !important;
     font-weight: 700 !important;
-    border-left: 3px solid #BE0002 !important;
+}
+
+/* Account main content */
+.um-account-page .um-account-main,
+.um-account-main {
+    background: #FFFFFF !important;
+    border-radius: 14px !important;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.06) !important;
+}
+
+/* Account tab title */
+.um-account-page .um-account-tab-title,
+.um-account-page .um-account-main h3 {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    color: #000000 !important;
+    border-bottom: 2px solid #eeeeee !important;
+    padding-bottom: 14px !important;
+    margin-bottom: 24px !important;
 }
 
 /* ============================================================
-   10. NOTIFICATIONS
+   12. NOTIFICATIONS
    ============================================================ */
 
 .um-notifications-count,
-.um-notification-count {
+.um-notification-count,
+.um-notifications-bubble {
     background-color: #BE0002 !important;
     color: #FFFFFF !important;
     font-family: 'Poppins', sans-serif !important;
+    font-size: 11px !important;
     font-weight: 700 !important;
     border-radius: 100px !important;
+    padding: 2px 6px !important;
+    min-width: 18px !important;
+    text-align: center !important;
+    display: inline-block !important;
 }
 
-.um-notification-item.unread {
+.um-notification-item.unread,
+.um-notifications-item.unread {
     border-left: 3px solid #BE0002 !important;
     background-color: rgba(190, 0, 2, 0.04) !important;
 }
 
+.um-notification-item a,
+.um-notifications-item a {
+    font-family: 'Inter', sans-serif !important;
+    color: #111111 !important;
+    text-decoration: none !important;
+}
+
+.um-notification-time,
+.um-notifications-time {
+    font-size: 12px !important;
+    color: #aaaaaa !important;
+    font-family: 'Inter', sans-serif !important;
+}
+
+/* Mark all read button */
+.um-notifications-mark-read {
+    color: #BE0002 !important;
+    font-family: 'Inter', sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    cursor: pointer !important;
+}
+
 /* ============================================================
-   11. FRIENDS BUTTONS
+   13. FRIENDS
    ============================================================ */
 
 .um-friends-btn,
 a.um-add-friend,
-.um-friend-action {
+.um-friend-action,
+.um-friends-button {
+    background-color: #BE0002 !important;
+    color: #E5C162 !important;
+    border: 2px solid #E5C162 !important;
+    border-radius: 100px !important;
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    padding: 8px 20px !important;
+    transition: all 0.2s ease !important;
+    cursor: pointer !important;
+    text-decoration: none !important;
+}
+
+.um-friends-btn:hover,
+a.um-add-friend:hover,
+.um-friends-button:hover {
+    background-color: #9a0002 !important;
+    color: #FFFFFF !important;
+}
+
+/* Cancel / pending state */
+.um-friends-btn.um-cancel-friend,
+.um-friend-pending {
+    background-color: transparent !important;
+    color: #888888 !important;
+    border-color: #cccccc !important;
+}
+
+/* ============================================================
+   14. ONLINE STATUS
+   ============================================================ */
+
+.um-online-icon,
+.um-online-status-icon.online {
+    background-color: #22c55e !important;
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50% !important;
+    border: 2px solid #FFFFFF !important;
+    display: inline-block !important;
+}
+
+.um-online-status .um-online {
+    color: #22c55e !important;
+    font-family: 'Inter', sans-serif !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+}
+
+/* ============================================================
+   15. VERIFIED BADGE
+   ============================================================ */
+
+.um-verified-icon,
+span.um-verified,
+.um-profile .um-verified {
+    color: #BE0002 !important;
+}
+
+/* ============================================================
+   16. USER PHOTOS
+   ============================================================ */
+
+.um-photos-grid .um-photo-item {
+    border-radius: 10px !important;
+    overflow: hidden !important;
+    transition: transform 0.2s ease !important;
+}
+
+.um-photos-grid .um-photo-item:hover {
+    transform: scale(1.02) !important;
+}
+
+.um-photos-upload-btn,
+.um-photos-btn {
     background-color: #BE0002 !important;
     color: #E5C162 !important;
     border: 2px solid #E5C162 !important;
     border-radius: 100px !important;
     font-family: 'Poppins', sans-serif !important;
     font-weight: 600 !important;
-    transition: all 0.2s ease !important;
-}
-
-.um-friends-btn:hover,
-a.um-add-friend:hover {
-    background-color: #9a0002 !important;
-    color: #FFFFFF !important;
 }
 
 /* ============================================================
-   12. ALERTS & ERRORS
+   17. BETTER MESSAGES (Private Messaging)
    ============================================================ */
 
-.um .um-field-error,
-.um .um-notice {
-    border-left: 4px solid #BE0002 !important;
-    background-color: rgba(190, 0, 2, 0.06) !important;
-    color: #BE0002 !important;
-    border-radius: 6px !important;
-    font-family: 'Inter', sans-serif !important;
-    font-size: 13px !important;
-}
-
-/* ============================================================
-   13. ONLINE STATUS
-   ============================================================ */
-
-.um-online-icon,
-.um-online-status-icon.online {
-    background-color: #22c55e !important;
-}
-
-/* ============================================================
-   14. VERIFIED BADGE
-   ============================================================ */
-
-.um-verified-icon,
-span.um-verified {
-    color: #BE0002 !important;
-}
-
-/* ============================================================
-   15. BETTER MESSAGES
-   ============================================================ */
-
+/* Send button */
 .better-messages-wrap .bm-send-button,
-.better-messages-wrap button[type="submit"] {
+.better-messages-wrap button[type="submit"],
+.better-messages-form .bm-send {
     background-color: #BE0002 !important;
     color: #FFFFFF !important;
     border-radius: 100px !important;
     border: none !important;
     font-family: 'Poppins', sans-serif !important;
     font-weight: 600 !important;
+    transition: background-color 0.2s ease !important;
 }
 
 .better-messages-wrap .bm-send-button:hover {
     background-color: #9a0002 !important;
 }
 
+/* Sent message bubble */
+.better-messages-wrap .message-item.sent .message-content,
+.bm-message-sent .message-text {
+    background-color: #BE0002 !important;
+    color: #FFFFFF !important;
+    border-radius: 16px 16px 4px 16px !important;
+}
+
+/* Message input */
+.better-messages-wrap textarea.bm-input,
+.better-messages-wrap .bm-input-wrap textarea {
+    border: 2px solid #dddddd !important;
+    border-radius: 12px !important;
+    font-family: 'Inter', sans-serif !important;
+    font-size: 14px !important;
+    transition: border-color 0.2s ease !important;
+    resize: none !important;
+}
+
+.better-messages-wrap textarea.bm-input:focus {
+    border-color: #BE0002 !important;
+    outline: none !important;
+}
+
+/* Thread list active */
+.better-messages-wrap .bm-thread.active,
+.better-messages-wrap .bm-thread:hover {
+    background-color: rgba(190, 0, 2, 0.06) !important;
+    border-left: 3px solid #BE0002 !important;
+}
+
+/* New message badge */
+.better-messages-wrap .bm-badge,
+.bm-unread-count {
+    background-color: #BE0002 !important;
+    color: #FFFFFF !important;
+    border-radius: 100px !important;
+    font-size: 11px !important;
+    font-weight: 700 !important;
+    font-family: 'Poppins', sans-serif !important;
+}
+
 /* ============================================================
-   16. WP ULIKE — HIDE DUPLICATE HEARTS ON PROFILE FIELDS
+   18. FACETED SEARCH (SuitPlugins)
    ============================================================ */
 
-/* Hide WP ULike buttons inside profile field rows */
+.um-fsearch-wrap .um-fsearch-filter label,
+.suitePlugins-faceted-search label {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 12px !important;
+    font-weight: 700 !important;
+    color: #333333 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.06em !important;
+}
+
+.um-fsearch-wrap input,
+.um-fsearch-wrap select,
+.suitePlugins-faceted-search input,
+.suitePlugins-faceted-search select {
+    border: 2px solid #dddddd !important;
+    border-radius: 8px !important;
+    font-family: 'Inter', sans-serif !important;
+    font-size: 14px !important;
+    color: #111111 !important;
+    padding: 9px 14px !important;
+    width: 100% !important;
+    transition: border-color 0.2s ease !important;
+    outline: none !important;
+}
+
+.um-fsearch-wrap input:focus,
+.um-fsearch-wrap select:focus {
+    border-color: #BE0002 !important;
+}
+
+.um-fsearch-btn,
+.um-fsearch-submit,
+.suitePlugins-faceted-search button[type="submit"] {
+    background-color: #BE0002 !important;
+    color: #E5C162 !important;
+    border: 2px solid #E5C162 !important;
+    border-radius: 100px !important;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 700 !important;
+    padding: 11px 28px !important;
+    cursor: pointer !important;
+    transition: all 0.2s ease !important;
+}
+
+.um-fsearch-btn:hover,
+.um-fsearch-submit:hover {
+    background-color: #9a0002 !important;
+    color: #FFFFFF !important;
+}
+
+/* ============================================================
+   19. WP ULIKE — HIDE DUPLICATE HEARTS ON PROFILE
+   ============================================================ */
+
 .um-profile .um-field .wpulike,
 .um-profile .um-field-area .wpulike,
 .um-profile .um-col-1 > .wpulike,
@@ -362,16 +957,12 @@ span.um-verified {
 .um .um-field .wp_ulike_general_class,
 .um .um-profile-nav .wp_ulike_general_class,
 .um-tabs .wpulike,
-.um-tab .wpulike {
-    display: none !important;
-}
-
-/* Keep WP ULike only on photos and posts — hide on profile meta fields */
+.um-tab .wpulike,
 .um-profile .um-field[data-key] .wpulike {
     display: none !important;
 }
 
-/* Style the remaining visible WP ULike buttons */
+/* Style remaining visible WP ULike buttons */
 .wpulike .wp_ulike_btn,
 .wpulike .wp-ulike-pro-template {
     color: #BE0002 !important;
@@ -390,53 +981,14 @@ span.um-verified {
 }
 
 /* ============================================================
-   17. PROFILE PAGE — CLEANUP
+   20. WORDPRESS ADMIN BAR & GENERAL
    ============================================================ */
 
-/* Remove extra spacing from profile fields caused by hidden likes */
-.um-profile .um-field {
-    position: relative !important;
+/* Selection highlight */
+::selection {
+    background-color: #BE0002;
+    color: #FFFFFF;
 }
-
-/* Profile cover area — keep existing theme style, just ensure text is readable */
-.um .um-cover-add,
-.um .um-cover-e {
-    font-family: 'Poppins', sans-serif !important;
-    font-weight: 600 !important;
-}
-
-/* Profile field label styling */
-.um-profile .um-field-label label {
-    font-family: 'Inter', sans-serif !important;
-    font-size: 11px !important;
-    font-weight: 600 !important;
-    color: #999999 !important;
-    text-transform: uppercase !important;
-    letter-spacing: 0.08em !important;
-}
-
-/* Profile field value */
-.um-profile .um-field-value,
-.um-profile .um-field-area p,
-.um-profile .um-field-area span {
-    font-family: 'Inter', sans-serif !important;
-    font-size: 15px !important;
-    color: #222222 !important;
-}
-
-/* Online dot */
-.um-online-icon {
-    display: inline-block !important;
-    width: 10px !important;
-    height: 10px !important;
-    border-radius: 50% !important;
-    background-color: #22c55e !important;
-    border: 2px solid #FFFFFF !important;
-}
-
-/* ============================================================
-   18. GENERAL WORDPRESS OVERRIDES
-   ============================================================ */
 
 /* WordPress default buttons */
 .wp-block-button .wp-block-button__link {
@@ -447,8 +999,27 @@ span.um-verified {
     font-weight: 700 !important;
 }
 
-/* Selection highlight */
-::selection {
-    background-color: #BE0002;
-    color: #FFFFFF;
+/* Pagination */
+.um-directory .um-members-pagination .page-numbers,
+.um-pagination .page-numbers {
+    font-family: 'Poppins', sans-serif !important;
+    color: #555555 !important;
+    border: 2px solid #dddddd !important;
+    border-radius: 8px !important;
+    transition: all 0.2s ease !important;
+    text-decoration: none !important;
+}
+
+.um-directory .um-members-pagination .page-numbers:hover,
+.um-pagination .page-numbers:hover {
+    border-color: #BE0002 !important;
+    color: #BE0002 !important;
+}
+
+.um-directory .um-members-pagination .page-numbers.current,
+.um-pagination .page-numbers.current {
+    background-color: #BE0002 !important;
+    border-color: #BE0002 !important;
+    color: #FFFFFF !important;
+    font-weight: 700 !important;
 }
